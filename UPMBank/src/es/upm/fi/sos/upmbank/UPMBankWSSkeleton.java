@@ -226,14 +226,35 @@ public class UPMBankWSSkeleton {
     public es.upm.fi.sos.upmbank.ChangePasswordResponse changePassword
     (
             es.upm.fi.sos.upmbank.ChangePassword changePassword
-    ) throws RemoteException {
-        String oldPwd = changePassword.getArgs0().getOldpwd();
-        String newPwd = changePassword.getArgs0().getNewpwd();
-        UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePasswordService = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword();
-        changePasswordService.getChangePassword().setOldpwd(oldPwd);
-        changePasswordService.getChangePassword().setNewpwd(newPwd);
-        ChangePasswordResponse pwdResponse = AuthClient.changePassword(changePasswordService);
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#changePassword");
+    ) {
+        Response response = new Response();
+        response.setResponse(false);
+
+        if (online) {
+            String username = sesionActual.getName();
+            String oldPwd = changePassword.getArgs0().getOldpwd();
+            String newPwd = changePassword.getArgs0().getNewpwd();
+
+            UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePasswordService = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword();
+            UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd changePasswordBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd();
+
+            changePasswordBackEnd.setName(username);
+            changePasswordBackEnd.setNewpwd(newPwd);
+            changePasswordBackEnd.setOldpwd(oldPwd);
+            changePasswordService.setChangePassword(changePasswordBackEnd);
+
+            try {
+                response.setResponse(AuthClient.changePassword(changePasswordService).get_return().getResult());
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        ChangePasswordResponse endResponse = new ChangePasswordResponse();
+        endResponse.set_return(response);
+
+        return endResponse;
     }
 
 }
