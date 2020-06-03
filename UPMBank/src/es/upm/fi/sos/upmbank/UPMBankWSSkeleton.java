@@ -93,6 +93,30 @@ public class UPMBankWSSkeleton {
     ) {
         //TODO : fill this with the necessary business logic
 
+        if(online == true){
+            int numberOfSessions = usuariosOnline.get(sesionActual.getName());
+
+            while(numberOfSessions >= 1){
+                if(numberOfSessions == 1){
+                    usuariosOnline.remove(sesionActual.getName());
+                    online = false;
+                    sesionActual = null;
+                }
+                numberOfSessions--;
+                usuariosOnline.put(sesionActual.getName(),numberOfSessions);
+            }
+
+           /* if(numberOfSessions == 1){
+                usuariosOnline.remove(sesionActual.getName());
+                online = false;
+                sesionActual = null;
+            }
+
+            else if(numberOfSessions > 1){
+                numberOfSessions--;
+                usuariosOnline.put(sesionActual.getName(),numberOfSessions);
+            }*/
+        }
     }
 
 
