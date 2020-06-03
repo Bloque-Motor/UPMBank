@@ -10,7 +10,6 @@ import UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonSt
 import es.upm.fi.sos.upmbank.xsd.Response;
 import es.upm.fi.sos.upmbank.xsd.User;
 import org.apache.axis2.AxisFault;
-import sun.security.util.Password;
 
 import java.rmi.RemoteException;
 import java.util.HashMap;
@@ -163,8 +162,34 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.AddUser addUser
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#addUser");
+        es.upm.fi.sos.upmbank.xsd.AddUserResponse response = new es.upm.fi.sos.upmbank.xsd.AddUserResponse();
+        response.setResponse(false);
+        response.setPwd("");
+
+
+        if (online && sesionActual.getName().equals("admin")) {
+            String username = addUser.getArgs0().getUsername();
+
+            UPMAuthenticationAuthorizationWSSkeletonStub.AddUser addUserService = new UPMAuthenticationAuthorizationWSSkeletonStub.AddUser();
+            UPMAuthenticationAuthorizationWSSkeletonStub.UserBackEnd userBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.UserBackEnd();
+
+            userBackEnd.setName(username);
+            addUserService.setUser(userBackEnd);
+
+            try {
+                UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponseBackEnd userResponseBackEnd = AuthClient.addUser(addUserService).get_return();
+                response.setResponse(userResponseBackEnd.getResult());
+                response.setPwd(userResponseBackEnd.getPassword());
+
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+        }
+
+        AddUserResponse endResponse = new AddUserResponse();
+        endResponse.set_return(response);
+        return endResponse;
+
     }
 
 
