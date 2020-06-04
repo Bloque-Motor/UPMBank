@@ -80,8 +80,22 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.CloseBankAcc closeBankAcc
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#closeBankAcc");
+
+        Response response = new Response();
+        BankAccount userBank = closeBankAcc.getArgs0();
+        String userIban = userBank.getIBAN();
+
+        if(accounts.get(userIban).equals(0.0) && online){
+
+            accounts.remove(userIban);
+            response.setResponse(true);
+
+        } else {response.setResponse(false);}
+
+        CloseBankAccResponse endResponse = new CloseBankAccResponse();
+        endResponse.set_return(response);
+
+        return endResponse;
     }
 
 
@@ -148,7 +162,7 @@ public class UPMBankWSSkeleton {
 
         String onlineUser = sesionActual.getName();
 
-        if(onlineUser.equals("admin")/*añadir aquí comprobación de que no tiene cuenta */){
+        if(onlineUser.equals("admin") && online/*añadir aquí comprobación de que no tiene cuenta */){
 
             userRemoveService.setName(username);
             userRemoved.setRemoveUser(userRemoveService);
@@ -166,7 +180,6 @@ public class UPMBankWSSkeleton {
 
         return endResponse;
     }
-
 
     /**
      * Auto generated method signature
