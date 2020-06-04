@@ -9,6 +9,7 @@ package es.upm.fi.sos.upmbank;
 import UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub;
 import es.upm.fi.sos.upmbank.xsd.Response;
 import es.upm.fi.sos.upmbank.xsd.User;
+import es.upm.fi.sos.upmbank.xsd.Username;
 import org.apache.axis2.AxisFault;
 import sun.security.util.Password;
 
@@ -131,8 +132,35 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.RemoveUser removeUser
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#removeUser");
+
+        Response response = new Response();
+        response.setResponse(false);
+
+        UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser userRemoveService = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser();
+        UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE userRemoved = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE();
+
+        Username user = removeUser.getArgs0();
+        String username = user.getUsername();
+
+        String onlineUser = sesionActual.getName();
+
+        if(onlineUser.equals("admin")/*añadir aquí comprobación de que no tiene cuenta */){
+
+            userRemoveService.setName(username);
+            userRemoved.setRemoveUser(userRemoveService);
+
+            try {
+                response.setResponse(AuthClient.removeUser(userRemoved).get_return().getResult());
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        RemoveUserResponse endResponse = new RemoveUserResponse();
+        endResponse.set_return(response);
+
+        return endResponse;
     }
 
 
@@ -195,8 +223,45 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.Login login
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#login");
+
+        User user = login.getArgs0();
+        String username = user.getName();
+        String password = user.getPwd();
+
+        Response response = new Response();
+        response.setResponse(false);
+
+        UPMAuthenticationAuthorizationWSSkeletonStub.Login loginService = new UPMAuthenticationAuthorizationWSSkeletonStub.Login();
+        UPMAuthenticationAuthorizationWSSkeletonStub.LoginBackEnd loginBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.LoginBackEnd();
+
+        loginBackEnd.setName(username);
+        loginBackEnd.setPassword(password);
+        loginService.setLogin(loginBackEnd);
+
+        try {
+            response.setResponse(AuthClient.login(loginService).get_return().getResult());
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        if(response.getResponse() == true){
+            if(online){
+                int numberOfSessions = usuariosOnline.get(username);
+                usuariosOnline.put(username,numberOfSessions++);
+
+            }
+
+            else if(!online){
+                usuariosOnline.put(username,1);
+                online = true;
+            }
+
+        }
+
+        LoginResponse endResponse = new LoginResponse();
+        endResponse.set_return(response);
+
+    return endResponse;
     }
 
 
@@ -237,7 +302,6 @@ public class UPMBankWSSkeleton {
 
             UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePasswordService = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword();
             UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd changePasswordBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd();
-
             changePasswordBackEnd.setName(username);
             changePasswordBackEnd.setNewpwd(newPwd);
             changePasswordBackEnd.setOldpwd(oldPwd);
