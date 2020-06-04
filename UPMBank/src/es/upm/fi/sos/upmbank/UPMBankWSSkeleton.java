@@ -226,9 +226,44 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.AddWithdrawal addWithdrawal
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#addWithdrawal");
-    }
+
+        AddMovementResponse response = new AddMovementResponse();
+
+        Movement info = addWithdrawal.getArgs0();
+        String ibanNumber = info.getIBAN();
+        Double quantityNumber = info.getQuantity();
+
+        if(accounts.containsKey(ibanNumber) && online){
+        if(accounts.get(ibanNumber) >= quantityNumber) {
+
+            Double newQuantity = accounts.get(ibanNumber) - quantityNumber;
+            accounts.put(ibanNumber, newQuantity);
+
+            Queue<Movement> mov = movements.get(sesionActual.getName());
+            Movement var = new Movement();
+            var.setIBAN(ibanNumber);
+            var.setQuantity(quantityNumber);
+
+            if (mov.size() >= 10){
+                mov.remove();
+            }
+
+            mov.add(var);
+
+            movements.put(sesionActual.getName(), mov);
+            response.setResult(true);
+
+        }
+        }else{
+            response.setResult(false);
+        }
+
+        AddWithdrawalResponse endResponse = new AddWithdrawalResponse();
+        endResponse.set_return(response);
+
+        return endResponse;
+
+       }
 
 
     /**
