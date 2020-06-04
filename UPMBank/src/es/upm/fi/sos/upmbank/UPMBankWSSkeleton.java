@@ -252,6 +252,7 @@ public class UPMBankWSSkeleton {
 
             movements.put(sesionActual.getName(), mov);
             response.setResult(true);
+            response.setBalance(newQuantity);
 
         }
         }else{
