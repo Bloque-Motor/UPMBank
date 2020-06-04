@@ -119,7 +119,7 @@ public class UPMBankWSSkeleton {
         BankAccount userBank = closeBankAcc.getArgs0();
         String userIban = userBank.getIBAN();
 
-        if(accounts.get(userIban).equals(0.0) && online){
+        if(accounts.get(userIban).equals(0) && online){
 
             accounts.remove(userIban);
             response.setResponse(true);
@@ -186,7 +186,6 @@ public class UPMBankWSSkeleton {
     ) {
 
         Response response = new Response();
-        response.setResponse(false);
 
         UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser userRemoveService = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser();
         UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE userRemoved = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE();
@@ -196,17 +195,21 @@ public class UPMBankWSSkeleton {
 
         String onlineUser = sesionActual.getName();
         ArrayList numeroCuentas = accountList.get(username);
-        if(onlineUser.equals("admin") && online && numeroCuentas.size()>0){
 
-            userRemoveService.setName(username);
-            userRemoved.setRemoveUser(userRemoveService);
 
-            try {
-                response.setResponse(AuthClient.removeUser(userRemoved).get_return().getResult());
-            } catch (RemoteException e) {
-                e.printStackTrace();
-            }
+        if (onlineUser.equals("admin") && online && numeroCuentas.size() > 0) {
 
+                userRemoveService.setName(username);
+                userRemoved.setRemoveUser(userRemoveService);
+
+                try {
+                    response.setResponse(AuthClient.removeUser(userRemoved).get_return().getResult());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+
+        }else{
+            response.setResponse(false);
         }
 
         RemoveUserResponse endResponse = new RemoveUserResponse();
@@ -257,6 +260,7 @@ public class UPMBankWSSkeleton {
         }
         }else{
             response.setResult(false);
+            response.setBalance(0);
         }
 
         AddWithdrawalResponse endResponse = new AddWithdrawalResponse();
