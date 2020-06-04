@@ -7,14 +7,13 @@
 package es.upm.fi.sos.upmbank;
 
 import UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub;
-import es.upm.fi.sos.upmbank.xsd.Response;
-import es.upm.fi.sos.upmbank.xsd.User;
-import es.upm.fi.sos.upmbank.xsd.Username;
+import es.upm.fi.sos.upmbank.xsd.*;
 import org.apache.axis2.AxisFault;
-import sun.security.util.Password;
 
 import java.rmi.RemoteException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Queue;
 
 /**
  * UPMBankWSSkeleton java skeleton for the axisService
@@ -22,11 +21,17 @@ import java.util.HashMap;
 public class UPMBankWSSkeleton {
 
     private static HashMap<String, User> listaUsuarios;
-    private static HashMap<String, Integer> usuariosOnline;
+    private static HashMap<String, Integer> usuariosOnline;                     //Username, Nº Sesiones
+    private static HashMap<String, ArrayList<BankAccount>> accountList;         //Username, [BankAccount]
+    private static HashMap<String, Double> accounts;                           //IBAN, Balance
+    private static HashMap<String, Queue<Movement>> movements;                  //Username, Queue<Movimientos>
+    private static UPMAuthenticationAuthorizationWSSkeletonStub AuthClient;
+    BankAccount test = new BankAccount();
     User admin;
     private User sesionActual;
     private boolean online;
-    private static UPMAuthenticationAuthorizationWSSkeletonStub AuthClient;
+
+
 
     public UPMBankWSSkeleton() {
         if (listaUsuarios == null) {
@@ -60,8 +65,7 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.AddBankAcc addBankAcc
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#addBankAcc");
+        Double quantity
     }
 
 
@@ -191,8 +195,34 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.AddUser addUser
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#addUser");
+        es.upm.fi.sos.upmbank.xsd.AddUserResponse response = new es.upm.fi.sos.upmbank.xsd.AddUserResponse();
+        response.setResponse(false);
+        response.setPwd("");
+
+
+        if (online && sesionActual.getName().equals("admin")) {
+            String username = addUser.getArgs0().getUsername();
+
+            UPMAuthenticationAuthorizationWSSkeletonStub.AddUser addUserService = new UPMAuthenticationAuthorizationWSSkeletonStub.AddUser();
+            UPMAuthenticationAuthorizationWSSkeletonStub.UserBackEnd userBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.UserBackEnd();
+
+            userBackEnd.setName(username);
+            addUserService.setUser(userBackEnd);
+
+            try {
+                UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponseBackEnd userResponseBackEnd = AuthClient.addUser(addUserService).get_return();
+                response.setResponse(userResponseBackEnd.getResult());
+                response.setPwd(userResponseBackEnd.getPassword());
+
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+        }
+
+        AddUserResponse endResponse = new AddUserResponse();
+        endResponse.set_return(response);
+        return endResponse;
+
     }
 
 
