@@ -35,10 +35,19 @@ public class UPMBankWSSkeleton {
 
     public UPMBankWSSkeleton() {
         if (listaUsuarios == null) {
-            listaUsuarios = new HashMap<String, User>();
+            listaUsuarios = new HashMap<>();
         }
         if (usuariosOnline == null) {
-            usuariosOnline = new HashMap<String, Integer>();
+            usuariosOnline = new HashMap<>();
+        }
+        if (accountList == null) {
+            accountList = new HashMap<>();
+        }
+        if (accounts == null) {
+            accounts = new HashMap<>();
+        }
+        if (movements == null) {
+            movements = new HashMap<>();
         }
         admin = new User();
         admin.setName("admin");
