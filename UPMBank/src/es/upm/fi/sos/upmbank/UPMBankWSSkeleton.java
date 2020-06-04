@@ -24,7 +24,7 @@ public class UPMBankWSSkeleton {
     private static HashMap<String, User> listaUsuarios;
     private static HashMap<String, Integer> usuariosOnline;                     //Username, Nº Sesiones
     private static HashMap<String, ArrayList<BankAccount>> accountList;         //Username, [BankAccount]
-    private static HashMap<String, Double> accounts;                           //IBAN, Balance
+    private static HashMap<String, Double> accounts;                            //IBAN, Balance
     private static HashMap<String, Queue<Movement>> movements;                  //Username, Queue<Movimientos>
     private static UPMAuthenticationAuthorizationWSSkeletonStub AuthClient;
     User admin;
@@ -286,8 +286,40 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.AddIncome addIncome
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#addIncome");
+        AddMovementResponse response = new AddMovementResponse();
+        String IBAN =  addIncome.getArgs0().getIBAN();
+
+        response.setResult(false);
+        response.setBalance(0);
+
+        if (online) {
+            for (BankAccount aux : accountList.get(sesionActual.getName())) {
+                if (aux.getIBAN().equals(IBAN)) {
+                    Double balance = accounts.get(IBAN);
+                    balance += addIncome.getArgs0().getQuantity();
+                    accounts.put(IBAN, balance);
+
+                    Queue<Movement> mov = movements.get(sesionActual.getName());
+                    Movement var = new Movement();
+                    var.setQuantity(addIncome.getArgs0().getQuantity());
+                    var.setIBAN(IBAN);
+
+                    while (mov.size() >= 10) {
+                        mov.remove();
+                    }
+                    mov.add(var);
+                    movements.put(sesionActual.getName(), mov);
+
+                    response.setBalance(balance);
+                    response.setResult(true);
+                    break;
+                }
+            }
+        }
+
+        AddIncomeResponse endResponse = new AddIncomeResponse();
+        endResponse.set_return(response);
+        return endResponse;
     }
 
 
@@ -355,8 +387,24 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.GetMyMovements getMyMovements
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#getMyMovements");
+        MovementList response = new MovementList();
+        double[] res = new double[10];
+
+        if (online && movements.containsKey(sesionActual.getName())) {
+            Queue<Movement> mov = movements.get(sesionActual.getName());
+            for (int i = 9; i >= 0; i--) {
+                res[i] = mov.remove().getQuantity();
+            }
+            response.setResult(true);
+            response.setMovementQuantities(res);
+        }
+        else {
+            response.setResult(false);
+        }
+
+        GetMyMovementsResponse endResponse = new GetMyMovementsResponse();
+        endResponse.set_return(response);
+        return endResponse;
     }
 
 
