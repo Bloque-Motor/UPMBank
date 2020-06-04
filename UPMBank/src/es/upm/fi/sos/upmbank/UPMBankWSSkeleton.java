@@ -14,6 +14,7 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Queue;
+import java.util.Random;
 
 /**
  * UPMBankWSSkeleton java skeleton for the axisService
@@ -26,7 +27,6 @@ public class UPMBankWSSkeleton {
     private static HashMap<String, Double> accounts;                           //IBAN, Balance
     private static HashMap<String, Queue<Movement>> movements;                  //Username, Queue<Movimientos>
     private static UPMAuthenticationAuthorizationWSSkeletonStub AuthClient;
-    BankAccount test = new BankAccount();
     User admin;
     private User sesionActual;
     private boolean online;
@@ -65,7 +65,41 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.AddBankAcc addBankAcc
     ) {
-        Double quantity
+        BankAccountResponse response = new BankAccountResponse();
+
+        if (online) {
+            Double quantity = addBankAcc.getArgs0().getQuantity();
+            Random random = new Random();
+            String ibanInt = String.format("%04d", random.nextInt(10000));
+            String IBAN =  sesionActual.getName() + ibanInt;
+
+            BankAccount account = new BankAccount();
+            account.setIBAN(IBAN);
+
+            ArrayList<BankAccount> aux;
+            if (accountList.containsKey(sesionActual.getName())) {
+                aux = accountList.get(sesionActual.getName());
+            }
+            else {
+                aux = new ArrayList<>();
+            }
+            aux.add(account);
+            accountList.put(sesionActual.getName(), aux);
+            accounts.put(IBAN, quantity);
+
+            response.setResult(true);
+            response.setIBAN(IBAN);
+        }
+        else {
+            response.setResult(false);
+            response.setIBAN("");
+        }
+
+        AddBankAccResponse endResponse = new AddBankAccResponse();
+        endResponse.set_return(response);
+
+        return endResponse;
+
     }
 
 
@@ -196,8 +230,6 @@ public class UPMBankWSSkeleton {
             es.upm.fi.sos.upmbank.AddUser addUser
     ) {
         es.upm.fi.sos.upmbank.xsd.AddUserResponse response = new es.upm.fi.sos.upmbank.xsd.AddUserResponse();
-        response.setResponse(false);
-        response.setPwd("");
 
 
         if (online && sesionActual.getName().equals("admin")) {
@@ -217,6 +249,10 @@ public class UPMBankWSSkeleton {
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
+        }
+        else {
+            response.setResponse(false);
+            response.setPwd("");
         }
 
         AddUserResponse endResponse = new AddUserResponse();
@@ -323,7 +359,6 @@ public class UPMBankWSSkeleton {
             es.upm.fi.sos.upmbank.ChangePassword changePassword
     ) {
         Response response = new Response();
-        response.setResponse(false);
 
         if (online) {
             String username = sesionActual.getName();
@@ -343,6 +378,9 @@ public class UPMBankWSSkeleton {
                 e.printStackTrace();
             }
 
+        }
+        else {
+            response.setResponse(false);
         }
 
         ChangePasswordResponse endResponse = new ChangePasswordResponse();
