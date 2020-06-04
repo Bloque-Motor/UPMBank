@@ -204,8 +204,8 @@ public class UPMBankWSSkeleton {
         String username = user.getUsername();
 
         String onlineUser = sesionActual.getName();
-
-        if(onlineUser.equals("admin") && online/*añadir aquí comprobación de que no tiene cuenta */){
+        ArrayList numeroCuentas = accountList.get(username);
+        if(onlineUser.equals("admin") && online && numeroCuentas.size()>0){
 
             userRemoveService.setName(username);
             userRemoved.setRemoveUser(userRemoveService);
