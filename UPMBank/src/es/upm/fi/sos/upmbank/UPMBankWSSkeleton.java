@@ -128,7 +128,7 @@ public class UPMBankWSSkeleton {
         BankAccount userBank = closeBankAcc.getArgs0();
         String userIban = userBank.getIBAN();
 
-        if(accounts.get(userIban).equals(0.0) && online){
+        if(accounts.get(userIban).equals(0) && online){
 
             accounts.remove(userIban);
             response.setResponse(true);
@@ -195,7 +195,6 @@ public class UPMBankWSSkeleton {
     ) {
 
         Response response = new Response();
-        response.setResponse(false);
 
         UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser userRemoveService = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser();
         UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE userRemoved = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE();
@@ -205,17 +204,21 @@ public class UPMBankWSSkeleton {
 
         String onlineUser = sesionActual.getName();
         ArrayList numeroCuentas = accountList.get(username);
-        if(onlineUser.equals("admin") && online && numeroCuentas.size()>0){
 
-            userRemoveService.setName(username);
-            userRemoved.setRemoveUser(userRemoveService);
 
-            try {
-                response.setResponse(AuthClient.removeUser(userRemoved).get_return().getResult());
-            } catch (RemoteException e) {
-                e.printStackTrace();
-            }
+        if (onlineUser.equals("admin") && online && numeroCuentas.size() > 0) {
 
+                userRemoveService.setName(username);
+                userRemoved.setRemoveUser(userRemoveService);
+
+                try {
+                    response.setResponse(AuthClient.removeUser(userRemoved).get_return().getResult());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+
+        }else{
+            response.setResponse(false);
         }
 
         RemoveUserResponse endResponse = new RemoveUserResponse();
@@ -235,9 +238,46 @@ public class UPMBankWSSkeleton {
     (
             es.upm.fi.sos.upmbank.AddWithdrawal addWithdrawal
     ) {
-        //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#addWithdrawal");
-    }
+
+        AddMovementResponse response = new AddMovementResponse();
+
+        Movement info = addWithdrawal.getArgs0();
+        String ibanNumber = info.getIBAN();
+        Double quantityNumber = info.getQuantity();
+
+        if(accounts.containsKey(ibanNumber) && online){
+        if(accounts.get(ibanNumber) >= quantityNumber) {
+
+            Double newQuantity = accounts.get(ibanNumber) - quantityNumber;
+            accounts.put(ibanNumber, newQuantity);
+
+            Queue<Movement> mov = movements.get(sesionActual.getName());
+            Movement var = new Movement();
+            var.setIBAN(ibanNumber);
+            var.setQuantity(quantityNumber);
+
+            if (mov.size() >= 10){
+                mov.remove();
+            }
+
+            mov.add(var);
+
+            movements.put(sesionActual.getName(), mov);
+            response.setResult(true);
+            response.setBalance(newQuantity);
+
+        }
+        }else{
+            response.setResult(false);
+            response.setBalance(0);
+        }
+
+        AddWithdrawalResponse endResponse = new AddWithdrawalResponse();
+        endResponse.set_return(response);
+
+        return endResponse;
+
+       }
 
 
     /**
