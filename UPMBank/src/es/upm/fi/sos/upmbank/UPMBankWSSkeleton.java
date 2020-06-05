@@ -76,7 +76,20 @@ public class UPMBankWSSkeleton {
     ) {
         BankAccountResponse response = new BankAccountResponse();
 
-        if (online) {
+        boolean exist = false;
+        String username = sesionActual.getName();
+        UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+        userCheck.setName(username);
+        UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+        userExist.setUsername(userCheck);
+
+        try {
+            exist = AuthClient.existUser(userExist).get_return().getResult();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        if (online && exist) {
             Double quantity = addBankAcc.getArgs0().getQuantity();
             Random random = new Random();
             String ibanInt = String.format("%04d", random.nextInt(10000));
@@ -128,7 +141,20 @@ public class UPMBankWSSkeleton {
         BankAccount userBank = closeBankAcc.getArgs0();
         String userIban = userBank.getIBAN();
 
-        if(accounts.get(userIban).equals(0) && online){
+        boolean exist = false;
+        String username = sesionActual.getName();
+        UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+        userCheck.setName(username);
+        UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+        userExist.setUsername(userCheck);
+
+        try {
+            exist = AuthClient.existUser(userExist).get_return().getResult();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        if(accounts.get(userIban).equals(0) && online && exist){
 
             accounts.remove(userIban);
             response.setResponse(true);
@@ -195,6 +221,8 @@ public class UPMBankWSSkeleton {
     ) {
 
         Response response = new Response();
+        boolean exist = false;
+
 
         UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser userRemoveService = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser();
         UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE userRemoved = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE();
@@ -205,8 +233,18 @@ public class UPMBankWSSkeleton {
         String onlineUser = sesionActual.getName();
         ArrayList<BankAccount> numeroCuentas = accountList.get(username);
 
+        UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+        userCheck.setName(username);
+        UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+        userExist.setUsername(userCheck);
 
-        if (onlineUser.equals("admin") && online && (numeroCuentas==null || numeroCuentas.isEmpty()) && !username.equals("admin")) {
+        try {
+            exist = AuthClient.existUser(userExist).get_return().getResult();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        if (exist && onlineUser.equals("admin") && online && (numeroCuentas == null || numeroCuentas.isEmpty()) && !username.equals("admin")) {
 
                 userRemoveService.setName(username);
                 userRemoved.setRemoveUser(userRemoveService);
@@ -245,7 +283,20 @@ public class UPMBankWSSkeleton {
         String ibanNumber = info.getIBAN();
         Double quantityNumber = info.getQuantity();
 
-        if(accounts.containsKey(ibanNumber) && online){
+        boolean exist = false;
+        String username = sesionActual.getName();
+        UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+        userCheck.setName(username);
+        UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+        userExist.setUsername(userCheck);
+
+        try {
+            exist = AuthClient.existUser(userExist).get_return().getResult();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        if(accounts.containsKey(ibanNumber) && online && exist){
         if(accounts.get(ibanNumber) >= quantityNumber) {
 
             Double newQuantity = accounts.get(ibanNumber) - quantityNumber;
@@ -340,7 +391,20 @@ public class UPMBankWSSkeleton {
         response.setResult(false);
         response.setBalance(0);
 
-        if (online) {
+        boolean exist = false;
+        String username = sesionActual.getName();
+        UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+        userCheck.setName(username);
+        UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+        userExist.setUsername(userCheck);
+
+        try {
+            exist = AuthClient.existUser(userExist).get_return().getResult();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        if (online && exist) {
             for (BankAccount aux : accountList.get(sesionActual.getName())) {
                 if (aux.getIBAN().equals(IBAN)) {
                     Double balance = accounts.get(IBAN);
@@ -446,7 +510,20 @@ public class UPMBankWSSkeleton {
         MovementList response = new MovementList();
         double[] res = new double[10];
 
-        if (online && movements.containsKey(sesionActual.getName())) {
+        boolean exist = false;
+        String username = sesionActual.getName();
+        UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+        userCheck.setName(username);
+        UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+        userExist.setUsername(userCheck);
+
+        try {
+            exist = AuthClient.existUser(userExist).get_return().getResult();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        if (exist && online && movements.containsKey(sesionActual.getName())) {
             Queue<Movement> mov = movements.get(sesionActual.getName());
             for (int i = 9; i >= 0; i--) {
                 res[i] = mov.remove().getQuantity();
@@ -476,11 +553,24 @@ public class UPMBankWSSkeleton {
             es.upm.fi.sos.upmbank.ChangePassword changePassword
     ) {
         Response response = new Response();
+        boolean exist = false;
 
-        if (online) {
-            String username = sesionActual.getName();
-            String oldPwd = changePassword.getArgs0().getOldpwd();
-            String newPwd = changePassword.getArgs0().getNewpwd();
+        String username = sesionActual.getName();
+        String oldPwd = changePassword.getArgs0().getOldpwd();
+        String newPwd = changePassword.getArgs0().getNewpwd();
+
+        UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+        userCheck.setName(username);
+        UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+        userExist.setUsername(userCheck);
+
+        try {
+            exist = AuthClient.existUser(userExist).get_return().getResult();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        if (online && exist) {
 
             UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePasswordService = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword();
             UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd changePasswordBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd();
