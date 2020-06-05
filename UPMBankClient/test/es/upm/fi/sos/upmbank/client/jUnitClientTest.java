@@ -14,6 +14,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class jUnitClientTest {
 
     private jUnitClient client;
@@ -188,136 +189,140 @@ class jUnitClientTest {
                 fail("Exception thrown");
             }
         }
+
+        @Nested
+        @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+        @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+        @DisplayName("Actions for One Registered User")
+        class User1 {
+            private jUnitClient client;
+
+            private  String username;
+            private  String password;
+
+            @BeforeAll
+            void loadClient() throws AxisFault {
+                this.client = new jUnitClient();
+                Object[] keys = usedUsers.keySet().toArray();
+                Object key = keys[0];
+                username = key.toString();
+                password = usedUsers.get(key.toString());
+            }
+
+            @Test
+            @DisplayName("User Login")
+            @Order(0)
+            void login() {
+                this.client.setUsername(username);
+                this.client.setPassword(password);
+                try {
+                    assertTrue(client.login());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
+
+            @Test
+            @DisplayName("Attempt to add user")
+            @Order(1)
+            void addUser() {
+                try {
+                    UPMBankWSStub.AddUserResponse response = client.addUser("AaBbCcDd8462");
+                    assertFalse(response.getResponse());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
+
+            @ParameterizedTest
+            @DisplayName("Attempt to remove user")
+            @MethodSource("es.upm.fi.sos.upmbank.client.jUnitClientTest#randomUser")
+            @Order(2)
+            void removeUser(String input) {
+                try {
+                    UPMBankWSStub.Response response = client.removeUser(input);
+                    assertFalse(response.getResponse());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
+
+            @Test
+            @DisplayName("ChangePassword correcto")
+            @Order(3)
+            void changePassword() {
+                String newPwd = faker.regexify("[a-z1-9]{8}");
+                String oldPwd = client.getUser().getPwd();
+                try {
+                    UPMBankWSStub.Response response = client.changePassword(newPwd, oldPwd);
+                    assertTrue(response.getResponse());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
+
+            @Test
+            @DisplayName("ChangePassword incorrecto")
+            @Order(4)
+            void changePassword1() {
+                String newPwd = faker.regexify("[a-z1-9]{8}");
+                try {
+                    UPMBankWSStub.Response response = client.changePassword(newPwd, newPwd);
+                    assertFalse(response.getResponse());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
+
+            @Test
+            @DisplayName("Add account")
+            @Order(5)
+            void addAccount() {
+                try {
+                    UPMBankWSStub.BankAccountResponse response = client.addBankAcc(STARTAMMOUNT);
+                    assertTrue(response.getResult());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
+
+            @Test
+            @DisplayName("Add income")
+            @Order(6)
+            void addIncome() {
+                double qtty = 1000;
+                try {
+                    UPMBankWSStub.AddMovementResponse response = client.addMovement(client.getIBAN(), qtty);
+                    assertTrue(response.getResult());
+                    assertEquals(response.getBalance(), STARTAMMOUNT + qtty);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
+
+            @Test
+            @DisplayName("Add income to wrong account")
+            @Order(7)
+            void addIncome1() {
+                double qtty = 100;
+                try {
+                    UPMBankWSStub.AddMovementResponse response = client.addMovement("1111", qtty);
+                    assertFalse(response.getResult());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
+        }
     }
 
-    @Nested
-    @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-    @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-    @DisplayName("Actions for One Registered User")
-    class User1 {
-        private jUnitClient client;
-
-        private final String username = randomUser().toString();
-        private final String password = usedUsers.get(username);
-
-        @BeforeAll
-        void loadClient() throws AxisFault {
-            this.client = new jUnitClient();
-
-        }
-
-        @Test
-        @DisplayName("User Login")
-        @Order(0)
-        void login() {
-            this.client.setUsername(username);
-            this.client.setPassword(password);
-            try {
-                assertTrue(client.login());
-            } catch (RemoteException e) {
-                e.printStackTrace();
-                fail("Exception thrown");
-            }
-        }
-
-        @Test
-        @DisplayName("Attempt to add user")
-        @Order(1)
-        void addUser() {
-            try {
-                UPMBankWSStub.AddUserResponse response = client.addUser("AaBbCcDd8462");
-                assertFalse(response.getResponse());
-            } catch (RemoteException e) {
-                e.printStackTrace();
-                fail("Exception thrown");
-            }
-        }
-
-        @ParameterizedTest
-        @DisplayName("Attempt to remove user")
-        @MethodSource("es.upm.fi.sos.upmbank.client.jUnitClientTest#randomUser")
-        @Order(2)
-        void removeUser(String input) {
-            try {
-                UPMBankWSStub.Response response = client.removeUser(input);
-                assertFalse(response.getResponse());
-            } catch (RemoteException e) {
-                e.printStackTrace();
-                fail("Exception thrown");
-            }
-        }
-
-        @Test
-        @DisplayName("ChangePassword correcto")
-        @Order(3)
-        void changePassword() {
-            String newPwd = faker.regexify("[a-z1-9]{8}");
-            String oldPwd = client.getUser().getPwd();
-            try {
-                UPMBankWSStub.Response response = client.changePassword(newPwd, oldPwd);
-                assertTrue(response.getResponse());
-            } catch (RemoteException e) {
-                e.printStackTrace();
-                fail("Exception thrown");
-            }
-        }
-
-        @Test
-        @DisplayName("ChangePassword incorrecto")
-        @Order(4)
-        void changePassword1() {
-            String newPwd = faker.regexify("[a-z1-9]{8}");
-            try {
-                UPMBankWSStub.Response response = client.changePassword(newPwd, newPwd);
-                assertFalse(response.getResponse());
-            } catch (RemoteException e) {
-                e.printStackTrace();
-                fail("Exception thrown");
-            }
-        }
-
-        @Test
-        @DisplayName("Add account")
-        @Order(5)
-        void addAccount() {
-            try {
-                UPMBankWSStub.BankAccountResponse response = client.addBankAcc(STARTAMMOUNT);
-                assertTrue(response.getResult());
-            } catch (RemoteException e) {
-                e.printStackTrace();
-                fail("Exception thrown");
-            }
-        }
-
-        @Test
-        @DisplayName("Add income")
-        @Order(6)
-        void addIncome() {
-            double qtty = 1000;
-            try {
-                UPMBankWSStub.AddMovementResponse response = client.addMovement(client.getIBAN(), qtty);
-                assertTrue(response.getResult());
-                assertEquals(response.getBalance(), STARTAMMOUNT + qtty);
-            } catch (RemoteException e) {
-                e.printStackTrace();
-                fail("Exception thrown");
-            }
-        }
-
-        @Test
-        @DisplayName("Add income to wrong account")
-        @Order(7)
-        void addIncome1() {
-            double qtty = 100;
-            try {
-                UPMBankWSStub.AddMovementResponse response = client.addMovement("1111", qtty);
-                assertFalse(response.getResult());
-            } catch (RemoteException e) {
-                e.printStackTrace();
-                fail("Exception thrown");
-            }
-        }
-    }
 
     static Stream<String> generateUsername() {
         String[] array = new String[NUMUSERS];

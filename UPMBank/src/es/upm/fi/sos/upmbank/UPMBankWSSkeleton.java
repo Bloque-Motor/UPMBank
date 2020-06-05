@@ -11,10 +11,7 @@ import es.upm.fi.sos.upmbank.xsd.*;
 import org.apache.axis2.AxisFault;
 
 import java.rmi.RemoteException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Queue;
-import java.util.Random;
+import java.util.*;
 
 /**
  * UPMBankWSSkeleton java skeleton for the axisService
@@ -419,6 +416,7 @@ public class UPMBankWSSkeleton {
                         accounts.put(IBAN, balance);
 
                         Queue<Movement> mov = movements.get(sesionActual.getName());
+                        if (mov == null) mov = new LinkedList<>();
                         Movement var = new Movement();
                         var.setQuantity(addIncome.getArgs0().getQuantity());
                         var.setIBAN(IBAN);

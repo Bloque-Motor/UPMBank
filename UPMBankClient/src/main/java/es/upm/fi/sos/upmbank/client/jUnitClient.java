@@ -40,6 +40,7 @@ public class jUnitClient {
         stub._getServiceClient().engageModule("addressing");
         stub._getServiceClient().getOptions().setManageSession(true);
         this.user = new User();
+        this.accounts = new ArrayList<>();
     }
 
     boolean login() throws RemoteException {
@@ -79,6 +80,7 @@ public class jUnitClient {
         var.setNewpwd(newPwd);
         var.setOldpwd(oldPwd);
         ChangePassword changePwd = new ChangePassword();
+        changePwd.setArgs0(var);
         Response response = stub.changePassword(changePwd).get_return();
         if (response.getResponse()) {
             this.user.setPwd(newPwd);
