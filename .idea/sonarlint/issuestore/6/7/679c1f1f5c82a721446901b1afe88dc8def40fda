@@ -1,0 +1,65 @@
+
+^
+java:S3973•"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+F
+java:S3740"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740‚"/Provide the parametrized type for this generic.(ßå®¤
+F
+java:S3740‚"/Provide the parametrized type for this generic.(ßå®¤
+K
+java:S3740Õ"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+K
+java:S3740Õ"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+`
+java:S1192À"IDefine a constant instead of duplicating this literal "quantity" 4 times.(Êß˜Õ
+x
+java:S1192Ÿ"aDefine a constant instead of duplicating this literal "http://upmbank.sos.fi.upm.es/xsd" 8 times.(óÙ¬ï
+†
+java:S1192¡"jDefine a constant instead of duplicating this literal "http://www.w3.org/2001/XMLSchema-instance" 7 times.(¢Ù‚Ôÿÿÿÿÿ
+a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+{
+java:S1149Á"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+
+java:S1149Õ"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+±
+java:S1130ˆ"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+±
+java:S1130"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+i
+java:S3776»"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+N
+java:S3972Š"7Move this "if" to a new line or add the missing "else".(†şƒ÷
+
+java:S1149Õ"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+V
+java:S1118":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+a
+java:S1854Õ"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776©"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ò¶ìÃ
+b
+java:S3027¼"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+b
+java:S3027½"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+]
+java:S3027Á"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+?	java:S108ô")Either remove or fill this block of code.(á¢–¬
+R
+java:S1481Õ"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+F
+java:S1481­"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+B
+java:S1481¯"+Remove this unused "prefix" local variable.(åÒù÷
+M
+java:S1481°"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+O
+java:S1144ü"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+T
+java:S1144Š"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+K
+java:S1144¤"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+G
+java:S1144»"0Remove this unused private "writeQNames" method.(†»ìí

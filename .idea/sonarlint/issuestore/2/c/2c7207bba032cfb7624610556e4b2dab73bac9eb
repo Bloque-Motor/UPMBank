@@ -1,0 +1,17 @@
+
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(àù±÷ùÿÿÿÿ8ÁÜÒ‡¨.
+?
+java:S1148"#Use a logger to log this exception.(´ÂÆ	8ãøÔ€¨.
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(ú÷åøÿÿÿÿ8ÜÂ×‡¨.
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(ÀüÊš8äá¯…¨.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¼‹îæüÿÿÿÿ8’˜ÿƒ¨.
+R
+java:S1481#"0Remove this unused "adminLogout" local variable.(Áœâ§ûÿÿÿÿ8½Ï‰ƒ¨.
+^
+java:S1854'"<Remove this useless assignment to local variable "response".(¨­¹øÿÿÿÿ8ÊÕ‡¨.
+E
+java:S11488"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8è­…¨.
+_
+java:S2259%"BA "NullPointerException" could be thrown; "stub" is nullable here.(òÜåî8ıØä‡¨.
+a
+java:S1854#"?Remove this useless assignment to local variable "adminLogout".(Áœâ§ûÿÿÿÿ8½Ï‰ƒ¨.
