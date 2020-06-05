@@ -155,7 +155,7 @@ public class UPMBankWSSkeleton {
     ) {
         //TODO : fill this with the necessary business logic
 
-        if(online == true){
+        if(online){
             int numberOfSessions = usuariosOnline.get(sesionActual.getName());
 
             while(numberOfSessions >= 1){
@@ -203,10 +203,10 @@ public class UPMBankWSSkeleton {
         String username = user.getUsername();
 
         String onlineUser = sesionActual.getName();
-        ArrayList numeroCuentas = accountList.get(username);
+        ArrayList<BankAccount> numeroCuentas = accountList.get(username);
 
 
-        if (onlineUser.equals("admin") && online && numeroCuentas.size() > 0) {
+        if (onlineUser.equals("admin") && online && (numeroCuentas==null || numeroCuentas.isEmpty()) && !username.equals("admin")) {
 
                 userRemoveService.setName(username);
                 userRemoved.setRemoveUser(userRemoveService);

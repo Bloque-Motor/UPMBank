@@ -16,6 +16,9 @@ public class jUnitClient {
 
     public jUnitClient(String username, String password) throws AxisFault {
         stub = new UPMBankWSStub();
+        stub._getServiceClient().engageModule("addressing");
+        stub._getServiceClient().getOptions().setManageSession(true);
+        this.user = new User();
         this.user.setName(username);
         this.user.setPwd(password);
         this.random = new Random();
@@ -24,9 +27,19 @@ public class jUnitClient {
 
     public jUnitClient(String username) throws AxisFault {
         stub = new UPMBankWSStub();
+        stub._getServiceClient().engageModule("addressing");
+        stub._getServiceClient().getOptions().setManageSession(true);
+        this.user = new User();
         this.user.setName(username);
         this.random = new Random();
         this.accounts = new ArrayList<>();
+    }
+
+    public jUnitClient() throws AxisFault {
+        stub = new UPMBankWSStub();
+        stub._getServiceClient().engageModule("addressing");
+        stub._getServiceClient().getOptions().setManageSession(true);
+        this.user = new User();
     }
 
     boolean login() throws RemoteException {
@@ -112,10 +125,21 @@ public class jUnitClient {
         var.setIBAN(iban);
         var.setQuantity(qtty);
         AddWithdrawal addWithdrawal = new AddWithdrawal();
+        addWithdrawal.setArgs0(var);
+        return stub.addWithdrawal(addWithdrawal).get_return();
+    }
 
+    MovementList getMyMovements() throws RemoteException {
+        GetMyMovements var = new GetMyMovements();
+        GetMyMovementsResponse response = stub.getMyMovements(var);
+        return response.get_return();
     }
 
 
-
-
+    public void setUsername(String username) {
+        this.user.setName(username);
+    }
+    public void setPassword(String pwd) {
+        this.user.setPwd(pwd);
+    }
 }
