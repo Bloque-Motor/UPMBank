@@ -293,7 +293,6 @@ public class UPMBankWSSkeleton {
     ) {
         es.upm.fi.sos.upmbank.xsd.AddUserResponse response = new es.upm.fi.sos.upmbank.xsd.AddUserResponse();
 
-
         if (online && sesionActual.getName().equals("admin")) {
             String username = addUser.getArgs0().getUsername();
 
@@ -391,29 +390,37 @@ public class UPMBankWSSkeleton {
         Response response = new Response();
         response.setResponse(false);
 
-        UPMAuthenticationAuthorizationWSSkeletonStub.Login loginService = new UPMAuthenticationAuthorizationWSSkeletonStub.Login();
-        UPMAuthenticationAuthorizationWSSkeletonStub.LoginBackEnd loginBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.LoginBackEnd();
+        if (username.equals("admin") && password.equals("admin")) {
+            response.setResponse(true);
+        }
+        else {
+            UPMAuthenticationAuthorizationWSSkeletonStub.Login loginService = new UPMAuthenticationAuthorizationWSSkeletonStub.Login();
+            UPMAuthenticationAuthorizationWSSkeletonStub.LoginBackEnd loginBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.LoginBackEnd();
 
-        loginBackEnd.setName(username);
-        loginBackEnd.setPassword(password);
-        loginService.setLogin(loginBackEnd);
+            loginBackEnd.setName(username);
+            loginBackEnd.setPassword(password);
+            loginService.setLogin(loginBackEnd);
 
-        try {
-            response.setResponse(AuthClient.login(loginService).get_return().getResult());
-        } catch (RemoteException e) {
-            e.printStackTrace();
+            try {
+                response.setResponse(AuthClient.login(loginService).get_return().getResult());
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
         }
 
-        if(response.getResponse() == true){
+        if(response.getResponse()){
             if(online){
                 int numberOfSessions = usuariosOnline.get(username);
-                usuariosOnline.put(username,numberOfSessions++);
+                numberOfSessions++;
+                usuariosOnline.put(username,numberOfSessions);
 
             }
 
             else if(!online){
                 usuariosOnline.put(username,1);
                 online = true;
+                sesionActual = user;
+                System.out.println(username + "is now online");
             }
 
         }

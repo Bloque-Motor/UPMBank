@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UPMBank/UPMBank.iml" filepath="$PROJECT_DIR$/UPMBank/UPMBank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UPMBankClient/UPMBankClient.iml" filepath="$PROJECT_DIR$/UPMBankClient/UPMBankClient.iml" />
     </modules>
   </component>
 </project>
