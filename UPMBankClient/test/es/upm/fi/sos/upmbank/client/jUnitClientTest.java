@@ -88,6 +88,7 @@ class jUnitClientTest {
                 assertTrue(client.login());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -102,6 +103,7 @@ class jUnitClientTest {
                 usedUsers.put(input, response.getPwd());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -116,6 +118,7 @@ class jUnitClientTest {
                 usedUsers.remove(input);
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -129,6 +132,7 @@ class jUnitClientTest {
                 assertFalse(response.getResponse());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -141,6 +145,7 @@ class jUnitClientTest {
                 assertFalse(response.getResponse());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -166,12 +171,13 @@ class jUnitClientTest {
                 assertFalse(response.getResponse());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
         @ParameterizedTest
         @MethodSource("es.upm.fi.sos.upmbank.client.jUnitClientTest#randomUser")
-        @DisplayName("Add user without login")
+        @DisplayName("Remove user without login")
         @Order(7)
         void removeUserL(String input) {
             try {
@@ -179,6 +185,7 @@ class jUnitClientTest {
                 assertFalse(response.getResponse());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
     }
@@ -209,6 +216,7 @@ class jUnitClientTest {
                 assertTrue(client.login());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -221,6 +229,7 @@ class jUnitClientTest {
                 assertFalse(response.getResponse());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -234,6 +243,7 @@ class jUnitClientTest {
                 assertFalse(response.getResponse());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -248,6 +258,7 @@ class jUnitClientTest {
                 assertTrue(response.getResponse());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -261,6 +272,7 @@ class jUnitClientTest {
                 assertFalse(response.getResponse());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -273,6 +285,7 @@ class jUnitClientTest {
                 assertTrue(response.getResult());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -287,6 +300,7 @@ class jUnitClientTest {
                 assertEquals(response.getBalance(), STARTAMMOUNT + qtty);
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
 
@@ -300,6 +314,7 @@ class jUnitClientTest {
                 assertFalse(response.getResult());
             } catch (RemoteException e) {
                 e.printStackTrace();
+                fail("Exception thrown");
             }
         }
     }
