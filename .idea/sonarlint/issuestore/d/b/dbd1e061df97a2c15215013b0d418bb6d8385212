@@ -1,0 +1,154 @@
+
+R
+java:S1172–"6Remove this unused method parameter "optimizeContent".(¸êÛïøÿÿÿÿ
+J
+java:S1144ê".Remove this unused private "wraplogin" method.(€È °ûÿÿÿÿ
+F
+java:S3740¹"/Provide the parametrized type for this generic.(ñÚûÁ
+F
+java:S3740¹"/Provide the parametrized type for this generic.(ñÚûÁ
+=
+java:S1172É"&Remove these unused method parameters.(õ„°—
+O
+java:S1144"3Remove this unused private "wrapremoveUser" method.(Ü†—’ÿÿÿÿÿ
+F
+java:S3740º"/Provide the parametrized type for this generic.(ÎÕò‡
+‚
+java:S1488ù"fImmediately return this expression instead of assigning it to the temporary variable "wrappedElement".(Ã™ï­ùÿÿÿÿ
+E
+java:S1144î")Remove this unused private "toOM" method.(áŸ—¢şÿÿÿÿ
+E
+java:S1144ü")Remove this unused private "toOM" method.(¡ú¦Ïşÿÿÿÿ
+}
+java:S1488Å"fImmediately return this expression instead of assigning it to the temporary variable "wrappedElement".(±™âö
+@
+java:S1144˜")Remove this unused private "toOM" method.(µãáÏ
+|
+java:S1488Ø"fImmediately return this expression instead of assigning it to the temporary variable "wrappedElement".(™ô‰i
+@
+java:S1144Î")Remove this unused private "toOM" method.(‘ãÖÔ
+@
+java:S1144Ş")Remove this unused private "toOM" method.(®ûÕ«
+=
+java:S1172¶"&Remove these unused method parameters.(×úˆ
+E
+java:S1144ˆ")Remove this unused private "toOM" method.(Ÿî«Üùÿÿÿÿ
+R
+java:S1172à"6Remove this unused method parameter "optimizeContent".(†¸”¡şÿÿÿÿ
+M
+java:S1172Š"6Remove this unused method parameter "optimizeContent".(†İ¼ô
+M
+java:S1172À"6Remove this unused method parameter "optimizeContent".(°‘óü
+=
+java:S1172ï"&Remove these unused method parameters.(Œ¾
+E
+java:S1144´")Remove this unused private "toOM" method.(¥üšÄüÿÿÿÿ
+N
+java:S1144×"2Remove this unused private "wrapaddIncome" method.(—•ëÿÿÿÿÿ
+M
+java:S1172¢"6Remove this unused method parameter "extraNamespaces".(Ñ¬‘
+F
+java:S1144š"/Remove this unused private "toEnvelope" method.(¦€÷‰
+Q
+java:S1144‹"5Remove this unused private "wrapcloseBankAcc" method.(ıî¸Ôúÿÿÿÿ
+R
+java:S1172¤"6Remove this unused method parameter "optimizeContent".(Î•³üÿÿÿÿ
+F
+java:S3740¢"/Provide the parametrized type for this generic.(Ñ¬‘
+J
+java:S1144ø"3Remove this unused private "wrapaddBankAcc" method.(£‚÷¨
+‚
+java:S1488ë"fImmediately return this expression instead of assigning it to the temporary variable "wrappedElement".(í÷ôÿÿÿÿÿ
+E
+java:S1144Ü")Remove this unused private "toOM" method.(”Œˆáüÿÿÿÿ
+R
+java:S1172ˆ"6Remove this unused method parameter "optimizeContent".(Ÿî«Üùÿÿÿÿ
+}
+java:S1488ş"fImmediately return this expression instead of assigning it to the temporary variable "wrappedElement".(¤óª¾
+=
+java:S1172‚"&Remove these unused method parameters.(æçè’
+B
+java:S1172£"&Remove these unused method parameters.(õè½Úùÿÿÿÿ
+s
+java:S11927"]Define a constant instead of duplicating this literal "http://upmbank.sos.fi.upm.es" 9 times.(é Õ³
+@
+java:S1144²")Remove this unused private "toOM" method.(°Êâí
+R
+java:S1172Ü"6Remove this unused method parameter "optimizeContent".(”Œˆáüÿÿÿÿ
+M
+java:S1172ì"6Remove this unused method parameter "optimizeContent".(½Ò»Ñ
+K
+java:S3740¡"/Provide the parametrized type for this generic.(†„²øÿÿÿÿ
+R
+java:S1172Â"6Remove this unused method parameter "optimizeContent".(†ÙĞÿÿÿÿÿ
+@
+java:S1144ì")Remove this unused private "toOM" method.(½Ò»Ñ
+E
+java:S1144Ğ")Remove this unused private "toOM" method.(»ÖÜ‡ûÿÿÿÿ
+a	java:S112Ó"FDefine and throw a dedicated exception instead of using a generic one.(˜ØÛûÿÿÿÿ
+@
+java:S1144¦")Remove this unused private "toOM" method.(…±òÜ
+E
+java:S1144Â")Remove this unused private "toOM" method.(†ÙĞÿÿÿÿÿ
+@
+java:S1144Š")Remove this unused private "toOM" method.(†İ¼ô
+‚
+java:S1488Ÿ"fImmediately return this expression instead of assigning it to the temporary variable "wrappedElement".(ÕëÆîûÿÿÿÿ
+}
+java:S1488²"fImmediately return this expression instead of assigning it to the temporary variable "wrappedElement".(¤ğÈ†
+M
+java:S1172Ş"6Remove this unused method parameter "optimizeContent".(®ûÕ«
+E
+java:S1144à")Remove this unused private "toOM" method.(†¸”¡şÿÿÿÿ
+E
+java:S1144¤")Remove this unused private "toOM" method.(Î•³üÿÿÿÿ
+=
+java:S1172ê"&Remove these unused method parameters.(Ú¬í
+B
+java:S1172Ü"&Remove these unused method parameters.(êºŸ«üÿÿÿÿ
+B
+java:S1172ı"&Remove these unused method parameters.(•³ë–ıÿÿÿÿ
+M
+java:S1172Î"6Remove this unused method parameter "optimizeContent".(‘ãÖÔ
+@
+java:S1144À")Remove this unused private "toOM" method.(°‘óü
+M
+java:S1172˜"6Remove this unused method parameter "optimizeContent".(µãáÏ
+M
+java:S1144±"6Remove this unused private "wrapaddWithdrawal" method.(ëÏ¢­
+K
+java:S1144Â"4Remove this unused private "createAxisFault" method.(ë—è£
+‚
+java:S1488Œ"fImmediately return this expression instead of assigning it to the temporary variable "wrappedElement".(Ğ¯âÃÿÿÿÿÿ
+G
+java:S1144Ä"0Remove this unused private "wrapaddUser" method.(‰›È±
+M
+java:S1172¦"6Remove this unused method parameter "optimizeContent".(…±òÜ
+=
+java:S1172"&Remove these unused method parameters.(ÿ‹„ã
+E
+java:S1144–")Remove this unused private "toOM" method.(¸êÛïøÿÿÿÿ
+R
+java:S1172ü"6Remove this unused method parameter "optimizeContent".(¡ú¦Ïşÿÿÿÿ
+R
+java:S1172î"6Remove this unused method parameter "optimizeContent".(áŸ—¢şÿÿÿÿ
+N
+java:S1144"7Remove this unused private "wrapchangePassword" method.(·°‹Ï
+M
+java:S1172ú"6Remove this unused method parameter "optimizeContent".(«±¬Ì
+M
+java:S1172²"6Remove this unused method parameter "optimizeContent".(°Êâí
+S
+java:S1144ı"7Remove this unused private "wrapgetMyMovements" method.(°–àÛÿÿÿÿÿ
+n
+java:S3776Ÿ"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(±úá³úÿÿÿÿ
+F
+java:S3740¸"/Provide the parametrized type for this generic.(ØŠşú
+@
+java:S1144ú")Remove this unused private "toOM" method.(«±¬Ì
+R
+java:S1172Ğ"6Remove this unused method parameter "optimizeContent".(»ÖÜ‡ûÿÿÿÿ
+}
+java:S1488‘"fImmediately return this expression instead of assigning it to the temporary variable "wrappedElement".(ÛØ¶
+R
+java:S1172´"6Remove this unused method parameter "optimizeContent".(¥üšÄüÿÿÿÿ

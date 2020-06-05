@@ -1,0 +1,2598 @@
+
+O
+java:S3878æ"8Remove this array creation and simply pass the elements.(”®¦ö
+?	java:S108å)")Either remove or fill this block of code.(á¢–¬
+
+java:S1149”&"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+V
+java:S1118’=":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+±
+java:S1130ú"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+F
+java:S3740""/Provide the parametrized type for this generic.(ßå®¤
+a
+java:S2147Ô"ECombine this catch with the one at line 718, which has the same body.(§ÄÁÿÿÿÿÿ
+V
+java:S1118‚j":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+t	java:S116à&"^Rename this field "local_returnTracker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸€òò
+
+java:S1149”&"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+T
+java:S1144„("8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+O
+java:S3878İ"8Remove this array creation and simply pass the elements.(”®¦ö
+K
+java:S3740¿"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+
+java:S1149òS"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+
+java:S1149İ3"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+
+java:S1149á/"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+d	java:S100”"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øçˆ«
+?	java:S108Ìv")Either remove or fill this block of code.(á¢–¬
+B
+java:S1481A"+Remove this unused "prefix" local variable.(åÒù÷
+T
+java:S1144’2"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+n
+java:S3776æ
+"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(‚Ş“½ıÿÿÿÿ
+V
+java:S1118îa":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+d	java:S100ØL"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ê³
+M
+java:S1481¹""1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+F
+java:S3740ãu"/Provide the parametrized type for this generic.(ßå®¤
+S
+java:S1172Äƒ"6Remove this unused method parameter "optimizeContent".(æö¤ñıÿÿÿÿ
+F
+java:S1481®^"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+i
+java:S3776şl"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+M
+java:S1481›O"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+T
+java:S1144âU"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+
+java:S1149šE"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+±
+java:S1130äk"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+K
+java:S3740á/"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+l	java:S117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÿôòüÿÿÿÿ
+F
+java:S3740Ûq"/Provide the parametrized type for this generic.(•ßüÂ
+]
+java:S3027Í/"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+\
+java:S2147Ê"ECombine this catch with the one at line 449, which has the same body.(õ§¦Ô
+^
+java:S3973”T"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+j
+java:S3776£€"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+{
+java:S1149É2"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+]
+java:S3027°A"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+T
+java:S1144Õd"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+B
+java:S1481–"+Remove this unused "prefix" local variable.(åÒù÷
+L
+java:S3740·"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+]
+java:S3027É3"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+K
+java:S3740ºj"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+K
+java:S3740¦b"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+a	java:S112æ"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+f	java:S117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌì
+K
+java:S3740ı}"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+?	java:S108¹E")Either remove or fill this block of code.(á¢–¬
+M
+java:S1481ƒW"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+^
+java:S3973ƒ0"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+F
+java:S3740Ú"/Provide the parametrized type for this generic.(ßå®¤
+\
+java:S2147Ó"ECombine this catch with the one at line 330, which has the same body.(õ§¦Ô
+d	java:S100â&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ê³
+F
+java:S3740ãu"/Provide the parametrized type for this generic.(ßå®¤
+n
+java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(€ºÅëşÿÿÿÿ
+
+java:S1149¬:"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+O
+java:S1144ö'"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+F
+java:S1144Æ‚")Remove this unused private "toOM" method.(Î©°şÿÿÿÿ
+K
+java:S3740 f"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+G
+java:S3740ê€"/Provide the parametrized type for this generic.(ßå®¤
+F
+java:S3740‰3"/Provide the parametrized type for this generic.(•ßüÂ
+
+java:S1149Ê="eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+O
+java:S3878Â"8Remove this array creation and simply pass the elements.(½¤Í½
+^
+java:S3973¶n"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+i
+java:S3776µ+"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+b
+java:S2147½"FCombine this catch with the one at line 1850, which has the same body.(Ì‹Îşıÿÿÿÿ
+F
+java:S1144¸‚")Remove this unused private "toOM" method.(€¬¤²úÿÿÿÿ
+{
+java:S1149Ò."_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+
+java:S1149Ş""eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+e
+java:S1192†C"IDefine a constant instead of duplicating this literal "username" 3 times.(áÑ ¢ÿÿÿÿÿ
+L
+java:S3740Ú…"/Provide the parametrized type for this generic.(†„²øÿÿÿÿ
+±
+java:S1130œ'"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+M
+java:S1481‡:"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+G
+java:S1144‘a"0Remove this unused private "writeQNames" method.(†»ìí
+g	java:S117ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êûšÇ
+t	java:S116êE"^Rename this field "local_returnTracker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸€òò
+b
+java:S3027ä}"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+±
+java:S1130àB"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+j
+java:S1192ä"SDefine a constant instead of duplicating this literal "addBankAccResponse" 3 times.(âø‡³
+G
+java:S1144Ì."0Remove this unused private "writeQNames" method.(†»ìí
+i
+java:S3776ÆS"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ùÙ—ì
+d	java:S100¢I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ê³
+K
+java:S3740"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+S
+java:S1172îƒ"6Remove this unused method parameter "optimizeContent".(ßÁˆûÿÿÿÿ
+F
+java:S3740®}"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740æi"/Provide the parametrized type for this generic.(•ßüÂ
+R
+java:S1481ÀO"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+>
+java:S1172û„"&Remove these unused method parameters.(ß¬†à
+V
+java:S1118âD":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+O
+java:S1144¿l"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+a
+java:S1854òS"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+K
+java:S1144“@"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+]
+java:S2147©
+"FCombine this catch with the one at line 1312, which has the same body.(õ§¦Ô
+e
+java:S1192ŠP"IDefine a constant instead of duplicating this literal "Movement" 3 times.(Û›œüÿÿÿÿ
+b
+java:S3027û%"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+
+java:S1149Ã,"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+n
+java:S3776—,"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ú‹êÔşÿÿÿÿ
+a
+java:S1854«z"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740”&"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+j
+java:S3776‹"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(½”³ğ
+O
+java:S1144è"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+M
+java:S1481¥)"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+i
+java:S3776üV"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(­ôüæ
+{
+java:S1149…%"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+F
+java:S3740ñ@"/Provide the parametrized type for this generic.(ßå®¤
+B
+java:S1481®H"+Remove this unused "prefix" local variable.(åÒù÷
+b
+java:S3027ü%"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+r	java:S116î"WRename this field "local_return" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅºÅÂøÿÿÿÿ
+B
+java:S1481¸""+Remove this unused "prefix" local variable.(åÒù÷
+F
+java:S1481ƒz"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+O
+java:S3878"8Remove this array creation and simply pass the elements.(”®¦ö
+l	java:S117á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+a
+java:S1854á/"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+a
+java:S1854³7"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740Ù"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740òN"/Provide the parametrized type for this generic.(ßå®¤
+d
+java:S1192´\"HDefine a constant instead of duplicating this literal "balance" 4 times.(°îÊ»ûÿÿÿÿ
+
+java:S1149 f"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+g	java:S117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²²ö
+i
+java:S3776æm"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(áŸ§Ë
+O
+java:S1144ë?"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+a	java:S112Ğb"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+l	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¬û„ùÿÿÿÿ
+b
+java:S2147ì"FCombine this catch with the one at line 2269, which has the same body.(¸ºÊİıÿÿÿÿ
+^
+java:S3973€#"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+K
+java:S3740Ş""/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+g	java:S117¥"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²²ö
+{
+java:S1149›q"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+?	java:S108‹_")Either remove or fill this block of code.(á¢–¬
+{
+java:S1149¢u"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+T
+java:S1144„<"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+?	java:S108Ùj")Either remove or fill this block of code.(á¢–¬
+O
+java:S1144ŠY"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+K
+java:S3740ı}"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+˜
+java:S1186¬"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(„˜…™
+h
+java:S3776ú"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(Æî’F
+O
+java:S3878"8Remove this array creation and simply pass the elements.(½¤Í½
+b
+java:S3027Å3"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+
+java:S1149ºj"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+b
+java:S2147¢"FCombine this catch with the one at line 1043, which has the same body.(¸ºÊİıÿÿÿÿ
+^
+java:S3973ÀE"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+j
+java:S1192îA"NDefine a constant instead of duplicating this literal "The element: " 8 times.(éšÆÄúÿÿÿÿ
+M
+java:S1481ûe"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+F
+java:S3740Åm"/Provide the parametrized type for this generic.(ßå®¤
+b
+java:S3027“:"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+F
+java:S1481øe"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+g	java:S117®"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û ×Æ
+l	java:S117î
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+±
+java:S1130•'"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+a
+java:S2147ã"ECombine this catch with the one at line 599, which has the same body.(ÕÄçêşÿÿÿÿ
+R
+java:S1481³7"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+W
+java:S1118ÿ€":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+O
+java:S3878¿"8Remove this array creation and simply pass the elements.(”®¦ö
+I
+java:S1481œ,"2Remove this unused "nillableValue" local variable.(½ÂÖ½
+n
+java:S3776‡7"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(•¿¨ğøÿÿÿÿ
+{
+java:S1149—y"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+O
+java:S1144ß8"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+o
+java:S1192¹4"SDefine a constant instead of duplicating this literal "removeUserResponse" 3 times.( áÆıÿÿÿÿ
+
+java:S1149”&"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+a	java:S112ÈE"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+R
+java:S1481ÔH"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+d	java:S100âL"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã‹Úø
+T
+java:S1144¬"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+g	java:S117‡	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û ×Æ
+i
+java:S3776ñ"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(†‹ë
+F
+java:S1144€‚")Remove this unused private "toOM" method.(¨™áøÿÿÿÿ
+c
+java:S3027Ÿ"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+K
+java:S3740İ3"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+M
+java:S1481b"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+K
+java:S3740ª"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+O
+java:S3878²"8Remove this array creation and simply pass the elements.(”®¦ö
+i
+java:S3776§"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+K
+java:S3740¼"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+a
+java:S2147Í"ECombine this catch with the one at line 449, which has the same body.(ÕÄçêşÿÿÿÿ
+2
+java:S3626¿"Remove this redundant jump.(ûÁİ…
+?	java:S108¯&")Either remove or fill this block of code.(á¢–¬
+n
+java:S3776ó"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ÀÀ‹“øÿÿÿÿ
+O
+java:S3878É"8Remove this array creation and simply pass the elements.(½¤Í½
+K
+java:S3740»"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+{
+java:S1149ã"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+
+java:S1149ÔH"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+b
+java:S2147¿"FCombine this catch with the one at line 1581, which has the same body.(§İØéøÿÿÿÿ
+F
+java:S3740¤"/Provide the parametrized type for this generic.(ßå®¤
+b
+java:S3027¬A"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+i
+java:S3776µ<"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+M
+java:S1481ím"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+±
+java:S1130ƒt"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+{
+java:S1149äR"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+a
+java:S2147¢"ECombine this catch with the one at line 924, which has the same body.(§ÄÁÿÿÿÿÿ
+T
+java:S1144Î$"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+\
+java:S1192L"GDefine a constant instead of duplicating this literal "logout" 6 times.(³Š¯
+a	java:S112œ"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+K
+java:S3740¬:"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+O
+java:S1144Òx"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+
+java:S1149á/"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S1481ÊS"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+K
+java:S3740Æ"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+b
+java:S2147£
+"FCombine this catch with the one at line 1312, which has the same body.(Ì‹Îşıÿÿÿÿ
+a
+java:S1854¨"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+B
+java:S1481¤)"+Remove this unused "prefix" local variable.(åÒù÷
+a
+java:S2147Ç"ECombine this catch with the one at line 449, which has the same body.(§ÄÁÿÿÿÿÿ
+l	java:S117Ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÚŞËşÿÿÿÿ
+O
+java:S3878Ğ"8Remove this array creation and simply pass the elements.(”®¦ö
+T
+java:S1144˜!"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+\
+java:S2147à"ECombine this catch with the one at line 599, which has the same body.(õ§¦Ô
+K
+java:S3740©"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+?	java:S108ü/")Either remove or fill this block of code.(á¢–¬
+T
+java:S1144à`"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+K
+java:S3740Â"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+S
+java:S1172ª‚"6Remove this unused method parameter "optimizeContent".(•èıÕüÿÿÿÿ
+{
+java:S1149»+"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+a
+java:S2147Ù"ECombine this catch with the one at line 330, which has the same body.(¸ºÊİıÿÿÿÿ
+V
+java:S1118èe":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+b
+java:S3027¥r"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+F
+java:S3740×y"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S1144Äƒ")Remove this unused private "toOM" method.(æö¤ñıÿÿÿÿ
+f	java:S117Ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌì
+N
+java:S1172ò"6Remove this unused method parameter "optimizeContent".(È“èé
+a
+java:S2147à"ECombine this catch with the one at line 718, which has the same body.(§İØéøÿÿÿÿ
+K
+java:S3740¶"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+M
+java:S1481—"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+F
+java:S3740ä9"/Provide the parametrized type for this generic.(•ßüÂ
+d	java:S100©{"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üóƒ»
+K
+java:S3740®"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+V
+java:S1118Úm":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+F
+java:S3740ä6"/Provide the parametrized type for this generic.(•ßüÂ
+b
+java:S3027›7"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+O
+java:S3878½"8Remove this array creation and simply pass the elements.(”®¦ö
+b
+java:S1192ĞP"LDefine a constant instead of duplicating this literal "BankAccount" 3 times.(—ô‚S
+b
+java:S3027É/"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+l	java:S117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿’©Óÿÿÿÿÿ
+b
+java:S3027"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+{
+java:S1149„m"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+^
+java:S3973Õ7"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+e
+java:S1192¨P"IDefine a constant instead of duplicating this literal "Response" 3 times.(¦Ù‹ğûÿÿÿÿ
+g	java:S117»"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û ×Æ
+F
+java:S3740å6"/Provide the parametrized type for this generic.(ßå®¤
+O
+java:S3878¼"8Remove this array creation and simply pass the elements.(½¤Í½
+b
+java:S3027¡j"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+±
+java:S1130\"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+i
+java:S3776µ("RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+i
+java:S1192I"RDefine a constant instead of duplicating this literal "addIncomeResponse" 3 times.(™¿ç‘
+O
+java:S3878±"8Remove this array creation and simply pass the elements.(½¤Í½
+]
+java:S3027¬O"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+K
+java:S3740Ñ"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+B
+java:S1481‚W"+Remove this unused "prefix" local variable.(åÒù÷
+K
+java:S3740«z"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+±
+java:S1130ŸF"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+F
+java:S3740å9"/Provide the parametrized type for this generic.(ßå®¤
+a
+java:S2147Ğ"ECombine this catch with the one at line 449, which has the same body.(¸ºÊİıÿÿÿÿ
+K
+java:S1144ïd"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+g	java:S117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸‰ÇÛ
+T
+java:S1144í8"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+K
+java:S3740Õ"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+F
+java:S3740ñ@"/Provide the parametrized type for this generic.(ßå®¤
+K
+java:S1144<"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+
+java:S1149Ê="eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740	"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+
+java:S1149òS"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776²Z"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¨ªü©
+b
+java:S2147Ü"FCombine this catch with the one at line 2000, which has the same body.(ÕÄçêşÿÿÿÿ
+
+java:S1149ºj"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+O
+java:S1144ı\"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+b
+java:S2147ó"FCombine this catch with the one at line 2657, which has the same body.(§İØéøÿÿÿÿ
+b
+java:S3027"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+K
+java:S3740Ù"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+N
+java:S1172¨ƒ"6Remove this unused method parameter "optimizeContent".(óàíË
+±
+java:S1130©X"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+K
+java:S1144¨G"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+b
+java:S2147Æ"FCombine this catch with the one at line 1731, which has the same body.(Ì‹Îşıÿÿÿÿ
+F
+java:S3740‰3"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S1481œA"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+a	java:S112Ûv"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+±
+java:S1130È{"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+V
+java:S1118¦Z":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+d	java:S100öE"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÖã¥
+R
+java:S1481½r"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+?	java:S108Êz")Either remove or fill this block of code.(á¢–¬
+i
+java:S3776ª@"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+K
+java:S3740”
+"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+V
+java:S1118ğ":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+G
+java:S1144«N"0Remove this unused private "writeQNames" method.(†»ìí
+{
+java:S1149ã"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+F
+java:S3740“/"/Provide the parametrized type for this generic.(ßå®¤
+K
+java:S3740 f"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+K
+java:S3740Ã,"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+
+java:S1149ò"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+i
+java:S1192¼P"MDefine a constant instead of duplicating this literal "MovementList" 3 times.(ÂªÓÿÿÿÿÿ
+g	java:S117È"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û ×Æ
+B
+java:S1481,"+Remove this unused "prefix" local variable.(åÒù÷
+O
+java:S1144ÔU"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+i
+java:S3776Ã2"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+K
+java:S3740¾"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+i
+java:S3776è|"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+b
+java:S3027‡f"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+F
+java:S1144Òƒ")Remove this unused private "toOM" method.(—ƒªüüÿÿÿÿ
+F
+java:S1144àƒ")Remove this unused private "toOM" method.(§‡–úÿÿÿÿÿ
+{
+java:S1149ÏY"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+b
+java:S3027È/"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+K
+java:S3740Ë"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+b
+java:S3027úm"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+]
+java:S3027şm"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+g	java:S117ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û ×Æ
+K
+java:S3740Ö^"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+b
+java:S3027”:"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+i	java:S100À#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·†½Äüÿÿÿÿ
+K
+java:S3740œ	"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+
+java:S1149ÀO"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740î"/Provide the parametrized type for this generic.(ßå®¤
+
+java:S1149ò"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740…H"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740¥S"/Provide the parametrized type for this generic.(ßå®¤
+l	java:S117¢"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+O
+java:S3878Ù"8Remove this array creation and simply pass the elements.(”®¦ö
+{
+java:S1149™V"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+i
+java:S3776“V"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+H
+java:S1144£€"0Remove this unused private "writeQNames" method.(†»ìí
+
+java:S1186øn"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿ÿšÂıÿÿÿÿ
+G
+java:S1144µ("0Remove this unused private "writeQNames" method.(†»ìí
+
+java:S1149¼"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+M
+java:S1481Í"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+b
+java:S2147Í"FCombine this catch with the one at line 2119, which has the same body.(§ÄÁÿÿÿÿÿ
+
+java:S1149ı}"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+g	java:S117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²²ö
+F
+java:S1481€"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+C
+java:S1172¼„"&Remove these unused method parameters.(Ê³ÓÂıÿÿÿÿ
+F
+java:S3740òN"/Provide the parametrized type for this generic.(ßå®¤
+]
+java:S3027ŞS"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+G
+java:S1144µ<"0Remove this unused private "writeQNames" method.(†»ìí
+F
+java:S3740ÌD"/Provide the parametrized type for this generic.(•ßüÂ
+^
+java:S3973Ÿ4"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+i
+java:S3776€:"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¹ã´è
+g	java:S117ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²²ö
+a	java:S112ÒW"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+N
+java:S1172â‚"6Remove this unused method parameter "optimizeContent".( €ù¦
+i
+java:S3776•q"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+`
+java:S1192‹d"IDefine a constant instead of duplicating this literal "quantity" 8 times.(Êß˜Õ
+R
+java:S1481šE"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+R
+java:S1481¬:"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+{
+java:S1149»<"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+b
+java:S2147Ï"FCombine this catch with the one at line 1731, which has the same body.(ÕÄçêşÿÿÿÿ
+M
+java:S1481,"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+K
+java:S3740½"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+O
+java:S1144ŸR"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+{
+java:S1149Ï!"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+]
+java:S3027†E"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+F
+java:S3740Øy"/Provide the parametrized type for this generic.(ßå®¤
+T
+java:S1144ÕC"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+]
+java:S2147œ"FCombine this catch with the one at line 1043, which has the same body.(õ§¦Ô
+b
+java:S3027b"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+V
+java:S1118‹,":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+^
+java:S3973¶:"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+t	java:S116ô"^Rename this field "local_returnTracker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸€òò
+G
+java:S1144 i"0Remove this unused private "writeQNames" method.(†»ìí
+b
+java:S2147²
+"FCombine this catch with the one at line 1312, which has the same body.(§İØéøÿÿÿÿ
+K
+java:S3740Ä"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+N
+java:S1172šƒ"6Remove this unused method parameter "optimizeContent".(ßÿŠÑ
+n
+java:S1192š#"WDefine a constant instead of duplicating this literal "getMyMovementsResponse" 3 times.(Ñ»“„
+l	java:S117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¬û„ùÿÿÿÿ
+K
+java:S3740†"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+
+java:S1149Ê)"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+a
+java:S1854ò"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+{
+java:S1149¤9"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+i
+java:S3776ÿy"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(³ÈŠÄ
+O
+java:S3878Ò"8Remove this array creation and simply pass the elements.(½¤Í½
+]
+java:S3027¶="FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+R
+java:S1481”&"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+T
+java:S1144­R"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+O
+java:S3878Ì"8Remove this array creation and simply pass the elements.(”®¦ö
+S
+java:S1172œ‚"6Remove this unused method parameter "optimizeContent".(ÉÄíÖüÿÿÿÿ
+V
+java:S1118ÒK":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+d	java:S100ì&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÖã¥
+B
+java:S1481ÌS"+Remove this unused "prefix" local variable.(åÒù÷
+a
+java:S1854½r"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+d	java:S100Õ4"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÖã¥
+]
+java:S2147Ã"FCombine this catch with the one at line 1850, which has the same body.(õ§¦Ô
+b
+java:S2147É"FCombine this catch with the one at line 1850, which has the same body.(¸ºÊİıÿÿÿÿ
+F
+java:S3740Š3"/Provide the parametrized type for this generic.(ßå®¤
+g	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²²ö
+F
+java:S3740ñN"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S1481¢)"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+O
+java:S1144Š!"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+K
+java:S3740·"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+f	java:S117İ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌì
+{
+java:S1149»<"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+K
+java:S3740µ"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+^
+java:S3973àf"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+b
+java:S2147ã"FCombine this catch with the one at line 2388, which has the same body.(¸ºÊİıÿÿÿÿ
+±
+java:S1130‘8"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+g	java:S117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û ×Æ
+
+java:S1149ÄA"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740âu"/Provide the parametrized type for this generic.(•ßüÂ
+f	java:S117Ğ
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌì
+g
+java:S1192X"LDefine a constant instead of duplicating this literal "removeUser" 14 times.(¦ñ¸€ùÿÿÿÿ
+^
+java:S3973Ê"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+l	java:S117ı"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©«ˆ§ùÿÿÿÿ
+|
+java:S1149©€"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+F
+java:S1481¢="*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+C
+java:S1172¥…"&Remove these unused method parameters.(ãÑÕıÿÿÿÿ
+a	java:S112ô)"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+{
+java:S1149¤6"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+a	java:S112ô="FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+K
+java:S3740ŞZ"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+g	java:S117Ø	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÆÉÉ
+{
+java:S1149î|"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+{
+java:S1149¤6"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+V
+java:S1118ˆO":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+F
+java:S3740Z"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740ğ@"/Provide the parametrized type for this generic.(•ßüÂ
+b	java:S112å"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+a
+java:S2147Ö"ECombine this catch with the one at line 330, which has the same body.(ÕÄçêşÿÿÿÿ
+i
+java:S3776)"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(‘ê½¥
+a
+java:S2147Í"ECombine this catch with the one at line 330, which has the same body.(Ì‹Îşıÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(Ô¬Ì¤ıÿÿÿÿ
+
+java:S1149Ö^"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+G
+java:S1144¿G"0Remove this unused private "writeQNames" method.(†»ìí
+K
+java:S1144ü"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+b
+java:S2147Æ"FCombine this catch with the one at line 1850, which has the same body.(ÕÄçêşÿÿÿÿ
+e
+java:S1192¯?"IDefine a constant instead of duplicating this literal "response" 8 times.(ë®Ş‘ûÿÿÿÿ
+>
+java:S1172º…"&Remove these unused method parameters.(€¼òì
+a	java:S112‹0"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+b
+java:S3027š7"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+V
+java:S1118ô9":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+S
+java:S1172€‚"6Remove this unused method parameter "optimizeContent".(¨™áøÿÿÿÿ
+i
+java:S37769"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+a	java:S112´L"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+b
+java:S3027ÙS"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+G
+java:S11449"0Remove this unused private "writeQNames" method.(†»ìí
+F
+java:S1481¬H"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+?	java:S108şr")Either remove or fill this block of code.(á¢–¬
+±
+java:S1130‹M"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+u
+java:S11924"_Define a constant instead of duplicating this literal "http://upmbank.sos.fi.upm.es" 173 times.(‘Ç…ï
+n
+java:S3776Ñ}"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(­É…úÿÿÿÿ
+±
+java:S1130Ğo"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+?	java:S108ÛO")Either remove or fill this block of code.(á¢–¬
+c
+java:S1192@"NDefine a constant instead of duplicating this literal "closeBankAcc" 14 times.(ÔÅ«
+m	java:S116äE"WRename this field "local_return" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢™Ï”
+l	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+V
+java:S1118ğV":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+t	java:S116É4"^Rename this field "local_returnTracker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸€òò
+?	java:S108Î7")Either remove or fill this block of code.(á¢–¬
+O
+java:S1144Öp"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+K
+java:S3740Ş""/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+F
+java:S1481Õ}"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+F
+java:S3740Z"/Provide the parametrized type for this generic.(ßå®¤
+b
+java:S2147ß"FCombine this catch with the one at line 2000, which has the same body.(¸ºÊİıÿÿÿÿ
+a
+java:S1854Ê="ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+A
+java:S1144¨ƒ")Remove this unused private "toOM" method.(óàíË
+F
+java:S3740Ìe"/Provide the parametrized type for this generic.(•ßüÂ
+O
+java:S1144ÇC"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+
+java:S1149¨"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+{
+java:S1149Ò."_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+
+java:S1149³7"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+q
+java:S1192Ğ&"UDefine a constant instead of duplicating this literal "closeBankAccResponse" 3 times.(¹›ÙÒüÿÿÿÿ
+F
+java:S3740çi"/Provide the parametrized type for this generic.(ßå®¤
+?	java:S108ü3")Either remove or fill this block of code.(á¢–¬
+F
+java:S3740Š3"/Provide the parametrized type for this generic.(ßå®¤
+?	java:S108–s")Either remove or fill this block of code.(á¢–¬
+R
+java:S1481’n"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+r	java:S116ĞL"WRename this field "local_return" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÕ…‘ûÿÿÿÿ
+d	java:S100€F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üóƒ»
+b
+java:S3027«A"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+B
+java:S1481¸Z"+Remove this unused "prefix" local variable.(åÒù÷
+O
+java:S1144Ò`"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+t	java:S116 I"^Rename this field "local_returnTracker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸€òò
+O
+java:S3878Å"8Remove this array creation and simply pass the elements.(½¤Í½
+
+java:S1149šE"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776ÉY"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+b
+java:S2147Ù"FCombine this catch with the one at line 2119, which has the same body.(§İØéøÿÿÿÿ
+T
+java:S1144ïh"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+G
+java:S1144ÿ$"0Remove this unused private "writeQNames" method.(†»ìí
+h
+java:S1192Ä"QDefine a constant instead of duplicating this literal "setFaultMessage" 18 times.(’Š©Ï
+±
+java:S1130Š8"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+F
+java:S3740Øa"/Provide the parametrized type for this generic.(ßå®¤
+K
+java:S1144şp"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+l	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›î£­üÿÿÿÿ
+b
+java:S3027ÚS"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+O
+java:S3878Æ"8Remove this array creation and simply pass the elements.(”®¦ö
+±
+java:S1130åw"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+>
+java:S1172ıƒ"&Remove these unused method parameters.(ùÍ É
+b
+java:S2147¥"FCombine this catch with the one at line 1043, which has the same body.(§İØéøÿÿÿÿ
+V
+java:S1118óy":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+
+java:S1149ÀO"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+S
+java:S1172Œƒ"6Remove this unused method parameter "optimizeContent".(áä«Şüÿÿÿÿ
+b
+java:S2147à"FCombine this catch with the one at line 2388, which has the same body.(ÕÄçêşÿÿÿÿ
+±
+java:S1130’M"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+]
+java:S2147Ğ"FCombine this catch with the one at line 2119, which has the same body.(õ§¦Ô
+K
+java:S3740¬:"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+{
+java:S1149¢u"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+b
+java:S2147¹"FCombine this catch with the one at line 1462, which has the same body.(Ì‹Îşıÿÿÿÿ
+F
+java:S3740Z"/Provide the parametrized type for this generic.(•ßüÂ
+V
+java:S1118û6":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+K
+java:S3740­"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+‚
+java:S1149·"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+O
+java:S3878µ"8Remove this array creation and simply pass the elements.(½¤Í½
+
+java:S1149 f"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+a
+java:S1854Ş""ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+?	java:S108¥L")Either remove or fill this block of code.(á¢–¬
+G
+java:S1144†D"0Remove this unused private "writeQNames" method.(†»ìí
+n
+java:S3776Ğ	"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(œÛÛËıÿÿÿÿ
+O
+java:S3878¥	"8Remove this array creation and simply pass the elements.(”®¦ö
+±
+java:S1130ó"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+
+java:S1149Ş""eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+n
+java:S3776="RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(’õÇÀüÿÿÿÿ
+G
+java:S1144¼]"0Remove this unused private "writeQNames" method.(†»ìí
+O
+java:S1144Ô"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+S
+java:S1172Ô‚"6Remove this unused method parameter "optimizeContent".(•âİ°şÿÿÿÿ
+K
+java:S1144¬2"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+S
+java:S1481·"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+^
+java:S3973éz"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+O
+java:S1144ö*"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+R
+java:S1481ò"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+i
+java:S3776ŞR"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+V
+java:S1118ŒA":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+b
+java:S3027²)"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+^
+java:S3973ì="GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+G
+java:S1144•q"0Remove this unused private "writeQNames" method.(†»ìí
+±
+java:S1130’1"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+g
+java:S1192ÆL"PDefine a constant instead of duplicating this literal "addUserResponse" 3 times.(í­‹
+]
+java:S3027ÊZ"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+
+java:S1149Ê)"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+N
+java:S1172ğ‚"6Remove this unused method parameter "optimizeContent".(‘ğØš
+^
+java:S3973üj"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+a
+java:S1854”&"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+R
+java:S1481Ê)"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+g	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û ×Æ
+F
+java:S3740Æ%"/Provide the parametrized type for this generic.(ßå®¤
+b
+java:S3027˜v"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+a	java:S112èf"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+a	java:S112ˆ["FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+
+java:S1149’n"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740ò"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+h
+java:S3776µ/"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Ÿ»ğ^
+i
+java:S3776è%"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(çÃüò
+V
+java:S1118œH":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+K
+java:S3740¡"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+]
+java:S3027Œf"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+F
+java:S3740û+"/Provide the parametrized type for this generic.(•ßüÂ
+a
+java:S1854ı}"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+K
+java:S1144ŞJ"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+a
+java:S2147Ä"ECombine this catch with the one at line 449, which has the same body.(Ì‹Îşıÿÿÿÿ
+n
+java:S3776˜A"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(²œ´æÿÿÿÿÿ
+b
+java:S3027W"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+d	java:S100ö&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üóƒ»
+d	java:S100¶#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏµÎß
+±
+java:S1130Úc"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+i
+java:S3776‘a"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+F
+java:S3740¤"/Provide the parametrized type for this generic.(ßå®¤
+?	java:S108Áb")Either remove or fill this block of code.(á¢–¬
+K
+java:S1144ïC"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+±
+java:S1130ÄQ"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+F
+java:S3740“/"/Provide the parametrized type for this generic.(ßå®¤
+{
+java:S1149Â]"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+F
+java:S3740ÍD"/Provide the parametrized type for this generic.(ßå®¤
+]
+java:S3027’b"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+T
+java:S1144ò"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+I
+java:S1481…:"2Remove this unused "nillableValue" local variable.(½ÂÖ½
+
+java:S1149Ö^"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+o
+java:S1192Å\"XDefine a constant instead of duplicating this literal "result cannot be null!!" 3 times.(¿—í‘
+l	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿’©Óÿÿÿÿÿ
+i
+java:S3776Æ"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Œ¯Œ
+t	java:S116ÖL"^Rename this field "local_returnTracker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸€òò
+M
+java:S1481Œv"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+g	java:S117”"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û ×Æ
+±
+java:S1130ş4"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+K
+java:S3740ÄA"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+m
+java:S1192îA"QDefine a constant instead of duplicating this literal "  cannot be null" 8 times.(éšÆÄúÿÿÿÿ
+±
+java:S1130‹1"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+M
+java:S1481¹Z"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+{
+java:S1149—a"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+G
+java:S1144ŞR"0Remove this unused private "writeQNames" method.(†»ìí
+A
+java:S1144ò")Remove this unused private "toOM" method.(È“èé
+r	java:S116‚"WRename this field "local_return" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÇÜŠıÿÿÿÿ
+b
+java:S2147ù"FCombine this catch with the one at line 2538, which has the same body.(¸ºÊİıÿÿÿÿ
+
+java:S1149½r"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+
+java:S1149¬:"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(Ô¬Ì¤ıÿÿÿÿ
+b
+java:S3027ùm"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+b
+java:S2147¯	"FCombine this catch with the one at line 1193, which has the same body.(§ÄÁÿÿÿÿÿ
+b
+java:S2147–"FCombine this catch with the one at line 1043, which has the same body.(Ì‹Îşıÿÿÿÿ
+T
+java:S1144˜Y"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+O
+java:S3878¾"8Remove this array creation and simply pass the elements.(½¤Í½
+K
+java:S1144¥]"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+F
+java:S3740å9"/Provide the parametrized type for this generic.(ßå®¤
+K
+java:S3740˜
+"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+F
+java:S3740""/Provide the parametrized type for this generic.(•ßüÂ
+±
+java:S1130½Q"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+S
+java:S3972ïi"7Move this "if" to a new line or add the missing "else".(ûÆºşÿÿÿÿ
+K
+java:S1144ú`"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+F
+java:S1144œ‚")Remove this unused private "toOM" method.(ÉÄíÖüÿÿÿÿ
+b
+java:S2147Ó"FCombine this catch with the one at line 2000, which has the same body.(Ì‹Îşıÿÿÿÿ
+G
+java:S1144“V"0Remove this unused private "writeQNames" method.(†»ìí
+F
+java:S3740£"/Provide the parametrized type for this generic.(ñÚûÁ
+O
+java:S1144¶J"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+F
+java:S3740…H"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740ü("/Provide the parametrized type for this generic.(ßå®¤
+i
+java:S3776İ"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(˜ êç
+a	java:S112§4"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+b
+java:S3027¤r"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+M
+java:S1481ï%"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+F
+java:S3740‚^"/Provide the parametrized type for this generic.(•ßüÂ
+M
+java:S14817"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+F
+java:S3740ÙV"/Provide the parametrized type for this generic.(•ßüÂ
+?	java:S108ùZ")Either remove or fill this block of code.(á¢–¬
+F
+java:S3740¤S"/Provide the parametrized type for this generic.(•ßüÂ
+K
+java:S1144Ñ|"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+]
+java:S3027v"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+F
+java:S1481’j"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+F
+java:S3740ƒ^"/Provide the parametrized type for this generic.(ßå®¤
+b
+java:S2147¬
+"FCombine this catch with the one at line 1312, which has the same body.(ÕÄçêşÿÿÿÿ
+b
+java:S2147¼"FCombine this catch with the one at line 1581, which has the same body.(¸ºÊİıÿÿÿÿ
+T
+java:S1144ù?"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+±
+java:S1130© "”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+]
+java:S3027€&"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+J
+java:S3740"/Provide the parametrized type for this generic.(Ïô¢³ûÿÿÿÿ
+F
+java:S1144Ô‚")Remove this unused private "toOM" method.(•âİ°şÿÿÿÿ
+
+java:S1149ŞZ"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+T
+java:S1144‹]"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+b
+java:S2147¼"FCombine this catch with the one at line 1462, which has the same body.(§ÄÁÿÿÿÿÿ
+a	java:S112şH"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+_
+java:S3973İ"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+]
+java:S3027Ş"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+ˆ
+java:S1192 "lDefine a constant instead of duplicating this literal "http://www.w3.org/2001/XMLSchema-instance" 184 times.(¢Ù‚Ôÿÿÿÿÿ
+F
+java:S1481‹7"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+K
+java:S3740 "/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+
+java:S1149ı}"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+a	java:S112§~"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+V
+java:S1118¦"":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+O
+java:S1144."3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+?	java:S108¿f")Either remove or fill this block of code.(á¢–¬
+F
+java:S3740ü+"/Provide the parametrized type for this generic.(ßå®¤
+_
+java:S1192Á\"HDefine a constant instead of duplicating this literal "result" 12 times.(õêÆ
+a
+java:S1854Ã,"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+l	java:S117û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+F
+java:S1144¶ƒ")Remove this unused private "toOM" method.(ºüà®üÿÿÿÿ
+l	java:S117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÁ»µıÿÿÿÿ
+f	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¼¡í
+F
+java:S3740Ûq"/Provide the parametrized type for this generic.(•ßüÂ
+f	java:S117ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌì
+K
+java:S3740È"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+a	java:S112¾&"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+]
+java:S3027—z"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+F
+java:S3740ä9"/Provide the parametrized type for this generic.(•ßüÂ
+\
+java:S2147×"ECombine this catch with the one at line 718, which has the same body.(õ§¦Ô
+b
+java:S3027ñK"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+n
+java:S3776Ôo"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(»»¾üúÿÿÿÿ
+b
+java:S2147×"FCombine this catch with the one at line 2388, which has the same body.(Ì‹Îşıÿÿÿÿ
+F
+java:S1481•r"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+N
+java:S1172Û…"6Remove this unused method parameter "extraNamespaces".(Ñ¬‘
+{
+java:S1149»+"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+S
+java:S1172‚"6Remove this unused method parameter "optimizeContent".(Úï´¸ùÿÿÿÿ
+c
+java:S3027"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+
+java:S1149ı}"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+±
+java:S1130Óc"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+i	java:S100ìL"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Í½½ûÿÿÿÿ
+F
+java:S3740ÚV"/Provide the parametrized type for this generic.(ßå®¤
+?	java:S108")Either remove or fill this block of code.(á¢–¬
+T
+java:S1144úM"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+i
+java:S3776±3"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(ìã¼à
+d	java:S100Ÿ{"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÖã¥
+n
+java:S3776Ã"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(•Ã™ùÿÿÿÿ
+L
+java:S1144Œ€"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+K
+java:S3740Á"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+K
+java:S3740Ê)"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+
+java:S1149Ê)"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+±
+java:S1130³-"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+i
+java:S3776õJ"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+
+java:S1149Ã,"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+d
+java:S1192²P"HDefine a constant instead of duplicating this literal "Deposit" 3 times.(óÊÆ¡øÿÿÿÿ
+‚
+java:S1149·"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+±
+java:S1130‡"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+B
+java:S1481äK"+Remove this unused "prefix" local variable.(åÒù÷
+
+java:S1149«z"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740î"/Provide the parametrized type for this generic.(ßå®¤
+>
+java:S1172’„"&Remove these unused method parameters.(£›É
+{
+java:S1149Ï!"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+F
+java:S3740âu"/Provide the parametrized type for this generic.(•ßüÂ
+?	java:S108˜~")Either remove or fill this block of code.(á¢–¬
+F
+java:S3740Är"/Provide the parametrized type for this generic.(ßÜÕñ
+F
+java:S3740çi"/Provide the parametrized type for this generic.(ßå®¤
+K
+java:S1144ÇR"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+l	java:S117ğ
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾¯ºûÿÿÿÿ
+F
+java:S3740Íe"/Provide the parametrized type for this generic.(ßå®¤
+i
+java:S3776Ì."RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+i
+java:S3776¼]"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+^
+java:S3973€["GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+d	java:S100€ "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¹¿ò
+b
+java:S3027W"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+a
+java:S1854Ê)"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+T
+java:S1144äp"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+^
+java:S3973Í,"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+a
+java:S1854ºj"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+b
+java:S2147Ÿ"FCombine this catch with the one at line 1043, which has the same body.(ÕÄçêşÿÿÿÿ
+i
+java:S3776ôe"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ò¶ìÃ
+
+java:S1149òS"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+g	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û ×Æ
+K
+java:S1144…u"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+b
+java:S2147Ö"FCombine this catch with the one at line 2000, which has the same body.(§ÄÁÿÿÿÿÿ
+T
+java:S1144G"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+
+java:S1149šE"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740Äm"/Provide the parametrized type for this generic.(•ßüÂ
+n
+java:S3776úa"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(‹Àíåıÿÿÿÿ
+K
+java:S3740Ê="/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+a
+java:S1854ÄA"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+F
+java:S1481”"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+B
+java:S1481—r"+Remove this unused "prefix" local variable.(åÒù÷
+F
+java:S3740»K"/Provide the parametrized type for this generic.(•ßüÂ
+m	java:S116{"WRename this field "local_return" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢™Ï”
+{
+java:S1149»("_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+±
+java:S1130ÜI"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+
+java:S1149¨"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+±
+java:S1130° "”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+a
+java:S1854ŠL"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740á/"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+b
+java:S11924"LDefine a constant instead of duplicating this literal "addBankAcc" 14 times.(‘Ç…ï
+b
+java:S2147é"FCombine this catch with the one at line 2269, which has the same body.(ÕÄçêşÿÿÿÿ
+F
+java:S3740£"/Provide the parametrized type for this generic.(ñÚûÁ
+]
+java:S3027¨"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+
+java:S1149¦b"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776Ù"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ÉšØ
+K
+java:S3740Ï"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+M
+java:S1481åK"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+B
+java:S1481†:"+Remove this unused "prefix" local variable.(åÒù÷
+b
+java:S2147Ò"FCombine this catch with the one at line 1731, which has the same body.(¸ºÊİıÿÿÿÿ
+O
+java:S3878©"8Remove this array creation and simply pass the elements.(”®¦ö
+\
+java:S2147¥"ECombine this catch with the one at line 924, which has the same body.(õ§¦Ô
+M
+java:S3972’3"7Move this "if" to a new line or add the missing "else".(Ø‘Û 
+M
+java:S1481¯H"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+d
+java:S1192d"ODefine a constant instead of duplicating this literal "addWithdrawal" 14 times.(çÜ®/
+±
+java:S1130èg"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+±
+java:S1130°X"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+d	java:S100¶I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ÈôÌ
+K
+java:S3740²"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+b
+java:S3027»H"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+F
+java:S1481êm"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+F
+java:S3740ü+"/Provide the parametrized type for this generic.(ßå®¤
+Q
+java:S1118÷O":Add a private constructor to hide the implicit public one.(äáš–
+l	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¬û„ùÿÿÿÿ
+{
+java:S1149­"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+
+java:S1149ŠL"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S1144²!"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+±
+java:S1130ş>"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+a
+java:S1854İ3"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776ü"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(æ–£ 
+b
+java:S2147ö"FCombine this catch with the one at line 2538, which has the same body.(ÕÄçêşÿÿÿÿ
+O
+java:S1144„2"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+b
+java:S2147à"FCombine this catch with the one at line 2269, which has the same body.(Ì‹Îşıÿÿÿÿ
+?	java:S108Ã")Either remove or fill this block of code.(á¢–¬
+O
+java:S3878å"8Remove this array creation and simply pass the elements.(½¤Í½
+F
+java:S1481âK"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+b
+java:S3027§O"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+i
+java:S3776‘y"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+F
+java:S3740ƒ^"/Provide the parametrized type for this generic.(ßå®¤
+^
+java:S3973’_"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+]
+java:S2147Ì"FCombine this catch with the one at line 1731, which has the same body.(õ§¦Ô
+F
+java:S3740¯}"/Provide the parametrized type for this generic.(ßå®¤
+O
+java:S1144áh"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+K
+java:S3740¦b"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+i
+java:S3776Ì"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(†£ğô
+n
+java:S3776‘r"RRefactor this method to reduce its Cognitive Complexity from 60 to the 15 allowed.(çÙ«¾şÿÿÿÿ
+F
+java:S3740£"/Provide the parametrized type for this generic.(•ßüÂ
+d	java:S100ìE"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ê³
+
+java:S1149’n"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776œu"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+F
+java:S1481Ê"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+f	java:S117ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌì
+G
+java:S3740ê€"/Provide the parametrized type for this generic.(ßå®¤
+a	java:S112ˆ#"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+l	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+
+java:S1149á/"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740æi"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740†H"/Provide the parametrized type for this generic.(ßå®¤
+{
+java:S1149™V"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+a	java:S112Õ,"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+b
+java:S2147ç"FCombine this catch with the one at line 2657, which has the same body.(§ÄÁÿÿÿÿÿ
+d	java:S100ß4"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üóƒ»
+V
+java:S1118ùu":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+b
+java:S3027“z"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+R
+java:S1481 f"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+±
+java:S1130ÕI"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+±
+java:S1130ñ_"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+K
+java:S3740¨"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+±
+java:S1130½"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+
+java:S1149ÄA"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+a
+java:S2147«"ECombine this catch with the one at line 924, which has the same body.(¸ºÊİıÿÿÿÿ
+K
+java:S3740Ş"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+R
+java:S1481Ö^"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+
+java:S1149±v"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740Ã"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+b
+java:S2147Ó"FCombine this catch with the one at line 2119, which has the same body.(ÕÄçêşÿÿÿÿ
+?	java:S108ÃW")Either remove or fill this block of code.(á¢–¬
+F
+java:S3740û<"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740í"/Provide the parametrized type for this generic.(•ßüÂ
+K
+java:S3740šE"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+]
+java:S3027©r"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+b
+java:S2147Å"FCombine this catch with the one at line 1462, which has the same body.(¸ºÊİıÿÿÿÿ
+F
+java:S1481›,"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+F
+java:S3740¤S"/Provide the parametrized type for this generic.(•ßüÂ
+G
+java:S1144‘y"0Remove this unused private "writeQNames" method.(†»ìí
+]
+java:S3027öK"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+F
+java:S1144Œƒ")Remove this unused private "toOM" method.(áä«Şüÿÿÿÿ
+c
+java:S1192h"GDefine a constant instead of duplicating this literal "newpwd" 3 times.(ªÒ“ªşÿÿÿÿ
+b
+java:S3027±)"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+
+java:S1149ÄA"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740½r"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+a	java:S112Ò"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+b
+java:S3027’z"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+b
+java:S3027™v"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+O
+java:S1144ö;"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+R
+java:S1481¨"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+B
+java:S1481ìm"+Remove this unused "prefix" local variable.(åÒù÷
+F
+java:S3740ğ@"/Provide the parametrized type for this generic.(•ßüÂ
+l	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÁ»µıÿÿÿÿ
+K
+java:S1144‡9"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+F
+java:S3740×y"/Provide the parametrized type for this generic.(•ßüÂ
+
+java:S1149Ê="eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740ÔH"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+V
+java:S1118Ü%":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+b
+java:S3027½^"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+B
+java:S1481‚"+Remove this unused "prefix" local variable.(åÒù÷
+g	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²²ö
+t	java:S116ª#"^Rename this field "local_returnTracker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸€òò
+{
+java:S1149¦i"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+b
+java:S2147Ì"FCombine this catch with the one at line 1850, which has the same body.(§İØéøÿÿÿÿ
+R
+java:S1481ı}"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+K
+java:S3740Ã,"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+a	java:S112İ7"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+F
+java:S3740ü<"/Provide the parametrized type for this generic.(ßå®¤
+K
+java:S1144çl"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+i
+java:S3776¨H"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(’ï¢µ
+F
+java:S3740£"/Provide the parametrized type for this generic.(•ßüÂ
+>
+java:S1172æ„"&Remove these unused method parameters.(ôµšµ
+M
+java:S1481¥="1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+i
+java:S3776†D"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+G
+java:S1144§"0Remove this unused private "writeQNames" method.(†»ìí
+F
+java:S3740×a"/Provide the parametrized type for this generic.(•ßüÂ
+R
+java:S1481ŠL"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+K
+java:S3740ŞZ"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+a	java:S112ñz"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+l	java:S117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+n
+java:S3776ª^"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(‡İêÉøÿÿÿÿ
+F
+java:S1481ì%"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+a
+java:S1854 f"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ÈôÌ
+b
+java:S3027ÅZ"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+{
+java:S1149›q"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(Ïô¢³ûÿÿÿÿ
+`
+java:S1192şB"IDefine a constant instead of duplicating this literal "Username" 3 times.(½ü•
+F
+java:S1481¶""*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+K
+java:S3740«z"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+^
+java:S3973âO"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+b
+java:S2147æ"FCombine this catch with the one at line 2388, which has the same body.(§İØéøÿÿÿÿ
+F
+java:S3740ÍD"/Provide the parametrized type for this generic.(ßå®¤
+y
+java:S1192¢1"bDefine a constant instead of duplicating this literal "http://upmbank.sos.fi.upm.es/xsd" 91 times.(óÙ¬ï
+F
+java:S3740å6"/Provide the parametrized type for this generic.(ßå®¤
+a
+java:S2147Ó"ECombine this catch with the one at line 449, which has the same body.(§İØéøÿÿÿÿ
+F
+java:S3740¯}"/Provide the parametrized type for this generic.(ßå®¤
+V
+java:S1118º":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+T
+java:S1144ët"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+B
+java:S14817"+Remove this unused "prefix" local variable.(åÒù÷
+]
+java:S2147¶"FCombine this catch with the one at line 1581, which has the same body.(õ§¦Ô
+±
+java:S1130Şw"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+b
+java:S2147À"FCombine this catch with the one at line 1850, which has the same body.(§ÄÁÿÿÿÿÿ
+K
+java:S3740ÄA"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+K
+java:S3740½r"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+a	java:S112¾n"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+b
+java:S2147ä"FCombine this catch with the one at line 2657, which has the same body.(Ì‹Îşıÿÿÿÿ
+B
+java:S1481šO"+Remove this unused "prefix" local variable.(åÒù÷
+F
+java:S3740Å%"/Provide the parametrized type for this generic.(•ßüÂ
+a
+java:S2147İ"ECombine this catch with the one at line 718, which has the same body.(¸ºÊİıÿÿÿÿ
+b
+java:S3027²="FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+n
+java:S3776ŞK"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Š¿Ÿ§ÿÿÿÿÿ
+b
+java:S3027Ä3"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+{
+java:S1149—y"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+C
+java:S1172§„"&Remove these unused method parameters.(ÊÏ„Öûÿÿÿÿ
+K
+java:S3740İ3"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+b
+java:S3027Ù"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+K
+java:S3740¼"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+h
+java:S3776ê"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(êˆÄ;
+‰
+java:S1130&"sRemove the declaration of thrown exception 'org.apache.axis2.AxisFault', as it cannot be thrown from method's body.(¹É©‹
+i
+java:S3776ÿ$"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+F
+java:S3740Åm"/Provide the parametrized type for this generic.(ßå®¤
+±
+java:S1130ïg"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+K
+java:S1144("/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+F
+java:S1144ª‚")Remove this unused private "toOM" method.(•èıÕüÿÿÿÿ
+l	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+b
+java:S1854·"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+{
+java:S1149°@"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+A
+java:S1144ş‚")Remove this unused private "toOM" method.(Ãı
+a
+java:S1854’n"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+b
+java:S3027å}"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+F
+java:S3740’/"/Provide the parametrized type for this generic.(•ßüÂ
+d
+java:S1192p"IDefine a constant instead of duplicating this literal "addUser" 14 times.(…Õ‹ÿÿÿÿÿ
+l	java:S117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¬û„ùÿÿÿÿ
+F
+java:S3740¤"/Provide the parametrized type for this generic.(ÎÕò‡
+S
+java:S3972‹^"7Move this "if" to a new line or add the missing "else".(º¸Ş…úÿÿÿÿ
+a
+java:S1854¦b"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+?	java:S108ù"")Either remove or fill this block of code.(á¢–¬
+{
+java:S1149ûJ"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+±
+java:S1130"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+O
+java:S3878¶"8Remove this array creation and simply pass the elements.(”®¦ö
+m	java:S116Ú&"WRename this field "local_return" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢™Ï”
+B
+java:S1481î%"+Remove this unused "prefix" local variable.(åÒù÷
+a	java:S112œT"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+M
+java:S1481¸3"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+F
+java:S1481òD"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+F
+java:S3740Z"/Provide the parametrized type for this generic.(ßå®¤
+j
+java:S1192ÚE"NDefine a constant instead of duplicating this literal "loginResponse" 3 times.(ì§ºÁûÿÿÿÿ
+a
+java:S1854¬:"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+S
+java:S3972ày"7Move this "if" to a new line or add the missing "else".(º¸Ş…úÿÿÿÿ
+±
+java:S1130„"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+d	java:S100¬#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ê³
+l
+java:S1192”"PDefine a constant instead of duplicating this literal "getMyMovements" 14 times.(ÎíÔíúÿÿÿÿ
+a
+java:S1854ÀO"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+]
+java:S3027”"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+K
+java:S3740ŠL"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+l	java:S117å"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾¯ºûÿÿÿÿ
+G
+java:S1144ª@"0Remove this unused private "writeQNames" method.(†»ìí
+{
+java:S1149äR"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+M
+java:S1481Ø}"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+K
+java:S3740»"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+
+java:S1149¦b"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740ÚV"/Provide the parametrized type for this generic.(ßå®¤
+
+java:S1149³7"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+N
+java:S1172ş‚"6Remove this unused method parameter "optimizeContent".(Ãı
+
+java:S1149ŠL"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+b
+java:S2147™"FCombine this catch with the one at line 1043, which has the same body.(§ÄÁÿÿÿÿÿ
+b
+java:S3027b"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+|
+java:S1149©€"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+L
+java:S3740·"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+B
+java:S1481…z"+Remove this unused "prefix" local variable.(åÒù÷
+b
+java:S3027£"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+±
+java:S1130İk"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+d	java:S100¬I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øçˆ«
+R
+java:S1481Ã,"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+F
+java:S3740†H"/Provide the parametrized type for this generic.(ßå®¤
+]
+java:S3027é}"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+B
+java:S1481Ì"+Remove this unused "prefix" local variable.(åÒù÷
+O
+java:S1144À$"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+?	java:S108ïH")Either remove or fill this block of code.(á¢–¬
+F
+java:S3740®}"/Provide the parametrized type for this generic.(•ßüÂ
+K
+java:S3740Ê)"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+F
+java:S3740Ù"/Provide the parametrized type for this generic.(•ßüÂ
+a	java:S112š_"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+{
+java:S1149™"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+t	java:S116“{"^Rename this field "local_returnTracker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸€òò
+?	java:S108å=")Either remove or fill this block of code.(á¢–¬
+b
+java:S2147í"FCombine this catch with the one at line 2538, which has the same body.(Ì‹Îşıÿÿÿÿ
+K
+java:S3740®"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+F
+java:S1144‚")Remove this unused private "toOM" method.(Úï´¸ùÿÿÿÿ
+b
+java:S2147ğ"FCombine this catch with the one at line 2657, which has the same body.(¸ºÊİıÿÿÿÿ
+a
+java:S1854Ö^"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+b
+java:S2147Ú"FCombine this catch with the one at line 2388, which has the same body.(§ÄÁÿÿÿÿÿ
+O
+java:S1144ìM"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+l	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¬û„ùÿÿÿÿ
+t	java:S116ˆ"^Rename this field "local_returnTracker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸€òò
+±
+java:S1130¡*"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+B
+java:S1481»/"+Remove this unused "prefix" local variable.(åÒù÷
+O
+java:S3878¤	"8Remove this array creation and simply pass the elements.(½¤Í½
+G
+java:S1144É!"0Remove this unused private "writeQNames" method.(†»ìí
+O
+java:S3878›
+"8Remove this array creation and simply pass the elements.(½¤Í½
+K
+java:S3740ŠL"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+?	java:S108×")Either remove or fill this block of code.(á¢–¬
+
+java:S1149±v"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+G
+java:S1144õJ"0Remove this unused private "writeQNames" method.(†»ìí
+
+java:S1149’n"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+b
+java:S3027¼H"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+O
+java:S3878¨"8Remove this array creation and simply pass the elements.(½¤Í½
+a
+java:S2147Ÿ"ECombine this catch with the one at line 924, which has the same body.(Ì‹Îşıÿÿÿÿ
+
+java:S1149ŞZ"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740¹"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+]
+java:S3027”W"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+i
+java:S3776“"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+l	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¬û„ùÿÿÿÿ
+V
+java:S1118’)":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+K
+java:S3740ºj"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+O
+java:S3878Ë"8Remove this array creation and simply pass the elements.(½¤Í½
+R
+java:S1481ŞZ"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+F
+java:S3740Üq"/Provide the parametrized type for this generic.(ßå®¤
+>
+java:S1172Ñ„"&Remove these unused method parameters.(ìû‡¹
+K
+java:S3740¡	"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+g	java:S117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²²ö
+K
+java:S3740òS"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+F
+java:S3740¼K"/Provide the parametrized type for this generic.(ßå®¤
+R
+java:S1481İ3"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+K
+java:S1144‡6"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+{
+java:S1149ûJ"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+m	java:S116Ã4"WRename this field "local_return" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢™Ï”
+T
+java:S1144·|"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+i
+java:S3776…v"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Éãı
+b
+java:S3027ª,"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+K
+java:S3740º"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+n
+java:S3776‡"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(·ÈÈóøÿÿÿÿ
+F
+java:S3740ñN"/Provide the parametrized type for this generic.(•ßüÂ
+K
+java:S1144úx"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+{
+java:S1149ŒD"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+{
+java:S1149Œe"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+b
+java:S3027Ú"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+?	java:S108˜4")Either remove or fill this block of code.(á¢–¬
+N
+java:S3972Õe"7Move this "if" to a new line or add the missing "else".(†şƒ÷
+i
+java:S3776É!"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+T
+java:S1144ÄJ"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+a
+java:S2147İ"ECombine this catch with the one at line 599, which has the same body.(§ÄÁÿÿÿÿÿ
+n
+java:S3776ş"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(÷‘ò‡ÿÿÿÿÿ
+R
+java:S1481á/"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+F
+java:S1481µ3"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+T
+java:S1144â"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+F
+java:S3740""/Provide the parametrized type for this generic.(•ßüÂ
+l	java:S117ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©«ˆ§ùÿÿÿÿ
+b
+java:S3027E"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+g	java:S117ä	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²²ö
+K
+java:S3740Ê"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+{
+java:S1149±N"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+^
+java:S3973¬L"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+^
+java:S3973Óv"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+n
+java:S3776îD"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¿ù”Çøÿÿÿÿ
+b
+java:S3027¨O"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+K
+java:S1144µ."/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+R
+java:S1481ÄA"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+
+java:S1149¨W"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S1144+"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+±
+java:S1130•;"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+±
+java:S1130¬-"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+S
+java:S1172Òƒ"6Remove this unused method parameter "optimizeContent".(—ƒªüüÿÿÿÿ
+V
+java:S1118©/":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+R
+java:S1481Ş""6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+
+java:S1149Ş""eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+g	java:S117ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸‰ÇÛ
+±
+java:S1130×o"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+G
+java:S3740Û…"/Provide the parametrized type for this generic.(Ñ¬‘
+{
+java:S1149É2"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+s
+java:S1192ƒ{"WDefine a constant instead of duplicating this literal "changePasswordResponse" 3 times.(¢¦»ùÿÿÿÿ
+]
+java:S2147æ"FCombine this catch with the one at line 2269, which has the same body.(õ§¦Ô
+F
+java:S3740û("/Provide the parametrized type for this generic.(•ßüÂ
+r	java:S116šI"WRename this field "local_return" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÇÜŠıÿÿÿÿ
+F
+java:S1481şa"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+b
+java:S3027Å""FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+@	java:S108Ö")Either remove or fill this block of code.(á¢–¬
+T
+java:S1144ö"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+f	java:S117÷"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌì
+f	java:S117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌì
+]
+java:S2147ó"FCombine this catch with the one at line 2538, which has the same body.(õ§¦Ô
+^
+java:S3973ì)"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+
+java:S1149³7"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740»K"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740Ú"/Provide the parametrized type for this generic.(ßå®¤
+{
+java:S1149î|"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+B
+java:S1481‹v"+Remove this unused "prefix" local variable.(åÒù÷
+
+java:S1149½r"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+M
+java:S1481˜r"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+a
+java:S1854±v"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+G
+java:S11446"0Remove this unused private "writeQNames" method.(†»ìí
+O
+java:S1144Çd"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+F
+java:S3740¢"/Provide the parametrized type for this generic.(ØŠşú
+M
+java:S1481õD"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+
+java:S1149¨W"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+
+java:S1149İ3"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+±
+java:S1130úT"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+{
+java:S1149Œe"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+F
+java:S1481‰v"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+K
+java:S3740¨"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+F
+java:S1481¹/"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+]
+java:S3027¯,"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+]
+java:S2147İ"FCombine this catch with the one at line 2388, which has the same body.(õ§¦Ô
+O
+java:S3878Ü"8Remove this array creation and simply pass the elements.(½¤Í½
+K
+java:S1144è$"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+h
+java:S3776ùO"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ú“¶;
+?	java:S108õj")Either remove or fill this block of code.(á¢–¬
+M
+java:S1481ÍS"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+F
+java:S1481„:"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+
+java:S1149ŞZ"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S1144”N"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+R
+java:S1481«z"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+B
+java:S1481úe"+Remove this unused "prefix" local variable.(åÒù÷
+S
+java:S1172àƒ"6Remove this unused method parameter "optimizeContent".(§‡–úÿÿÿÿÿ
+{
+java:S1149…%"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+A
+java:S1144â‚")Remove this unused private "toOM" method.( €ù¦
+N
+java:S1481’"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+a	java:S112„k"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+]
+java:S3027ÀH"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+G
+java:S1144œu"0Remove this unused private "writeQNames" method.(†»ìí
+
+java:S1149±v"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+b
+java:S3027±="FPut single-quotes around ':' to use the faster "indexOf(char)" method.(óì›øÿÿÿÿ
+M
+java:S1481†z"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+F
+java:S3740Íe"/Provide the parametrized type for this generic.(ßå®¤
+M
+java:S1481ƒ"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+B
+java:S1481€b"+Remove this unused "prefix" local variable.(åÒù÷
+F
+java:S3740Üq"/Provide the parametrized type for this generic.(ßå®¤
+k
+java:S1192ÆP"TDefine a constant instead of duplicating this literal "BankAccountResponse" 3 times.( ­¯¸
+K
+java:S3740Õ"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+b
+java:S2147Â"FCombine this catch with the one at line 1462, which has the same body.(ÕÄçêşÿÿÿÿ
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+F
+java:S1481˜O"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+O
+java:S1144ß5"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+F
+java:S3740Øy"/Provide the parametrized type for this generic.(ßå®¤
+]
+java:S3027˜:"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+K
+java:S3740”"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+K
+java:S3740“
+"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+]
+java:S2147²	"FCombine this catch with the one at line 1193, which has the same body.(õ§¦Ô
+F
+java:S3740×a"/Provide the parametrized type for this generic.(•ßüÂ
+^
+java:S1192 h"GDefine a constant instead of duplicating this literal "oldpwd" 3 times.(¶üë¤
+
+java:S1149¦b"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776†e"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+V
+java:S1118Å}":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+F
+java:S1144îƒ")Remove this unused private "toOM" method.(ßÁˆûÿÿÿÿ
+g	java:S117×"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²²ö
+]
+java:S2147¿"FCombine this catch with the one at line 1462, which has the same body.(õ§¦Ô
+F
+java:S3740¥S"/Provide the parametrized type for this generic.(ßå®¤
+O
+java:S1144"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+K
+java:S3740ÔH"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+i
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ş³Ü¡
+^
+java:S3027£"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+T
+java:S1144Íl"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+g
+java:S1192•?"PDefine a constant instead of duplicating this literal "AddUserResponse" 3 times.(½çóø
+K
+java:S1144Æ"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+a
+java:S1854¼"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+_
+java:S1192ä"HDefine a constant instead of duplicating this literal "return" 36 times.(Í³šê
+i
+java:S37766"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+a	java:S112ŠB"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+±
+java:S1130óT"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+B
+java:S1481·3"+Remove this unused "prefix" local variable.(åÒù÷
+o
+java:S3776Ø…"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(±úá³úÿÿÿÿ
+±
+java:S1130Ï{"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+C
+java:S1172…"&Remove these unused method parameters.(óÿ•œşÿÿÿÿ
+i
+java:S1192P"MDefine a constant instead of duplicating this literal "PasswordPair" 3 times.(³şğ´ÿÿÿÿÿ
+F
+java:S3740Ìe"/Provide the parametrized type for this generic.(•ßüÂ
+B
+java:S1481×}"+Remove this unused "prefix" local variable.(åÒù÷
+{
+java:S1149­"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+
+java:S1149¼"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+l	java:S117Ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñĞë‰úÿÿÿÿ
+a
+java:S2147Ú"ECombine this catch with the one at line 599, which has the same body.(Ì‹Îşıÿÿÿÿ
+b
+java:S2147É"FCombine this catch with the one at line 1731, which has the same body.(§ÄÁÿÿÿÿÿ
+l	java:S117‰	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¬û„ùÿÿÿÿ
+K
+java:S1144üU"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+d	java:S100Š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ê³
+B
+java:S1481ôD"+Remove this unused "prefix" local variable.(åÒù÷
+K
+java:S3740ò"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+{
+java:S1149ÅG"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+M
+java:S1481•j"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+K
+java:S3740±v"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+b
+java:S2147¦
+"FCombine this catch with the one at line 1312, which has the same body.(§ÄÁÿÿÿÿÿ
+{
+java:S1149ŒD"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+{
+java:S1149¤9"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+K
+java:S3740³7"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+O
+java:S3878˜"8Remove this array creation and simply pass the elements.(”®¦ö
+R
+java:S1481¼"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+T
+java:S1144›."8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+R
+java:S1481òS"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+a	java:S112¾:"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+O
+java:S3878Ã"8Remove this array creation and simply pass the elements.(”®¦ö
+
+java:S1149¨"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+b
+java:S3027Æ""FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+M
+java:S1481¼/"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+a
+java:S2147Ú"ECombine this catch with the one at line 718, which has the same body.(ÕÄçêşÿÿÿÿ
+b
+java:S3027¾^"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+R
+java:S1481Ê="6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+c
+java:S1192ˆ"GDefine a constant instead of duplicating this literal "login" 14 times.(ü”˜Ÿşÿÿÿÿ
+
+java:S1149¼"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740Ê="/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+F
+java:S3740ÙV"/Provide the parametrized type for this generic.(•ßüÂ
+K
+java:S3740¨W"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+G
+java:S1144İ"0Remove this unused private "writeQNames" method.(†»ìí
+F
+java:S3740ü<"/Provide the parametrized type for this generic.(ßå®¤
+n
+java:S3776š"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(©œ°…ÿÿÿÿÿ
+±
+java:S1130ø_"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+{
+java:S1149™"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+b
+java:S2147µ	"FCombine this catch with the one at line 1193, which has the same body.(ÕÄçêşÿÿÿÿ
+A
+java:S1144ğ‚")Remove this unused private "toOM" method.(‘ğØš
+R
+java:S1481¨W"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+b
+java:S2147¬	"FCombine this catch with the one at line 1193, which has the same body.(Ì‹Îşıÿÿÿÿ
+B
+java:S1481¤="+Remove this unused "prefix" local variable.(åÒù÷
+G
+java:S1481"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+
+java:S1149½r"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776€"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(­‚¤
+±
+java:S1130œ;"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+]
+java:S2147Ù"FCombine this catch with the one at line 2000, which has the same body.(õ§¦Ô
+V
+java:S1118¥3":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+S
+java:S1172¸‚"6Remove this unused method parameter "optimizeContent".(€¬¤²úÿÿÿÿ
+G
+java:S1144†e"0Remove this unused private "writeQNames" method.(†»ìí
+
+java:S1149Ã,"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S1481¶Z"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+a
+java:S1192|"KDefine a constant instead of duplicating this literal "addIncome" 14 times.(ˆÅö—
+b
+java:S3027ˆf"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+a
+java:S1854ŞZ"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776²""RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(ÂëÃñ
+{
+java:S1149—a"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+
+java:S1149ÔH"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+b
+java:S3027«,"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+i
+java:S3776¿G"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+T
+java:S1144„+"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+K
+java:S3740ÀO"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+d	java:S100Š "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÑ÷æ
+F
+java:S3740û+"/Provide the parametrized type for this generic.(•ßüÂ
+l	java:S117ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¬û„ùÿÿÿÿ
+O
+java:S3878Ø"8Remove this array creation and simply pass the elements.(½¤Í½
+b
+java:S2147¸	"FCombine this catch with the one at line 1193, which has the same body.(¸ºÊİıÿÿÿÿ
+a	java:S112êO"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+K
+java:S3740±v"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+d	java:S100ö"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ê³
+S
+java:S1172¶ƒ"6Remove this unused method parameter "optimizeContent".(ºüà®üÿÿÿÿ
+G
+java:S1144“"0Remove this unused private "writeQNames" method.(†»ìí
+^
+java:S3973s"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+b
+java:S2147°"FCombine this catch with the one at line 1581, which has the same body.(Ì‹Îşıÿÿÿÿ
+l
+java:S1192 "PDefine a constant instead of duplicating this literal "changePassword" 14 times.(¦š´²üÿÿÿÿ
+g	java:S117ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÆÉÉ
+M
+java:S1481±^"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+K
+java:S3740’n"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+{
+java:S1149„m"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+b
+java:S2147Ö"FCombine this catch with the one at line 2119, which has the same body.(¸ºÊİıÿÿÿÿ
+b
+java:S2147í"FCombine this catch with the one at line 2657, which has the same body.(ÕÄçêşÿÿÿÿ
+N
+java:S3972ù@"7Move this "if" to a new line or add the missing "else".(å¢¬Ì
+K
+java:S3740ÀO"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+]
+java:S2147ê"FCombine this catch with the one at line 2657, which has the same body.(õ§¦Ô
+l	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÚŞËşÿÿÿÿ
+V
+java:S1118^":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+
+java:S1149«z"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+?	java:S108ûA")Either remove or fill this block of code.(á¢–¬
+^
+java:S3973¶&"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+c
+java:S1192®"GDefine a constant instead of duplicating this literal "args0" 32 times.(˜Ì–µşÿÿÿÿ
+F
+java:S3740ü("/Provide the parametrized type for this generic.(ßå®¤
+n
+java:S3776”O"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(é„É§úÿÿÿÿ
+K
+java:S3740‹"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+K
+java:S3740Ì"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+
+java:S1149ºj"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740”&"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+K
+java:S1144²Y"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+a
+java:S1854¨W"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740È"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+O
+java:S3878Ó"8Remove this array creation and simply pass the elements.(”®¦ö
+O
+java:S1144ä"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+^
+java:S3973‚B"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+?	java:S108âz")Either remove or fill this block of code.(á¢–¬
+J
+java:S3740"/Provide the parametrized type for this generic.(Å¤ğúÿÿÿÿ
+V
+java:S1118…r":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+F
+java:S3740’/"/Provide the parametrized type for this generic.(•ßüÂ
+±
+java:S1130æ#"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+K
+java:S3740Ç"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+K
+java:S3740’n"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+R
+java:S1481ºj"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+G
+java:S1144Ó…"/Remove this unused private "toEnvelope" method.(¦€÷‰
+B
+java:S1481°^"+Remove this unused "prefix" local variable.(åÒù÷
+G
+java:S3740é€"/Provide the parametrized type for this generic.(•ßüÂ
+g	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êûšÇ
+{
+java:S1149¦i"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+F
+java:S3740Øa"/Provide the parametrized type for this generic.(ßå®¤
+F
+java:S3740í"/Provide the parametrized type for this generic.(•ßüÂ
+{
+java:S1149±N"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+?	java:S108T")Either remove or fill this block of code.(á¢–¬
+F
+java:S3740û<"/Provide the parametrized type for this generic.(•ßüÂ
+d	java:S100•{"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ê³
+S
+java:S1172Æ‚"6Remove this unused method parameter "optimizeContent".(Î©°şÿÿÿÿ
+G
+java:S1144è|"0Remove this unused private "writeQNames" method.(†»ìí
+
+java:S1149ò"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+O
+java:S1144©|"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+a
+java:S2147Ñ"ECombine this catch with the one at line 718, which has the same body.(Ì‹Îşıÿÿÿÿ
+K
+java:S3740¨W"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+i
+java:S3776«N"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+]
+java:S3027Ÿ7"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+b
+java:S3027¢j"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+O
+java:S1144İt"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+h
+java:S3776„"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(”´
+K
+java:S1144‰i"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+±
+java:S1130ı~"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+b
+java:S2147¯
+"FCombine this catch with the one at line 1312, which has the same body.(¸ºÊİıÿÿÿÿ
+b
+java:S2147³"FCombine this catch with the one at line 1581, which has the same body.(§ÄÁÿÿÿÿÿ
+±
+java:S1130¦F"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+F
+java:S3740Æ%"/Provide the parametrized type for this generic.(ßå®¤
+]
+java:S3027¦j"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+r
+java:S1192ø"VDefine a constant instead of duplicating this literal "addWithdrawalResponse" 3 times.(İ¦şûÿÿÿÿ
+{
+java:S1149»("_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+O
+java:S3878Ê"8Remove this array creation and simply pass the elements.(”®¦ö
+{
+java:S1149ÅG"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+a
+java:S1854ÔH"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+{
+java:S1149ÏY"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+K
+java:S3740Â"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+T
+java:S1144í5"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+
+java:S1149Ö^"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(Å¤ğúÿÿÿÿ
+b
+java:S2147Ê"FCombine this catch with the one at line 2119, which has the same body.(Ì‹Îşıÿÿÿÿ
+
+java:S1149İ3"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+±
+java:S1130÷>"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+K
+java:S1144"/Remove this unused private "writeQName" method.(õŞûëùÿÿÿÿ
+]
+java:S3027¶)"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+G
+java:S1144şl"0Remove this unused private "writeQNames" method.(†»ìí
+M
+java:S1481ŸA"1Remove this unused "namespaceuri" local variable.(ƒ§êòüÿÿÿÿ
+O
+java:S3878—"8Remove this array creation and simply pass the elements.(½¤Í½
+±
+java:S1130Ä"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+B
+java:S1481”j"+Remove this unused "prefix" local variable.(åÒù÷
+K
+java:S3740Ô"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+k	java:S116"VRename this field "_operations" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦°ÑĞ
+K
+java:S3740¥"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+K
+java:S3740‡"/Provide the parametrized type for this generic.(êº€şúÿÿÿÿ
+a
+java:S2147æ"ECombine this catch with the one at line 599, which has the same body.(¸ºÊİıÿÿÿÿ
+l	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¬û„ùÿÿÿÿ
+
+java:S1149¬:"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+T
+java:S1144àx"8Remove this unused private "writeQNameAttribute" method.(Ãáîçøÿÿÿÿ
+K
+java:S3740İ"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+a
+java:S2147Ğ"ECombine this catch with the one at line 330, which has the same body.(§ÄÁÿÿÿÿÿ
+V
+java:S1118„":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+O
+java:S3878Ï"8Remove this array creation and simply pass the elements.(½¤Í½
+K
+java:S3740´"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+
+java:S1149«z"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+b
+java:S2147ã"FCombine this catch with the one at line 2269, which has the same body.(§ÄÁÿÿÿÿÿ
+^
+java:S3973Ş"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+t
+java:S1192à"XDefine a constant instead of duplicating this literal "Unexpected subelement " 30 times.(ø—÷–ıÿÿÿÿ
+{
+java:S1149Â]"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+O
+java:S1144€G"3Remove this unused private "writeAttribute" method.(Ê÷ê°ÿÿÿÿÿ
+F
+java:S3740¼K"/Provide the parametrized type for this generic.(ßå®¤
+]
+java:S3027Â^"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+m	java:S116¤#"WRename this field "local_return" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€“Ç±
+K
+java:S3740â"/Provide the parametrized type for this generic.(Ç°ˆüùÿÿÿÿ
+±
+java:S1130üs"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+±
+java:S1130ß#"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+±
+java:S1130•\"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+F
+java:S3740Är"/Provide the parametrized type for this generic.(ßÜÕñ
+^
+java:S3973Èb"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+
+java:S1149 f"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+A
+java:S1144šƒ")Remove this unused private "toOM" method.(ßÿŠÑ
+^
+java:S3973öH"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+^
+java:S3973”"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+b
+java:S2147¹"FCombine this catch with the one at line 1581, which has the same body.(ÕÄçêşÿÿÿÿ
+a
+java:S2147¨"ECombine this catch with the one at line 924, which has the same body.(ÕÄçêşÿÿÿÿ
+G
+java:S1144Ã2"0Remove this unused private "writeQNames" method.(†»ìí
+K
+java:S3740òS"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+±
+java:S1130¨*"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+F
+java:S3740Äm"/Provide the parametrized type for this generic.(•ßüÂ
+K
+java:S3740Ğ"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+]
+java:S3027Ê""FPut single-quotes around ':' to use the faster "indexOf(char)" method.(§çîÌ
+K
+java:S3740Ö^"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+
+java:S1149ÀO"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S1481€W"*Remove this unused "event" local variable.(½„•Âşÿÿÿÿ
+b
+java:S2147ğ"FCombine this catch with the one at line 2538, which has the same body.(§ÄÁÿÿÿÿÿ
+b
+java:S3027¤"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+±
+java:S1130…5"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+R
+java:S1481±v"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+K
+java:S3740šE"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+O
+java:S3878œ
+"8Remove this array creation and simply pass the elements.(”®¦ö
+G
+java:S3740é€"/Provide the parametrized type for this generic.(•ßüÂ
+n
+java:S3776j"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(±¶íşÿÿÿÿ
+{
+java:S1149°@"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ç© İşÿÿÿÿ
+F
+java:S3740û("/Provide the parametrized type for this generic.(•ßüÂ
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(©¡óÀşÿÿÿÿ
+n
+java:S3776÷"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(½ÿşóùÿÿÿÿ
+a	java:S112¥s"FDefine and throw a dedicated exception instead of using a generic one.(¹å®Íûÿÿÿÿ
+a
+java:S1854šE"ERemove this useless assignment to local variable "handledAttributes".(“Ê‘ ıÿÿÿÿ
+
+java:S1149ÔH"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+
+java:S1149¨W"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+i
+java:S3776 i"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+K
+java:S3740³7"/Provide the parametrized type for this generic.(“Ê‘ ıÿÿÿÿ
+R
+java:S1481¦b"6Remove this unused "handledAttributes" local variable.(“Ê‘ ıÿÿÿÿ
+C
+java:S1481‘"+Remove this unused "prefix" local variable.(åÒù÷
+F
+java:S3740Å%"/Provide the parametrized type for this generic.(•ßüÂ
+G
+java:S1144µ+"0Remove this unused private "writeQNames" method.(†»ìí
+o
+java:S1192ûo"SDefine a constant instead of duplicating this literal "movementQuantities" 7 times.(”Ğàùÿÿÿÿ
+V
+java:S1118ºS":Add a private constructor to hide the implicit public one.(¯ ˆİøÿÿÿÿ
+G
+java:S1144ÉY"0Remove this unused private "writeQNames" method.(†»ìí
+l	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÿôòüÿÿÿÿ
+f	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌì
+±
+java:S1130çB"”Remove the declaration of thrown exception 'org.apache.axis2.databinding.ADBException' which is a subclass of 'javax.xml.stream.XMLStreamException'.(üÄ‹–øÿÿÿÿ
+b
+java:S3027ÆZ"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+i
+java:S3776İ"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(†»ìí
+‚
+java:S1149·"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+K
+java:S3740"/Provide the parametrized type for this generic.(‡¯¸ğÿÿÿÿÿ
+d	java:S100Ë4"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£Ê³
+k
+java:S1192ÚP"TDefine a constant instead of duplicating this literal "AddMovementResponse" 3 times.(Î•îÆ
+F
+java:S3740ÌD"/Provide the parametrized type for this generic.(•ßüÂ
+b
+java:S3027‚E"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ
+F
+java:S3740‚^"/Provide the parametrized type for this generic.(•ßüÂ
+F
+java:S3740ä6"/Provide the parametrized type for this generic.(•ßüÂ
+^
+java:S3973ÊW"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+
+java:S1149ŠL"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(“Ê‘ ıÿÿÿÿ
+F
+java:S3740""/Provide the parametrized type for this generic.(ßå®¤
+^
+java:S3973Ÿ~"GUse indentation to denote the code conditionally executed by this "if".(ôğòÿ
+?	java:S108ãA")Either remove or fill this block of code.(á¢–¬
+b
+java:S3027òK"FPut single-quotes around ':' to use the faster "indexOf(char)" method.(„º˜Œøÿÿÿÿ

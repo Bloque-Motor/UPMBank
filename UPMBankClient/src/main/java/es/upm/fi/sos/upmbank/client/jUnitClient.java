@@ -74,10 +74,10 @@ public class jUnitClient {
         return stub.removeUser(removeUser).get_return();
     }
 
-    Response changePassword(String newPwd) throws RemoteException {
+    Response changePassword(String newPwd, String oldPwd) throws RemoteException {
         PasswordPair var = new PasswordPair();
         var.setNewpwd(newPwd);
-        var.setOldpwd(this.user.getPwd());
+        var.setOldpwd(oldPwd);
         ChangePassword changePwd = new ChangePassword();
         Response response = stub.changePassword(changePwd).get_return();
         if (response.getResponse()) {
@@ -141,5 +141,11 @@ public class jUnitClient {
     }
     public void setPassword(String pwd) {
         this.user.setPwd(pwd);
+    }
+    public User getUser(){
+        return this.user;
+    }
+    public String getIBAN() {
+        return accounts.get(new Random().nextInt(accounts.size()));
     }
 }
