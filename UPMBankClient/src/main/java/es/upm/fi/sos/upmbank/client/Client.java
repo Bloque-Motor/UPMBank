@@ -23,7 +23,23 @@ public class Client {
         User admin = new User();
         admin.setName("admin");
         admin.setPwd("admin");
+        System.out.println("Usuario administrador creado");
 
+        System.out.println("\nPrueba login1: el usuario admin hace login con el usuario y el password correcto");
+        Login loginAdmin = new Login();
+        Logout logoutAdmin = new Logout();
+        loginAdmin.setArgs0(admin);
+        System.out.println("Login admin debería ser true, el resultado es: " + stub.login(loginAdmin).get_return().getResponse());
+
+        System.out.println("Probamos hacer login con un user que no existe");
+        User usuarioNoExiste = new User();
+        usuarioNoExiste.setName("JuanB");
+        usuarioNoExiste.setPwd("12345");
+
+
+
+
+        /*
         AddUser testUser = new AddUser();
         Username test = new Username();
         test.setUsername("asdfasdfbgfdsh75757asdfafñlghj.,");
@@ -54,6 +70,6 @@ public class Client {
             System.out.println(stub.login(user1).get_return().getResponse() +  " prueba login");
         } catch (RemoteException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }

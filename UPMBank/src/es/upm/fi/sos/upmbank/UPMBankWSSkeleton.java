@@ -191,9 +191,12 @@ public class UPMBankWSSkeleton {
                     usuariosOnline.remove(sesionActual.getName());
                     online = false;
                     sesionActual = null;
+                    numberOfSessions--;
                 }
-                numberOfSessions--;
-                usuariosOnline.put(sesionActual.getName(),numberOfSessions);
+                else {
+                    numberOfSessions--;
+                    usuariosOnline.put(sesionActual.getName(), numberOfSessions);
+                }
             }
 
            /* if(numberOfSessions == 1){
@@ -461,7 +464,7 @@ public class UPMBankWSSkeleton {
         Response response = new Response();
         response.setResponse(false);
 
-        if (username.equals("admin") && password.equals("admin")) {
+        if (username.equals("admin") && password.equals(admin.getPwd())) {
             response.setResponse(true);
         }
         else {
@@ -491,7 +494,7 @@ public class UPMBankWSSkeleton {
                 usuariosOnline.put(username,1);
                 online = true;
                 sesionActual = user;
-                System.out.println(username + "is now online");
+                System.out.println(username + " is now online");
             }
 
         }
@@ -518,7 +521,7 @@ public class UPMBankWSSkeleton {
         double[] res = new double[9];
 
         boolean exist = false;
-        
+
         if(online) {
             String username = sesionActual.getName();
             UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
@@ -581,7 +584,18 @@ public class UPMBankWSSkeleton {
                 e.printStackTrace();
             }
 
-            if (exist) {
+            if(username.equals("admin")){
+
+                if(admin.getPwd().equals(oldPwd)) {
+                    admin.setPwd(newPwd);
+                    response.setResponse(true);
+                }else{
+                    response.setResponse(false);
+                }
+
+            }
+
+            else if (exist && !username.equals("admin") && !oldPwd.equals(newPwd)){
 
                 UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePasswordService = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword();
                 UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd changePasswordBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd();
