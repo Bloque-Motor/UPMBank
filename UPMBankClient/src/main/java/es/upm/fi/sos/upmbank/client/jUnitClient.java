@@ -40,6 +40,7 @@ public class jUnitClient {
         stub._getServiceClient().engageModule("addressing");
         stub._getServiceClient().getOptions().setManageSession(true);
         this.user = new User();
+        this.accounts = new ArrayList<>();
     }
 
     boolean login() throws RemoteException {
@@ -74,11 +75,12 @@ public class jUnitClient {
         return stub.removeUser(removeUser).get_return();
     }
 
-    Response changePassword(String newPwd) throws RemoteException {
+    Response changePassword(String newPwd, String oldPwd) throws RemoteException {
         PasswordPair var = new PasswordPair();
         var.setNewpwd(newPwd);
-        var.setOldpwd(this.user.getPwd());
+        var.setOldpwd(oldPwd);
         ChangePassword changePwd = new ChangePassword();
+        changePwd.setArgs0(var);
         Response response = stub.changePassword(changePwd).get_return();
         if (response.getResponse()) {
             this.user.setPwd(newPwd);
@@ -141,5 +143,12 @@ public class jUnitClient {
     }
     public void setPassword(String pwd) {
         this.user.setPwd(pwd);
+    }
+    public User getUser(){
+        return this.user;
+    }
+    public String getIBAN() {
+        if (!accounts.isEmpty()) return accounts.get(0);
+        else return "";
     }
 }
