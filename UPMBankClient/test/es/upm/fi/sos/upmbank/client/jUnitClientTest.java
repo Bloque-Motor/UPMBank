@@ -320,6 +320,48 @@ class jUnitClientTest {
                     fail("Exception thrown");
                 }
             }
+
+            @Test
+            @DisplayName("Add witdrawal")
+            @Order(7)
+            void addWithdrawal() {
+                double qtty = 50;
+                try {
+                    UPMBankWSStub.AddMovementResponse response = client.addWithdrawal(client.getIBAN(), qtty);
+                    assertTrue(response.getResult());
+                    assertEquals(response.getBalance(), STARTAMMOUNT + 1000 - qtty);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Test
+            @DisplayName("Add withdrawal to wrong account")
+            @Order(8)
+            void addWithdrawal1() {
+                double qtty = 100;
+                try {
+                    UPMBankWSStub.AddMovementResponse response = client.addMovement("1111", qtty);
+                    assertFalse(response.getResult());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
+
+            @Test
+            @DisplayName("Get movements")
+            @Order(9)
+            void getMovements() {
+                double[] res = {0,0,0,0,0,0,0,50,1000};
+                try {
+                    UPMBankWSStub.MovementList response = client.getMyMovements();
+                    assertArrayEquals(res, response.getMovementQuantities());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                    fail("Exception thrown");
+                }
+            }
         }
     }
 

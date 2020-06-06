@@ -148,6 +148,7 @@ public class jUnitClient {
         return this.user;
     }
     public String getIBAN() {
-        return accounts.get(new Random().nextInt(accounts.size()));
+        if (!accounts.isEmpty()) return accounts.get(0);
+        else return "";
     }
 }
