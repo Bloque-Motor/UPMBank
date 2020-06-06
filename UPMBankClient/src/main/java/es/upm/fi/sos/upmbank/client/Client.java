@@ -4,6 +4,7 @@ import org.apache.axis2.AxisFault;
 import es.upm.fi.sos.upmbank.client.UPMBankWSStub.*;
 
 import java.rmi.RemoteException;
+import java.util.Arrays;
 
 public class Client {
 
@@ -77,7 +78,20 @@ public class Client {
         addCuenta1.setArgs0(dineroUser1);
         BankAccountResponse respuestaBankAccount1 = new BankAccountResponse();
         respuestaBankAccount1 = stub.addBankAcc(addCuenta1).get_return();
-        System.out.println("\n El usuario ha creado un cuenta con número de IBAN: " + respuestaBankAccount1.getIBAN() + ", creado correctamente:  " + respuestaBankAccount1.getResult());
+        System.out.println("\n El usuario ha creado un cuenta con número de IBAN " + respuestaBankAccount1.getIBAN() + ", creado correctamente:  " + respuestaBankAccount1.getResult());
+        AddIncome addIncomeUser1 = new AddIncome();
+        Movement movUser1 = new Movement();
+        movUser1.setIBAN(respuestaBankAccount1.getIBAN());
+        movUser1.setQuantity(1500.0);
+        addIncomeUser1.setArgs0(movUser1);
+        AddMovementResponse movResponse1 = new AddMovementResponse();
+        movResponse1 = stub.addIncome(addIncomeUser1).get_return();
+        System.out.println("\n Realiza un ingreso en la cuenta " + respuestaBankAccount1.getIBAN() + " de " + movUser1.getQuantity() + " con resultado: " + movResponse1.getResult());
+        System.out.println("\n Le quedan actualmente en la cuenta: " +  movResponse1.getBalance() + "€");
+        MovementList getMovUser1 = new MovementList();
+        GetMyMovements getMov1 = new GetMyMovements();
+        getMovUser1 = stub.getMyMovements(getMov1).get_return();
+        System.out.println("\n Su historial de operaciones es : " + Arrays.toString(getMovUser1.getMovementQuantities()));
         Logout logoutUserOp1 = new Logout();
         stub.logout(logoutUserOp1);
 
