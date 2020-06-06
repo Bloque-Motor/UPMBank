@@ -519,7 +519,7 @@ public class UPMBankWSSkeleton {
         double[] res = new double[10];
 
         boolean exist = false;
-        
+
         if(online) {
             String username = sesionActual.getName();
             UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
