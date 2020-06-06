@@ -1,6 +1,5 @@
 package es.upm.fi.sos.upmbank.client;
 
-import org.apache.axis2.AxisFault;
 import org.junit.jupiter.api.*;
 
 import java.rmi.RemoteException;
@@ -48,7 +47,7 @@ public class MultipleSessionsTest {
             assertTrue(user2.login());
 
             assertTrue(user1.addBankAcc(STARTAMMOUNT).getResult());
-            assertTrue(user2.addBankAcc(STARTAMMOUNT/2).getResult());
+            assertTrue(user2.addBankAcc(STARTAMMOUNT / 2).getResult());
 
             UPMBankWSStub.AddMovementResponse response1 = user1.addMovement(user1.getIBAN(), 2000);
             assertTrue(response1.getResult());
@@ -56,7 +55,7 @@ public class MultipleSessionsTest {
 
             UPMBankWSStub.AddMovementResponse response2 = user2.addWithdrawal(user2.getIBAN(), 500);
             assertTrue(response2.getResult());
-            assertEquals(response2.getBalance(), (STARTAMMOUNT/2) - 500);
+            assertEquals(response2.getBalance(), (STARTAMMOUNT / 2) - 500);
 
             double ref1 = user1.addMovement(user1.getIBAN(), 0).getBalance();
             double ref2 = user2.addMovement(user2.getIBAN(), 0).getBalance();
