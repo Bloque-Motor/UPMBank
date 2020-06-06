@@ -460,7 +460,7 @@ public class UPMBankWSSkeleton {
         Response response = new Response();
         response.setResponse(false);
 
-        if (username.equals("admin") && password.equals("admin")) {
+        if (username.equals("admin") && password.equals(admin.getPwd())) {
             response.setResponse(true);
         }
         else {
@@ -490,7 +490,7 @@ public class UPMBankWSSkeleton {
                 usuariosOnline.put(username,1);
                 online = true;
                 sesionActual = user;
-                System.out.println(username + "is now online");
+                System.out.println(username + " is now online");
             }
 
         }
@@ -579,7 +579,14 @@ public class UPMBankWSSkeleton {
                 e.printStackTrace();
             }
 
-            if (exist) {
+            if(username.equals("admin")){
+
+                admin.setPwd(newPwd);
+                response.setResponse(true);
+
+            }
+
+            else if (exist && !username.equals("admin")) {
 
                 UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePasswordService = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword();
                 UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd changePasswordBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd();
