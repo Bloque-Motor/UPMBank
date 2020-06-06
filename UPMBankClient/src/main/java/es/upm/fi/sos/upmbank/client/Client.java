@@ -30,7 +30,13 @@ public class Client {
         Logout logoutAdmin = new Logout();
         loginAdmin.setArgs0(admin);
         System.out.println("Login admin debería ser true, el resultado es: " + stub.login(loginAdmin).get_return().getResponse());
-        stub.logout(logoutAdmin);
+
+        System.out.println("Probamos hacer login con un user que no existe");
+        User usuarioNoExiste = new User();
+        usuarioNoExiste.setName("JuanB");
+        usuarioNoExiste.setPwd("12345");
+
+
 
 
         /*

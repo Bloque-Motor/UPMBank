@@ -584,12 +584,14 @@ public class UPMBankWSSkeleton {
 
             if(username.equals("admin")){
 
-                admin.setPwd(newPwd);
-                response.setResponse(true);
+                if(admin.getPwd().equals(oldPwd)) {
+                    admin.setPwd(newPwd);
+                    response.setResponse(true);
+                }
 
             }
 
-            else if (exist && !username.equals("admin")) {
+            else if (exist && !username.equals("admin") && !oldPwd.equals(newPwd)){
 
                 UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePasswordService = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword();
                 UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd changePasswordBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd();
