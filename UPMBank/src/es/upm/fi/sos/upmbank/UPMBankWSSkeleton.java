@@ -307,6 +307,7 @@ public class UPMBankWSSkeleton {
 
             Queue<Movement> mov = movements.get(sesionActual.getName());
             Movement var = new Movement();
+            if (mov == null) mov = new LinkedList<>();
             var.setIBAN(ibanNumber);
             var.setQuantity(quantityNumber);
 
@@ -514,7 +515,7 @@ public class UPMBankWSSkeleton {
             es.upm.fi.sos.upmbank.GetMyMovements getMyMovements
     ) {
         MovementList response = new MovementList();
-        double[] res = new double[10];
+        double[] res = new double[9];
 
         boolean exist = false;
         
@@ -533,9 +534,10 @@ public class UPMBankWSSkeleton {
         }
 
         if (exist && online && movements.containsKey(sesionActual.getName())) {
-            Queue<Movement> mov = movements.get(sesionActual.getName());
-            for (int i = 9; i >= 0; i--) {
-                res[i] = mov.remove().getQuantity();
+            Queue<Movement> mov = new LinkedList<>(movements.get(sesionActual.getName()));
+            for (int i = 0; i <= mov.size(); i++) {
+                int v = 8-i;
+                res[v] = mov.remove().getQuantity();
             }
             response.setResult(true);
             response.setMovementQuantities(res);

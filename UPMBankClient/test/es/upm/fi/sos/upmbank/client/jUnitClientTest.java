@@ -22,7 +22,7 @@ class jUnitClientTest {
     private static HashMap<String, String> usedUsers;
     private static final int NUMUSERS = 5;
     private static final String ADMIN = "admin";
-    private static final double STARTAMMOUNT = 500;
+    private static final double STARTAMMOUNT = 5000;
 
     @BeforeAll
     static void loadFaker() {
