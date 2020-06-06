@@ -61,7 +61,7 @@ public class MultipleSessionsTest {
             double ref1 = user1.addMovement(user1.getIBAN(), 0).getBalance();
             double ref2 = user2.addMovement(user2.getIBAN(), 0).getBalance();
             double bal = ref1;
-            for (int i = 0; i <= 5; i++) {
+            for (int i = 0; i <= 10; i++) {
                 UPMBankWSStub.AddMovementResponse loop = user1.addMovement(user1.getIBAN(), 100);
                 assertTrue(loop.getResult());
                 ref1 += 100;
@@ -82,6 +82,15 @@ public class MultipleSessionsTest {
             assertTrue(user1.login());
             assertTrue(user1.changePassword(user1Pwd, "1111").getResponse());
             user1.setPassword(user1Pwd);
+            double[] res = user1.getMyMovements().getMovementQuantities();
+            for (int i = 0; i < res.length; i++) {
+                System.out.println(res[i]);
+            }
+            System.out.println("////");
+            double[] res1 = user2.getMyMovements().getMovementQuantities();
+            for (int i = 0; i < res1.length; i++) {
+                System.out.println(res1[i]);
+            }
 
         } catch (RemoteException axisFault) {
             axisFault.printStackTrace();
