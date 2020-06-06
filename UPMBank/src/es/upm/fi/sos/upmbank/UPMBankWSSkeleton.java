@@ -587,6 +587,8 @@ public class UPMBankWSSkeleton {
                 if(admin.getPwd().equals(oldPwd)) {
                     admin.setPwd(newPwd);
                     response.setResponse(true);
+                }else{
+                    response.setResponse(false);
                 }
 
             }
