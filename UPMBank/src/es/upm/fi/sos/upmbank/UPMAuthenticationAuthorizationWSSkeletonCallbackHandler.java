@@ -3,10 +3,10 @@
  * UPMAuthenticationAuthorizationWSSkeletonCallbackHandler.java
  *
  * This file was auto-generated from WSDL
- * by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST)
+ * by the Apache Axis2 version: 1.6.2  Built on : Apr 19, 2012 (07:45:31 IST)
  */
 
-    package UPMAuthenticationAuthorization;
+    package es.upm.fi.sos.upmbank;
 
     /**
      *  UPMAuthenticationAuthorizationWSSkeletonCallbackHandler Callback class, Users can extend this class and implement
@@ -49,7 +49,7 @@
             * override this method for handling normal response from removeUser operation
             */
            public void receiveResultremoveUser(
-                    UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE result
+                    UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE result
                         ) {
            }
 
@@ -65,7 +65,7 @@
             * override this method for handling normal response from addUser operation
             */
            public void receiveResultaddUser(
-                    UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse result
+                    UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse result
                         ) {
            }
 
@@ -81,7 +81,7 @@
             * override this method for handling normal response from existUser operation
             */
            public void receiveResultexistUser(
-                    UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE result
+                    UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE result
                         ) {
            }
 
@@ -97,7 +97,7 @@
             * override this method for handling normal response from login operation
             */
            public void receiveResultlogin(
-                    UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse result
+                    UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse result
                         ) {
            }
 
@@ -113,7 +113,7 @@
             * override this method for handling normal response from changePassword operation
             */
            public void receiveResultchangePassword(
-                    UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE result
+                    UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE result
                         ) {
            }
 

@@ -3,9 +3,9 @@
  * UPMAuthenticationAuthorizationWSSkeletonStub.java
  *
  * This file was auto-generated from WSDL
- * by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST)
+ * by the Apache Axis2 version: 1.6.2  Built on : Apr 19, 2012 (07:45:31 IST)
  */
-        package UPMAuthenticationAuthorization;
+        package es.upm.fi.sos.upmbank;
 
         
 
@@ -187,9 +187,9 @@
 
                     
 
-                            public  UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE removeUser(
+                            public  UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE removeUser(
 
-                            UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE removeUser0)
+                            UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE removeUser0)
                         
 
                     throws java.rmi.RemoteException
@@ -240,11 +240,11 @@
                 
                                 java.lang.Object object = fromOM(
                                              _returnEnv.getBody().getFirstElement() ,
-                                             UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.class,
+                                             UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.class,
                                               getEnvelopeNamespaces(_returnEnv));
 
                                
-                                        return (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE)object;
+                                        return (UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE)object;
                                    
          }catch(org.apache.axis2.AxisFault f){
 
@@ -308,9 +308,9 @@
                 */
                 public  void startremoveUser(
 
-                 UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE removeUser0,
+                 UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE removeUser0,
 
-                  final UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
+                  final UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
@@ -354,10 +354,10 @@
                                 org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
                                 
                                         java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
-                                                                         UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.class,
+                                                                         UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.class,
                                                                          getEnvelopeNamespaces(resultEnv));
                                         callback.receiveResultremoveUser(
-                                        (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE)object);
+                                        (UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE)object);
                                         
                             } catch (org.apache.axis2.AxisFault e) {
                                 callback.receiveErrorremoveUser(e);
@@ -456,9 +456,9 @@
 
                     
 
-                            public  UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse addUser(
+                            public  UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse addUser(
 
-                            UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUser addUser2)
+                            UPMAuthenticationAuthorizationWSSkeletonStub.AddUser addUser2)
                         
 
                     throws java.rmi.RemoteException
@@ -509,11 +509,11 @@
                 
                                 java.lang.Object object = fromOM(
                                              _returnEnv.getBody().getFirstElement() ,
-                                             UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.class,
+                                             UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.class,
                                               getEnvelopeNamespaces(_returnEnv));
 
                                
-                                        return (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse)object;
+                                        return (UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse)object;
                                    
          }catch(org.apache.axis2.AxisFault f){
 
@@ -577,9 +577,9 @@
                 */
                 public  void startaddUser(
 
-                 UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUser addUser2,
+                 UPMAuthenticationAuthorizationWSSkeletonStub.AddUser addUser2,
 
-                  final UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
+                  final UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
@@ -623,10 +623,10 @@
                                 org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
                                 
                                         java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
-                                                                         UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.class,
+                                                                         UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.class,
                                                                          getEnvelopeNamespaces(resultEnv));
                                         callback.receiveResultaddUser(
-                                        (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse)object);
+                                        (UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse)object);
                                         
                             } catch (org.apache.axis2.AxisFault e) {
                                 callback.receiveErroraddUser(e);
@@ -725,9 +725,9 @@
 
                     
 
-                            public  UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE existUser(
+                            public  UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE existUser(
 
-                            UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser4)
+                            UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser4)
                         
 
                     throws java.rmi.RemoteException
@@ -778,11 +778,11 @@
                 
                                 java.lang.Object object = fromOM(
                                              _returnEnv.getBody().getFirstElement() ,
-                                             UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.class,
+                                             UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.class,
                                               getEnvelopeNamespaces(_returnEnv));
 
                                
-                                        return (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE)object;
+                                        return (UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE)object;
                                    
          }catch(org.apache.axis2.AxisFault f){
 
@@ -846,9 +846,9 @@
                 */
                 public  void startexistUser(
 
-                 UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser4,
+                 UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser4,
 
-                  final UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
+                  final UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
@@ -892,10 +892,10 @@
                                 org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
                                 
                                         java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
-                                                                         UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.class,
+                                                                         UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.class,
                                                                          getEnvelopeNamespaces(resultEnv));
                                         callback.receiveResultexistUser(
-                                        (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE)object);
+                                        (UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE)object);
                                         
                             } catch (org.apache.axis2.AxisFault e) {
                                 callback.receiveErrorexistUser(e);
@@ -994,9 +994,9 @@
 
                     
 
-                            public  UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse login(
+                            public  UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse login(
 
-                            UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.Login login6)
+                            UPMAuthenticationAuthorizationWSSkeletonStub.Login login6)
                         
 
                     throws java.rmi.RemoteException
@@ -1047,11 +1047,11 @@
                 
                                 java.lang.Object object = fromOM(
                                              _returnEnv.getBody().getFirstElement() ,
-                                             UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.class,
+                                             UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.class,
                                               getEnvelopeNamespaces(_returnEnv));
 
                                
-                                        return (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse)object;
+                                        return (UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse)object;
                                    
          }catch(org.apache.axis2.AxisFault f){
 
@@ -1115,9 +1115,9 @@
                 */
                 public  void startlogin(
 
-                 UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.Login login6,
+                 UPMAuthenticationAuthorizationWSSkeletonStub.Login login6,
 
-                  final UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
+                  final UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
@@ -1161,10 +1161,10 @@
                                 org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
                                 
                                         java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
-                                                                         UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.class,
+                                                                         UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.class,
                                                                          getEnvelopeNamespaces(resultEnv));
                                         callback.receiveResultlogin(
-                                        (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse)object);
+                                        (UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse)object);
                                         
                             } catch (org.apache.axis2.AxisFault e) {
                                 callback.receiveErrorlogin(e);
@@ -1263,9 +1263,9 @@
 
                     
 
-                            public  UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE changePassword(
+                            public  UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE changePassword(
 
-                            UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePassword8)
+                            UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePassword8)
                         
 
                     throws java.rmi.RemoteException
@@ -1316,11 +1316,11 @@
                 
                                 java.lang.Object object = fromOM(
                                              _returnEnv.getBody().getFirstElement() ,
-                                             UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.class,
+                                             UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.class,
                                               getEnvelopeNamespaces(_returnEnv));
 
                                
-                                        return (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE)object;
+                                        return (UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE)object;
                                    
          }catch(org.apache.axis2.AxisFault f){
 
@@ -1384,9 +1384,9 @@
                 */
                 public  void startchangePassword(
 
-                 UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePassword8,
+                 UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePassword8,
 
-                  final UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
+                  final UPMAuthenticationAuthorizationWSSkeletonCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
@@ -1430,10 +1430,10 @@
                                 org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
                                 
                                         java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
-                                                                         UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.class,
+                                                                         UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.class,
                                                                          getEnvelopeNamespaces(resultEnv));
                                         callback.receiveResultchangePassword(
-                                        (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE)object);
+                                        (UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE)object);
                                         
                             } catch (org.apache.axis2.AxisFault e) {
                                 callback.receiveErrorchangePassword(e);
@@ -10979,12 +10979,12 @@
         }
            
     
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -10993,12 +10993,12 @@
 
             }
         
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11007,12 +11007,12 @@
 
             }
         
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUser param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.AddUser param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUser.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.AddUser.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11021,12 +11021,12 @@
 
             }
         
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11035,12 +11035,12 @@
 
             }
         
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11049,12 +11049,12 @@
 
             }
         
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11063,12 +11063,12 @@
 
             }
         
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.Login param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.Login param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.Login.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.Login.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11077,12 +11077,12 @@
 
             }
         
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11091,12 +11091,12 @@
 
             }
         
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11105,12 +11105,12 @@
 
             }
         
-            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE param, boolean optimizeContent)
+            private  org.apache.axiom.om.OMElement  toOM(UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
             
                         try{
-                             return param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.MY_QNAME,
+                             return param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11120,14 +11120,14 @@
             }
         
                                     
-                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
+                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
                                         throws org.apache.axis2.AxisFault{
 
                                              
                                                     try{
 
                                                             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
-                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE.MY_QNAME,factory));
+                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE.MY_QNAME,factory));
                                                             return emptyEnvelope;
                                                         } catch(org.apache.axis2.databinding.ADBException e){
                                                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11141,14 +11141,14 @@
 
                              
                                     
-                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUser param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
+                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorizationWSSkeletonStub.AddUser param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
                                         throws org.apache.axis2.AxisFault{
 
                                              
                                                     try{
 
                                                             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
-                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUser.MY_QNAME,factory));
+                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.AddUser.MY_QNAME,factory));
                                                             return emptyEnvelope;
                                                         } catch(org.apache.axis2.databinding.ADBException e){
                                                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11162,14 +11162,14 @@
 
                              
                                     
-                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
+                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
                                         throws org.apache.axis2.AxisFault{
 
                                              
                                                     try{
 
                                                             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
-                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser.MY_QNAME,factory));
+                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser.MY_QNAME,factory));
                                                             return emptyEnvelope;
                                                         } catch(org.apache.axis2.databinding.ADBException e){
                                                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11183,14 +11183,14 @@
 
                              
                                     
-                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.Login param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
+                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorizationWSSkeletonStub.Login param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
                                         throws org.apache.axis2.AxisFault{
 
                                              
                                                     try{
 
                                                             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
-                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.Login.MY_QNAME,factory));
+                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.Login.MY_QNAME,factory));
                                                             return emptyEnvelope;
                                                         } catch(org.apache.axis2.databinding.ADBException e){
                                                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11204,14 +11204,14 @@
 
                              
                                     
-                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
+                                        private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
                                         throws org.apache.axis2.AxisFault{
 
                                              
                                                     try{
 
                                                             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
-                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword.MY_QNAME,factory));
+                                                            emptyEnvelope.getBody().addChild(param.getOMElement(UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword.MY_QNAME,factory));
                                                             return emptyEnvelope;
                                                         } catch(org.apache.axis2.databinding.ADBException e){
                                                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -11241,72 +11241,72 @@
 
         try {
         
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }
            
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserResponseE.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }
            
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUser.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.AddUser.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUser.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.AddUser.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }
            
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.AddUserResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }
            
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }
            
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.ExistUserResponseE.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }
            
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.Login.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.Login.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.Login.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.Login.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }
            
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.LoginResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }
            
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }
            
-                if (UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.class.equals(type)){
+                if (UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.class.equals(type)){
                 
-                           return UPMAuthenticationAuthorization.UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                           return UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordResponseE.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }

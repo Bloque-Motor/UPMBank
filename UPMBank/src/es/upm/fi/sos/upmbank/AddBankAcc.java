@@ -3,7 +3,7 @@
  * AddBankAcc.java
  *
  * This file was auto-generated from WSDL
- * by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:34:40 IST)
+ * by the Apache Axis2 version: 1.6.2  Built on : Apr 19, 2012 (07:45:31 IST)
  */
 
             
