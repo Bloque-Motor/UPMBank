@@ -191,9 +191,12 @@ public class UPMBankWSSkeleton {
                     usuariosOnline.remove(sesionActual.getName());
                     online = false;
                     sesionActual = null;
+                    numberOfSessions--;
                 }
-                numberOfSessions--;
-                usuariosOnline.put(sesionActual.getName(),numberOfSessions);
+                else {
+                    numberOfSessions--;
+                    usuariosOnline.put(sesionActual.getName(), numberOfSessions);
+                }
             }
 
            /* if(numberOfSessions == 1){
