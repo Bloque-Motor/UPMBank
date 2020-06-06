@@ -41,12 +41,13 @@ public class Client {
         System.out.println("\n Login admin debería ser true, el resultado es: " + stub.login(loginAdmin).get_return().getResponse());
 
         //Creacion admin con contraseña mal
+        System.out.println("\n\n Test 2 - el usuario admin hace login con el usuario y el password incorrecto");
         User adminMal = new User();
         adminMal.setName("admin");
         adminMal.setPwd("nopass");
         Login loginAdminMal = new Login();
         loginAdminMal.setArgs0(adminMal);
-        System.out.println("\n\n Test 2 - El admin intneta hacer login con password incorrecta, resultado esperado False, el resultado es: " + stub.login(adminMal).get_return().getResponse());
+        System.out.println("\n Login admin debería ser false, el resultado es: " + stub.login(loginAdminMal).get_return().getResponse());
 
         //login con usuario no existente
         System.out.println("\n\n Test 3 - Probamos hacer login con un user que no existe");
@@ -73,8 +74,15 @@ public class Client {
         System.out.println("\n Añadimos al usuario 2 " + user2.getUsername() + " el resultado es: " + respuesta2.getResponse());
         stub.logout(logoutAdmin);
 
+        //Añadimos usuario ya existente al sistema
+        System.out.println("\n\n Test 5 - Intentamos añadir un usuario ya existente, el resultado deberia ser false");
+        loginAdmin.setArgs0(admin);
+        AddUser adduser11 = new AddUser();
+        adduser11.setArgs0(user1);
+        System.out.println("\n Añadimos al usuario 1 " + user1.getUsername() + " el resultado es: " + stub.addUser(adduser11).get_return().getResponse());
+
         //Hacemos una operación del servicio
-        System.out.println("\n\n Test 5 - Hacemos operaciones del servicio con el user1");
+        System.out.println("\n\n Test 6 - Hacemos operaciones del servicio con el user1");
         User userOp1 = new User();
         userOp1.setName(user1.getUsername());
         userOp1.setPwd(respuesta1.getPwd());
@@ -105,7 +113,7 @@ public class Client {
         stub.logout(logoutUserOp1);
 
         //Hacemos una operacion del servicio sin loguearnos
-        System.out.println("\n\n Test 6 - Realizamos una operación en el sistema con un usuario que no ha hecho login previo, el resultado debería ser false");
+        System.out.println("\n\n Test 7 - Realizamos una operación en el sistema con un usuario que no ha hecho login previo, el resultado debería ser false");
         AddIncome addIncomeUser11 = new AddIncome();
         Movement movUser11 = new Movement();
         movUser1.setIBAN(respuestaBankAccount1.getIBAN());
