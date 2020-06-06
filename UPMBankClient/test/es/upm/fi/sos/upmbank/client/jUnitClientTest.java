@@ -93,6 +93,25 @@ class jUnitClientTest {
             }
         }
 
+        @Test
+        @DisplayName("Sudo change password")
+        @Order(1)
+        void sudoChange() {
+            try {
+                assertTrue(client.changePassword("1111", "admin").getResponse());
+                client.setPassword("1111");
+                client.logout();
+                assertTrue(client.login());
+                assertTrue(client.changePassword("admin", "1111").getResponse());
+                client.logout();
+                client.setPassword("admin");
+                assertTrue(client.login());
+            } catch (RemoteException e) {
+                e.printStackTrace();
+                fail("Exception thrown");
+            }
+        }
+
         @ParameterizedTest
         @DisplayName("Sudo Add Users")
         @MethodSource("es.upm.fi.sos.upmbank.client.jUnitClientTest#generateUsername")
