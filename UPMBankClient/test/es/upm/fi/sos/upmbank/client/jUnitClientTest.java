@@ -372,7 +372,7 @@ class jUnitClientTest {
             @DisplayName("Get movements")
             @Order(9)
             void getMovements() {
-                double[] res = {0,0,0,0,0,0,0,50,1000};
+                double[] res = {0,0,0,0,0,0,0,0,50,1000};
                 try {
                     UPMBankWSStub.MovementList response = client.getMyMovements();
                     assertArrayEquals(res, response.getMovementQuantities());
