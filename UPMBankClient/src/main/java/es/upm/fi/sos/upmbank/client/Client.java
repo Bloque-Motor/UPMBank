@@ -4,6 +4,7 @@ import org.apache.axis2.AxisFault;
 import es.upm.fi.sos.upmbank.client.UPMBankWSStub.*;
 
 import java.rmi.RemoteException;
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Client {
@@ -94,6 +95,17 @@ public class Client {
         System.out.println("\n Su historial de operaciones es : " + Arrays.toString(getMovUser1.getMovementQuantities()));
         Logout logoutUserOp1 = new Logout();
         stub.logout(logoutUserOp1);
+
+        //Hacemos una operacion del servicio sin loguearnos
+        System.out.println("\n\n Test 5 - Realizamos una operación en el sistema con un usuario que no ha hecho login previo, el resultado debería ser false");
+        AddIncome addIncomeUser11 = new AddIncome();
+        Movement movUser11 = new Movement();
+        movUser1.setIBAN(respuestaBankAccount1.getIBAN());
+        movUser1.setQuantity(2500.0);
+        addIncomeUser1.setArgs0(movUser1);
+        System.out.println("\n Realiza un ingreso en la cuenta, resultado: " +stub.addIncome(addIncomeUser11).get_return().getResult());
+
+        
 
 
 
