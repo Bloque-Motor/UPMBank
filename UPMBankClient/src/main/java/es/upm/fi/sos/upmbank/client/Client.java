@@ -28,9 +28,9 @@ public class Client {
 
         // Creación dos users para pruebas
         Username user1 = new Username();
-        user1.setUsername("InigoG");
+        user1.setUsername("InigoH");
         Username user2 = new Username();
-        user2.setUsername("IgnacioG");
+        user2.setUsername("IgnacioH");
 
         //login con el superuser
         System.out.println("\n\n Test 1 - el usuario admin hace login con el usuario y el password correcto");
@@ -202,7 +202,7 @@ public class Client {
         System.out.println("Intentamos hacer la retirada: " + stub.addWithdrawal(addWithdrawalUser1).get_return().getResult());
 
         //Cerramos una cuenta del banco
-        System.out.println("\n\n Test 16 - Intentamos cerrar la cuenta de un usuario que tiene una cuenta abierta, debería dar true");
+        System.out.println("\n\n Test 16 - Intentamos cerrar la cuenta de un usuario que tiene una cuenta abierta con fondos, debería dar false");
         CloseBankAcc cierraCuenta = new CloseBankAcc();
         BankAccount cuenta = new BankAccount();
         cuenta.setIBAN(respuestaBankAccount1.getIBAN());
