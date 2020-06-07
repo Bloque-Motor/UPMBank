@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/UPMBank"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="lib" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/../../Extra Libraries/axis2-1.6.2/lib"/>
+	</lib>
+</component>

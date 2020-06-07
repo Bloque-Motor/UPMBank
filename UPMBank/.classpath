@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/UPMBank/src"/>
+	<classpathentry kind="lib" path="C:/Users/Nacho/IdeaProjects/Extra Libraries/axis2-1.6.2/lib" sourcepath="C:/Users/Nacho/IdeaProjects/Extra Libraries/axis2-1.6.2/lib"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -28,9 +28,9 @@ public class Client {
 
         // Creación dos users para pruebas
         Username user1 = new Username();
-        user1.setUsername("InigoH");
+        user1.setUsername("InigoI");
         Username user2 = new Username();
-        user2.setUsername("IgnacioH");
+        user2.setUsername("IgnacioI");
 
         //login con el superuser
         System.out.println("\n\n Test 1 - el usuario admin hace login con el usuario y el password correcto");
