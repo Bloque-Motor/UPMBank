@@ -82,6 +82,10 @@ public class UPMBankWSSkeleton {
                 response.setResult(true);
                 response.setIBAN(iban);
             }
+            else {
+                response.setResult(false);
+                response.setIBAN("");
+            }
         }
 
         AddBankAccResponse res = new AddBankAccResponse();
@@ -206,6 +210,9 @@ public class UPMBankWSSkeleton {
                     e.printStackTrace();
                 }
             }
+            else {
+                response.setResponse(false);
+            }
         }
 
         RemoveUserResponse res = new RemoveUserResponse();
@@ -262,6 +269,10 @@ public class UPMBankWSSkeleton {
                 movimientos.put(usuarioActual, mov);
                 response.setResult(true);
                 response.setBalance(resultado);
+            }
+            else {
+                response.setResult(false);
+                response.setBalance(0);
             }
         }
 
@@ -358,6 +369,10 @@ public class UPMBankWSSkeleton {
                 movimientos.put(usuarioActual, mov);
                 response.setBalance(resultado);
                 response.setResult(true);
+            }
+            else {
+                response.setResult(false);
+                response.setBalance(0);
             }
         }
 
@@ -458,6 +473,9 @@ public class UPMBankWSSkeleton {
                 response.setResult(true);
                 response.setMovementQuantities(res);
             }
+            else {
+                response.setResult(false);
+            }
         }
 
         GetMyMovementsResponse res = new GetMyMovementsResponse();
@@ -515,7 +533,9 @@ public class UPMBankWSSkeleton {
                     } catch (RemoteException e) {
                         e.printStackTrace();
                     }
-
+                }
+                else {
+                    response.setResponse(false);
                 }
             }
         }

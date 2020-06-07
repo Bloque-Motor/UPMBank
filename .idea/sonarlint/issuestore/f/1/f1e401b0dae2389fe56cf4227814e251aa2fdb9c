@@ -1,51 +1,37 @@
 
-M
-java:S3740Î"/Provide the parametrized type for this generic.(Ÿ‘ìÔ8¨ÔÁ€¨.
-V	java:S106§"9Replace this use of System.out or System.err by a logger.(ˆ¥¯¾8›ßÄƒ¨.
-r	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â´çÌÿÿÿÿÿ8æü®ø§.
-M
-java:S3010)"+Remove this assignment of "usuariosOnline".(Æ«Œûÿÿÿÿ8æü®ø§.
+F
+java:S1148Î"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›­¥Ù¨.
+F
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›­¥Ù¨.
+E
+java:S1148C"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›­¥Ù¨.
 h
-java:S11925"FDefine a constant instead of duplicating this literal "admin" 7 times.(ò²­Êüÿÿÿÿ8æü®ø§.
-Z
-java:S2589£"7Remove this expression which always evaluates to "true"(»ÉÁäüÿÿÿÿ8½è¦‚¨.
-:
-java:S2119Q"Save and re-use this "Random".(¼İÅf8æü®ø§.
+java:S1192""FDefine a constant instead of duplicating this literal "admin" 7 times.(»ò…şÿÿÿÿ8›­¥Ù¨.
+F
+java:S1148÷"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›­¥Ù¨.
+Y
+java:S1117¶";Rename "cuentas" which hides the field declared at line 24.(êĞøã8›­¥Ù¨.
+F
+java:S1148Ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›­¥Ù¨.
+F
+java:S1148×"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›­¥Ù¨.
+F
+java:S1148ø"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒœÕÙ¨.
+F
+java:S1148„"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒœÕÙ¨.
+F
+java:S1148¬"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›­¥Ù¨.
+E
+java:S1148z"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›­¥Ù¨.
+>
+java:S3010%"!Remove this assignment of "stub".(‰Ô¶Ô8›­¥Ù¨.
+x
+java:S2159}"VRemove this call to "equals"; comparisons between unrelated types always return false.(š‹ÎÖùÿÿÿÿ8›­¥Ù¨.
 K
-java:S1172š"-Remove this unused method parameter "logout".(ã»Õ¶8¨ÔÁ€¨.
+java:S1172•"-Remove this unused method parameter "logout".(ã»Õ¶8›­¥Ù¨.
 F
-java:S1148ï"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8æü®ø§.
+java:S1148À"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8è¤¾Ù¨.
 S
-java:S1172¼"5Remove this unused method parameter "getMyMovements".(¦Ì„ã8§Ìş§.
-^	java:S125«"<This block of commented-out lines of code should be removed.(ÌéßØıÿÿÿÿ8¨ÔÁ€¨.
-r
-java:S3008"URename this field "AuthClient" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©òş›8æü®ø§.
-G
-java:S3010/"%Remove this assignment of "accounts".(‹È–¸ıÿÿÿÿ8Ğ†€¨.
-C
-java:S30102"&Remove this assignment of "movements".(Ù‚àÌ8Ğ†€¨.
-F
-java:S1125"(Remove the literal "true" boolean value.(è©»8¨ÔÁ€¨.
-[
-java:S1155Ñ">Use isEmpty() to check whether the collection is empty or not.(¯ÆØ<8¨ÔÁ€¨.
-h
-java:S2259¨"JA "NullPointerException" could be thrown; "sesionActual" is nullable here.(×–Ôß8¨ÔÁ€¨.
-s
-java:S2159ƒ"VRemove this call to "equals"; comparisons between unrelated types always return false.(ßøè28¨ÔÁ€¨.
-F
-java:S1148Ù"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨ÔÁ€¨.
-J
-java:S3010,"(Remove this assignment of "accountList".(ú•µıÿÿÿÿ8şÄ‚€¨.
-F
-java:S1148·"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8æü®ø§.
-I
-java:S3010;"'Remove this assignment of "AuthClient".(®Á¾øÿÿÿÿ8æü®ø§.
-P
-java:S1135œ"2Complete the task associated to this TODO comment.(¶Ë†Õ8¨ÔÁ€¨.
-F
-java:S1148—"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‹£‚¨.
-?
-java:S1148="#Use a logger to log this exception.(´ÂÆ	8æü®ø§.
-L
-java:S3010&"*Remove this assignment of "listaUsuarios".(Á•…Æüÿÿÿÿ8æü®ø§.
-s	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¨‘éşÿÿÿÿ8ßçóı§.
+java:S1172°"5Remove this unused method parameter "getMyMovements".(¦Ì„ã8›­¥Ù¨.
+o
+java:S3776Ü"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Î¶Ór8¤»ÏÙ¨.
