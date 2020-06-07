@@ -1,6 +1,5 @@
 package es.upm.fi.sos.upmbank.client;
 
-import org.apache.axis2.AxisFault;
 import es.upm.fi.sos.upmbank.client.UPMBankWSStub.*;
 
 import java.rmi.RemoteException;
@@ -15,6 +14,16 @@ public class Cliente {
         stub._getServiceClient().engageModule("addressing");
         stub._getServiceClient().getOptions().setManageSession(true);
 
+        UPMBankWSStub stub1 = null;
+        stub1 = new UPMBankWSStub();
+        stub1._getServiceClient().engageModule("addressing");
+        stub1._getServiceClient().getOptions().setManageSession(true);
+
+        UPMBankWSStub stub2 = null;
+        stub2 = new UPMBankWSStub();
+        stub2._getServiceClient().engageModule("addressing");
+        stub2._getServiceClient().getOptions().setManageSession(true);
+
         // Superuser
         User admin = new User();
         admin.setName("admin");
@@ -27,11 +36,11 @@ public class Cliente {
 
         //Usuarios test
         User test1 = new User();
-        test1.setName("PabloBDC");
+        test1.setName("PabloBDCA");
         String iban1 = "";
 
         User test2 = new User();
-        test2.setName("PabloBDC1");
+        test2.setName("PabloBDCA1");
         String iban2 = "";
 
         //Login admin
@@ -53,8 +62,8 @@ public class Cliente {
         Login user2 = new Login();
         user1.setArgs0(test1);
         user2.setArgs0(test2);
-        System.out.println("Resultado hacer login usuario 1 aun no registrado: " + stub.login(user1).get_return().getResponse());
-        System.out.println("Resultado hacer login usuario 2 aun no registrado: " + stub.login(user2).get_return().getResponse());
+        System.out.println("Resultado hacer login usuario 1 aun no registrado: " + stub1.login(user1).get_return().getResponse());
+        System.out.println("Resultado hacer login usuario 2 aun no registrado: " + stub2.login(user2).get_return().getResponse());
 
         //Operaciones sin login
         System.out.println("\nProbamos a añadir usuario sin hacer login");
@@ -88,10 +97,10 @@ public class Cliente {
         System.out.println("\nHacemos login con los nuevos usuarios sin cerrar la sesion del admin");
         Login loginUser1 = new Login();
         loginUser1.setArgs0(test1);
-        System.out.println("Respuesta de login user1: " + stub.login(loginUser1).get_return().getResponse());
+        System.out.println("Respuesta de login user1: " + stub1.login(loginUser1).get_return().getResponse());
         Login loginUser2 = new Login();
         loginUser2.setArgs0(test2);
-        System.out.println("Respuesta de login user2: " + stub.login(loginUser2).get_return().getResponse());
+        System.out.println("Respuesta de login user2: " + stub2.login(loginUser2).get_return().getResponse());
 
         //Creamos cuentas para los dos usuarios
         System.out.println("\nCreamos una cuenta bancaria para cada uno de los usuarios");
@@ -103,8 +112,8 @@ public class Cliente {
         deposit2.setQuantity(2000);
         addBankAcc1.setArgs0(deposit1);
         addBankAcc2.setArgs0(deposit2);
-        BankAccountResponse bankAccountResponse1 = stub.addBankAcc(addBankAcc1).get_return();
-        BankAccountResponse bankAccountResponse2 = stub.addBankAcc(addBankAcc2).get_return();
+        BankAccountResponse bankAccountResponse1 = stub1.addBankAcc(addBankAcc1).get_return();
+        BankAccountResponse bankAccountResponse2 = stub2.addBankAcc(addBankAcc2).get_return();
         System.out.println("Respuesta de añadir cuenta para usuario1: " + bankAccountResponse1.getResult());
         System.out.println("Respuesta de añadir cuenta para usuario2: " + bankAccountResponse2.getResult());
         iban1 = bankAccountResponse1.getIBAN();
@@ -122,8 +131,8 @@ public class Cliente {
         AddWithdrawal addWithdrawal2 = new AddWithdrawal();
         addIncome1.setArgs0(movement1);
         addWithdrawal2.setArgs0(movement2);
-        AddIncomeResponse addIncomeResponse1 = stub.addIncome(addIncome1);
-        AddWithdrawalResponse addWithdrawalResponse2 = stub.addWithdrawal(addWithdrawal2);
+        AddIncomeResponse addIncomeResponse1 = stub1.addIncome(addIncome1);
+        AddWithdrawalResponse addWithdrawalResponse2 = stub2.addWithdrawal(addWithdrawal2);
         System.out.println("Resultado añadir dinero al usuario1: " + addIncomeResponse1.get_return().getResult() + ". Balance: " + addIncomeResponse1.get_return().getBalance());
         System.out.println("Resultado de retirar dinero al usuario2: " + addWithdrawalResponse2.get_return().getResult() + ". Balance: " + addWithdrawalResponse2.get_return().getBalance());
 
@@ -137,8 +146,8 @@ public class Cliente {
         bankAccount2.setIBAN(iban2);
         closeBankAcc1.setArgs0(bankAccount1);
         closeBankAcc2.setArgs0(bankAccount2);
-        CloseBankAccResponse closeBankAccResponse1 = stub.closeBankAcc(closeBankAcc1);
-        CloseBankAccResponse closeBankAccResponse2 = stub.closeBankAcc(closeBankAcc2);
+        CloseBankAccResponse closeBankAccResponse1 = stub1.closeBankAcc(closeBankAcc1);
+        CloseBankAccResponse closeBankAccResponse2 = stub2.closeBankAcc(closeBankAcc2);
         System.out.println("Respuesta de cerrar cuenta usuario1: " + closeBankAccResponse1.get_return().getResponse());
         System.out.println("Respuesta de cerrar cuenta usuario2: " + closeBankAccResponse2.get_return().getResponse());
 
@@ -154,20 +163,20 @@ public class Cliente {
         passwordPair2.setNewpwd("2222");
         changePassword1.setArgs0(passwordPair1);
         changePassword2.setArgs0(passwordPair2);
-        ChangePasswordResponse changePasswordResponse1 = stub.changePassword(changePassword1);
-        ChangePasswordResponse changePasswordResponse2 = stub.changePassword(changePassword2);
+        ChangePasswordResponse changePasswordResponse1 = stub1.changePassword(changePassword1);
+        ChangePasswordResponse changePasswordResponse2 = stub2.changePassword(changePassword2);
         System.out.println("Respuesta de intentar cambiar usuario1: " + changePasswordResponse1.get_return().getResponse());
         System.out.println("Respuesta de intentar cambiar usuario2: " + changePasswordResponse2.get_return().getResponse());
         passwordPair1.setNewpwd(test1.getPwd());
         passwordPair1.setOldpwd("1111");
         changePassword1.setArgs0(passwordPair1);
-        changePasswordResponse1 = stub.changePassword(changePassword1);
+        changePasswordResponse1 = stub1.changePassword(changePassword1);
         System.out.println("Devolvemos la contraseña del usuario1 a su estado inicial: " + changePasswordResponse1.get_return().getResponse());
 
         //GetMovements
-        System.out.println("Solicitamos la lista de movimientos del usuario1");
+        System.out.println("\nSolicitamos la lista de movimientos del usuario1");
         GetMyMovements getMyMovements = new GetMyMovements();
-        GetMyMovementsResponse getMyMovementsResponse = stub.getMyMovements(getMyMovements);
+        GetMyMovementsResponse getMyMovementsResponse = stub1.getMyMovements(getMyMovements);
         System.out.println("Ultimos movimientos: " + Arrays.toString(getMyMovementsResponse.get_return().getMovementQuantities()));
     }
 }
