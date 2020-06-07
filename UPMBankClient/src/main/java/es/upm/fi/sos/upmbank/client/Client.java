@@ -190,5 +190,28 @@ public class Client {
         changeAdmin.setArgs0(passAdmin);
         System.out.println("El resultado de cambiar la contraseña ha sido: " + stub.changePassword(changeAdmin).get_return().getResponse());
 
+        //Un usuario intenta hacer una retirada de mayor dinero de lo que dispone
+        Login loginUser1Retirada = new Login();
+        loginUser1Retirada.setArgs0(userOp1);
+        System.out.println("\n\n Test 15 - Intentamos hacer una retirada por valor mayor del balance disponible, resultado false");
+        AddWithdrawal addWithdrawalUser1 = new AddWithdrawal();
+        Movement movementRetirada = new Movement();
+        movementRetirada.setIBAN(respuestaBankAccount1.getIBAN());
+        movementRetirada.setQuantity(8000.0);
+        addWithdrawalUser1.setArgs0(movementRetirada);
+        System.out.println("Intentamos hacer la retirada: " + stub.addWithdrawal(addWithdrawalUser1).get_return().getResult());
+
+        //Cerramos una cuenta del banco
+        System.out.println("\n\n Test 16 - Intentamos cerrar la cuenta de un usuario que tiene una cuenta abierta, debería dar true");
+        CloseBankAcc cierraCuenta = new CloseBankAcc();
+        BankAccount cuenta = new BankAccount();
+        cuenta.setIBAN(respuestaBankAccount1.getIBAN());
+        cierraCuenta.setArgs0(cuenta);
+        System.out.println("Hacemos el cierre de la cuenta bancaria con resultado: " + stub.closeBankAcc(cierraCuenta).get_return().getResponse());
+
+        //Hacemos logout del usuario 1
+        Logout user1Logout = new Logout();
+        stub.logout(user1Logout);
+
     }
 }
