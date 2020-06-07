@@ -79,7 +79,9 @@ public class Client {
         loginAdmin.setArgs0(admin);
         AddUser adduser11 = new AddUser();
         adduser11.setArgs0(user1);
-        System.out.println("Añadimos al usuario 1 " + user1.getUsername() + " el resultado es: " + stub.addUser(adduser11).get_return().getResponse());
+        System.out.println("\n Añadimos al usuario 1 " + user1.getUsername() + " el resultado es: " + stub.addUser(adduser11).get_return().getResponse());
+        Logout logoutAddUserAdmin = new Logout();
+        stub.logout(logoutAddUserAdmin);
 
         //Hacemos una operación del servicio
         System.out.println("\n\n Test 6 - Hacemos operaciones del servicio con el user1");
@@ -116,12 +118,78 @@ public class Client {
         System.out.println("\n\n Test 7 - Realizamos una operación en el sistema con un usuario que no ha hecho login previo, el resultado debería ser false");
         AddIncome addIncomeUser11 = new AddIncome();
         Movement movUser11 = new Movement();
-        movUser11.setIBAN(respuestaBankAccount1.getIBAN());
-        movUser11.setQuantity(2500.0);
-        addIncomeUser11.setArgs0(movUser11);
-        System.out.println("Realiza un ingreso en la cuenta, resultado: " +stub.addIncome(addIncomeUser11).get_return().getResult());
+        movUser1.setIBAN(respuestaBankAccount1.getIBAN());
+        movUser1.setQuantity(2500.0);
+        addIncomeUser1.setArgs0(movUser11);
+        System.out.println("\n Realiza un ingreso en la cuenta, resultado: " + stub.addIncome(addIncomeUser11).get_return().getResult());
 
+        //Un usuario sin cuentas abiertas que no es el admin intenta eliminarse
+        System.out.println("\n\n Test 8 - Un usuario intenta eliminarse, debería dar false");
+        RemoveUser removeUserNotAllowed = new RemoveUser();
+        removeUserNotAllowed.setArgs0(user2);
+        User userOp2 = new User();
+        userOp2.setName(user2.getUsername());
+        userOp2.setPwd(respuesta2.getPwd());
+        Login loginUser2Remove = new Login();
+        loginUser2Remove.setArgs0(userOp2);
+        System.out.println("Hacemos login con el user 2: " + stub.login(loginUser2Remove));
+        System.out.println("El usuario se intenta eliminar, resultado: " + stub.removeUser(removeUserNotAllowed).get_return().getResponse());
+        Logout logoutUser2 = new Logout();
+        stub.logout(logoutUser2);
 
+        //Intentamos quitar un usuario con cuentas abiertas
+        RemoveUser removeUser1 = new RemoveUser();
+        removeUser1.setArgs0(user1);
+        System.out.println("\n\n Test 9 - Intentamos borrar un usuario con cuentas abiertas, debería ser false");
+        loginAdmin.setArgs0(admin);
+        System.out.println("Hacemos login con el admin: " + stub.login(loginAdmin));
+        System.out.println("El resultado de borrar un usuario con cuentas abiertas es: " + stub.removeUser(removeUser1).get_return().getResponse());
+
+        //Intentamos quitar un usuario sin cuentas abiertas
+        RemoveUser removeUser2 = new RemoveUser();
+        removeUser2.setArgs0(user2);
+        System.out.println("\n\n Test 10 - Intentamos borrar un usuario sin cuentas abiertas, debería ser true");
+        System.out.println("El resultado de borrar un usuario sin cuentas abiertas es: " + stub.removeUser(removeUser2).get_return().getResponse());
+
+        //El usuario admin intenta autoeliminarse
+        RemoveUser removeAdmin = new RemoveUser();
+        Username userAdmin = new Username();
+        userAdmin.setUsername("admin");
+        removeAdmin.setArgs0(userAdmin);
+        System.out.println("\n\n Test 11 - El usuario Admin intenta autoeliminarse, debería ser false");
+        System.out.println("El resultado de autoeliminarse el admin es: " + stub.removeUser(removeAdmin));
+        Logout logoutAdminRemove = new Logout();
+        stub.logout(logoutAdminRemove);
+
+        //Cambiamos la contraseña al admin sin haber hecho login previo
+        System.out.println("\n\n Test 12 - Cambiamos la contraseña de admin sin haber hecho login previo, debería dar false");
+        ChangePassword changeAdminNoLogin = new ChangePassword();
+        PasswordPair passAdminNoLogin = new PasswordPair();
+        passAdminNoLogin.setOldpwd("admin");
+        passAdminNoLogin.setNewpwd("superuser");
+        changeAdminNoLogin.setArgs0(passAdminNoLogin);
+        System.out.println("El resultado de cambiar la contraseña ha sido: " + stub.changePassword(changeAdminNoLogin).get_return().getResponse());
+
+        //Cambiamos la contraseña al admin introduciendo incorrectamente la oldpsw
+        Login loginAdminPassIncorrect = new Login();
+        loginAdminPassIncorrect.setArgs0(admin);
+        System.out.println("\n\n Test 13 - Cambiamos la contraseña de admin introduciendo mal la oldpsw, debería dar false");
+        System.out.println("Hacemos login con el usuario admin, resultado: " + stub.login(loginAdminPassIncorrect));
+        ChangePassword changeAdminIncorrect = new ChangePassword();
+        PasswordPair passAdminIncorrect = new PasswordPair();
+        passAdminIncorrect.setOldpwd("passIncorrect");
+        passAdminIncorrect.setNewpwd("superuser");
+        changeAdminIncorrect.setArgs0(passAdminIncorrect);
+        System.out.println("El resultado de cambiar la contraseña ha sido: " + stub.changePassword(changeAdminIncorrect).get_return().getResponse());
+
+        //Cambiamos la contraseña al admin introduciendo correctamente la oldpsw
+        System.out.println("\n\n Test 14 - Cambiamos la contraseña de admin introduciendo las psw correctamente, debería ser true");
+        ChangePassword changeAdmin = new ChangePassword();
+        PasswordPair passAdmin = new PasswordPair();
+        passAdmin.setOldpwd("admin");
+        passAdmin.setNewpwd("superuser");
+        changeAdmin.setArgs0(passAdmin);
+        System.out.println("El resultado de cambiar la contraseña ha sido: " + stub.changePassword(changeAdmin).get_return().getResponse());
 
 
 

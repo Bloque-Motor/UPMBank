@@ -269,6 +269,8 @@ public class UPMBankWSSkeleton {
         AddMovementResponse response = new AddMovementResponse();
 
         boolean exist = false;
+        response.setResult(false);
+        response.setBalance(0);
 
         if (online) {
             Movement info = addWithdrawal.getArgs0();
@@ -308,9 +310,6 @@ public class UPMBankWSSkeleton {
                     response.setBalance(newQuantity);
                 }
             }
-        } else {
-            response.setResult(false);
-            response.setBalance(0);
         }
 
         AddWithdrawalResponse endResponse = new AddWithdrawalResponse();
@@ -598,4 +597,3 @@ public class UPMBankWSSkeleton {
     }
 
 }
-    
