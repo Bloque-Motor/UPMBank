@@ -209,12 +209,18 @@ public class Client {
         cierraCuenta.setArgs0(cuenta);
         System.out.println("Hacemos el cierre de la cuenta bancaria con resultado: " + stub.closeBankAcc(cierraCuenta).get_return().getResponse());
 
+        //Intentamos hacer login con un usuario distinto al de la sesion actual
+        Login loginUser2Other = new Login();
+        loginUser2Other.setArgs0(userOp2);
+        System.out.println("\n\n Test 17 - Intentamos hacer login con un usuario diferente a la sesión actual, debería dar false");
+        System.out.println("El resultado de hacer login es: " + stub.login(loginUser2Other).get_return().getResponse());
+
         //Hacemos logout del usuario 1
         Logout user1Logout = new Logout();
         stub.logout(user1Logout);
 
         //Intentamos abrir una cuenta sin hacer login
-        System.out.println("\n\n Test 17 - Intentamos abrir la cuenta sin hacer login previo, debería dar false");
+        System.out.println("\n\n Test 18 - Intentamos abrir la cuenta sin hacer login previo, debería dar false");
         AddBankAcc addCuentaNoLogin = new AddBankAcc();
         Deposit dineroUser1NoLogin = new Deposit();
         dineroUser1NoLogin.setQuantity(12000.0);
