@@ -213,5 +213,13 @@ public class Client {
         Logout user1Logout = new Logout();
         stub.logout(user1Logout);
 
+        //Intentamos abrir una cuenta sin hacer login
+        System.out.println("\n\n Test 17 - Intentamos abrir la cuenta sin hacer login previo, debería dar false");
+        AddBankAcc addCuentaNoLogin = new AddBankAcc();
+        Deposit dineroUser1NoLogin = new Deposit();
+        dineroUser1NoLogin.setQuantity(12000.0);
+        addCuentaNoLogin.setArgs0(dineroUser1NoLogin);
+        System.out.println("Intentamos abrir una cuenta: " + stub.addBankAcc(addCuentaNoLogin).get_return().getResult());
+
     }
 }
