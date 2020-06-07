@@ -1,10 +1,9 @@
 package es.upm.fi.sos.upmbank.client;
 
-import org.apache.axis2.AxisFault;
 import es.upm.fi.sos.upmbank.client.UPMBankWSStub.*;
+import org.apache.axis2.AxisFault;
 
 import java.rmi.RemoteException;
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Client {
@@ -29,9 +28,9 @@ public class Client {
 
         // Creación dos users para pruebas
         Username user1 = new Username();
-        user1.setUsername("InigoE");
+        user1.setUsername("InigoG");
         Username user2 = new Username();
-        user2.setUsername("IgnacioE");
+        user2.setUsername("IgnacioG");
 
         //login con el superuser
         System.out.println("\n\n Test 1 - el usuario admin hace login con el usuario y el password correcto");
@@ -56,7 +55,7 @@ public class Client {
         usuarioNoExiste.setPwd("12345");
         Login login1 = new Login();
         login1.setArgs0(usuarioNoExiste);
-        System.out.println("Login con un usuario que no existe deberia dar false, el resultado es: " +stub.login(login1).get_return().getResponse());
+        System.out.println("Login con un usuario que no existe deberia dar false, el resultado es: " + stub.login(login1).get_return().getResponse());
 
         //Añadimos usuarios al sistema
         System.out.println("\n\n Test 4 - Añadimos dos usuarios al sistema");
@@ -106,7 +105,7 @@ public class Client {
         AddMovementResponse movResponse1 = new AddMovementResponse();
         movResponse1 = stub.addIncome(addIncomeUser1).get_return();
         System.out.println("Realiza un ingreso en la cuenta " + respuestaBankAccount1.getIBAN() + " de " + movUser1.getQuantity() + " con resultado: " + movResponse1.getResult());
-        System.out.println("Le quedan actualmente en la cuenta: " +  movResponse1.getBalance() + "€");
+        System.out.println("Le quedan actualmente en la cuenta: " + movResponse1.getBalance() + "€");
         MovementList getMovUser1 = new MovementList();
         GetMyMovements getMov1 = new GetMyMovements();
         getMovUser1 = stub.getMyMovements(getMov1).get_return();
@@ -132,7 +131,7 @@ public class Client {
         userOp2.setPwd(respuesta2.getPwd());
         Login loginUser2Remove = new Login();
         loginUser2Remove.setArgs0(userOp2);
-        System.out.println("Hacemos login con el user 2: " + stub.login(loginUser2Remove));
+        System.out.println("Hacemos login con el user 2: " + stub.login(loginUser2Remove).get_return().getResponse());
         System.out.println("El usuario se intenta eliminar, resultado: " + stub.removeUser(removeUserNotAllowed).get_return().getResponse());
         Logout logoutUser2 = new Logout();
         stub.logout(logoutUser2);
@@ -142,7 +141,7 @@ public class Client {
         removeUser1.setArgs0(user1);
         System.out.println("\n\n Test 9 - Intentamos borrar un usuario con cuentas abiertas, debería ser false");
         loginAdmin.setArgs0(admin);
-        System.out.println("Hacemos login con el admin: " + stub.login(loginAdmin));
+        System.out.println("Hacemos login con el admin: " + stub.login(loginAdmin).get_return().getResponse());
         System.out.println("El resultado de borrar un usuario con cuentas abiertas es: " + stub.removeUser(removeUser1).get_return().getResponse());
 
         //Intentamos quitar un usuario sin cuentas abiertas
@@ -157,7 +156,7 @@ public class Client {
         userAdmin.setUsername("admin");
         removeAdmin.setArgs0(userAdmin);
         System.out.println("\n\n Test 11 - El usuario Admin intenta autoeliminarse, debería ser false");
-        System.out.println("El resultado de autoeliminarse el admin es: " + stub.removeUser(removeAdmin));
+        System.out.println("El resultado de autoeliminarse el admin es: " + stub.removeUser(removeAdmin).get_return().getResponse());
         Logout logoutAdminRemove = new Logout();
         stub.logout(logoutAdminRemove);
 
@@ -174,7 +173,7 @@ public class Client {
         Login loginAdminPassIncorrect = new Login();
         loginAdminPassIncorrect.setArgs0(admin);
         System.out.println("\n\n Test 13 - Cambiamos la contraseña de admin introduciendo mal la oldpsw, debería dar false");
-        System.out.println("Hacemos login con el usuario admin, resultado: " + stub.login(loginAdminPassIncorrect));
+        System.out.println("Hacemos login con el usuario admin, resultado: " + stub.login(loginAdminPassIncorrect).get_return().getResponse());
         ChangePassword changeAdminIncorrect = new ChangePassword();
         PasswordPair passAdminIncorrect = new PasswordPair();
         passAdminIncorrect.setOldpwd("passIncorrect");
@@ -191,42 +190,5 @@ public class Client {
         changeAdmin.setArgs0(passAdmin);
         System.out.println("El resultado de cambiar la contraseña ha sido: " + stub.changePassword(changeAdmin).get_return().getResponse());
 
-
-
-
-
-
-        /*
-        AddUser testUser = new AddUser();
-        Username test = new Username();
-        test.setUsername("asdfasdfbgfdsh75757asdfafñlghj.,");
-        System.out.println(test.getUsername());
-        testUser.setArgs0(test);
-
-        Login adminLogin = new Login();
-        adminLogin.setArgs0(admin);
-        Logout adminLogout = new Logout();
-
-        stub.login(adminLogin);
-
-        AddUserResponse response = new AddUserResponse();
-        response = stub.addUser(testUser).get_return();
-
-            System.out.println(response.getResponse());
-            System.out.println(response.getPwd());
-
-
-        Login user1 = new Login();
-        User test1 = new User();
-        test1.setPwd("null");
-        test1.setName("kljhfaosudfasf15461234");
-
-        user1.setArgs0(test1);
-
-        try {
-            System.out.println(stub.login(user1).get_return().getResponse() +  " prueba login");
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }*/
     }
 }

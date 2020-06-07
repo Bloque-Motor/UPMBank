@@ -153,7 +153,7 @@ public class UPMBankWSSkeleton {
                 e.printStackTrace();
             }
 
-            if (accounts.get(userIban).equals(0) && exist) {
+            if (accounts.get(userIban).equals(0.0) && exist) {
 
                 accounts.remove(userIban);
                 response.setResponse(true);
@@ -467,11 +467,10 @@ public class UPMBankWSSkeleton {
                 numberOfSessions++;
                 usuariosOnline.put(username, numberOfSessions);
 
-            } else if (!online) {
+            } else {
                 usuariosOnline.put(username, 1);
                 online = true;
                 sesionActual = user;
-                System.out.println(username + " is now online");
             }
 
         }
