@@ -20,14 +20,15 @@ import java.util.Random;
 public class UPMBankWSSkeleton {
 
     private static HashMap<String, Integer> sesiones = new HashMap<>();
-    private static HashMap<String, ArrayList<String>> listaCuentas = new HashMap<>();
     private static HashMap<String, Double> cuentas = new HashMap<>();
+    private static HashMap<String, ArrayList<String>> listaCuentas = new HashMap<>();
     private static HashMap<String, ArrayList<Movement>> movimientos = new HashMap<>();
     private static UPMAuthenticationAuthorizationWSSkeletonStub stub;
+
     User superuser;
+    private Random random;
     private String usuarioActual;
     private boolean conectado;
-    private Random random;
 
     public UPMBankWSSkeleton() throws AxisFault {
         superuser = new User();
@@ -56,19 +57,21 @@ public class UPMBankWSSkeleton {
             response.setResult(false);
             response.setIBAN("");
         } else {
-            boolean existe = false;
+            boolean comprobacionUsuario = false;
             try {
+
+                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existeUsuario = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
                 UPMAuthenticationAuthorizationWSSkeletonStub.Username username = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
                 username.setName(usuarioActual);
-                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
-                existUser.setUsername(username);
-                existe = stub.existUser(existUser).get_return().getResult();
+                existeUsuario.setUsername(username);
+                comprobacionUsuario = stub.existUser(existeUsuario).get_return().getResult();
+
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
 
-            if (existe) {
-                Double quantity = addBankAcc.getArgs0().getQuantity();
+            if (comprobacionUsuario) {
+                Double cantidad = addBankAcc.getArgs0().getQuantity();
                 String iban = Integer.toString(random.nextInt(1000000));
 
                 ArrayList<String> aux;
@@ -76,8 +79,8 @@ public class UPMBankWSSkeleton {
                     aux = listaCuentas.get(usuarioActual);
                 } else aux = new ArrayList<>();
                 aux.add(iban);
+                cuentas.put(iban, cantidad);
                 listaCuentas.put(usuarioActual, aux);
-                cuentas.put(iban, quantity);
 
                 response.setResult(true);
                 response.setIBAN(iban);
@@ -114,22 +117,11 @@ public class UPMBankWSSkeleton {
         if (!conectado) {
             response.setResponse(false);
         } else {
-            boolean existe = false;
-            try {
-                String usuario = usuarioActual;
-                UPMAuthenticationAuthorizationWSSkeletonStub.Username username = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
-                username.setName(usuario);
-                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
-                existUser.setUsername(username);
-                existe = stub.existUser(existUser).get_return().getResult();
-            } catch (RemoteException e) {
-                e.printStackTrace();
-            }
-
-            if (cuentas.get(iban).equals(0) && existe) {
-                cuentas.remove(iban);
+  
+            if (cuentas.get(iban).equals(0.0)) {
                 response.setResponse(true);
-            } else if (!existe) {
+                cuentas.remove(iban);
+            } else {
                 response.setResponse(false);
             }
         }
@@ -153,15 +145,16 @@ public class UPMBankWSSkeleton {
             es.upm.fi.sos.upmbank.Logout logout
     ) {
         if (conectado) {
-            int numberOfSessions = sesiones.get(usuarioActual);
 
-            if (numberOfSessions == 1) {
+            int numSesiones = sesiones.get(usuarioActual);
+
+            if (numSesiones == 1) {
                 sesiones.remove(usuarioActual);
-                conectado = false;
                 usuarioActual = null;
-            } else if (numberOfSessions > 1) {
-                numberOfSessions--;
-                sesiones.put(usuarioActual, numberOfSessions);
+                conectado = false;
+            } else if (numSesiones > 1) {
+                numSesiones--;
+                sesiones.put(usuarioActual, numSesiones);
             }
         }
     }
@@ -188,18 +181,18 @@ public class UPMBankWSSkeleton {
         if (!conectado) {
             response.setResponse(false);
         } else {
-            String onlineUser = usuarioActual;
-            boolean existe = false;
+            String usuarioOnline = usuarioActual;
+            boolean comprobacionUsuario = false;
             try {
                 UPMAuthenticationAuthorizationWSSkeletonStub.Username username1 = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existeUsuario = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
                 username1.setName(usuario);
-                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
-                existUser.setUsername(username1);
-                existe = stub.existUser(existUser).get_return().getResult();
+                existeUsuario.setUsername(username1);
+                comprobacionUsuario = stub.existUser(existeUsuario).get_return().getResult();
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
-            if (existe && onlineUser.equals("admin") && (cuentas == null || cuentas.isEmpty()) && !usuario.equals("admin")) {
+            if (usuarioOnline.equals("admin") && comprobacionUsuario && (cuentas == null || cuentas.isEmpty()) && !usuario.equals("admin")) {
                 try {
                     UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser removeUser1 = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUser();
                     UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE removeUserE = new UPMAuthenticationAuthorizationWSSkeletonStub.RemoveUserE();
@@ -243,30 +236,31 @@ public class UPMBankWSSkeleton {
             String iban = movimiento.getIBAN();
             Double cantidad = movimiento.getQuantity();
 
-            boolean existe = false;
+            boolean comprobacionUsuario = false;
             try {
-                UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
-                userCheck.setName(usuarioActual);
-                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
-                userExist.setUsername(userCheck);
-                existe = stub.existUser(userExist).get_return().getResult();
+                UPMAuthenticationAuthorizationWSSkeletonStub.Username username1 = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existeUsuario = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+                username1.setName(usuarioActual);
+                existeUsuario.setUsername(username1);
+                comprobacionUsuario = stub.existUser(existeUsuario).get_return().getResult();
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
-            if (existe && cuentas.containsKey(iban) && cuentas.get(iban) >= cantidad) {
+            if (comprobacionUsuario && cuentas.containsKey(iban) && cuentas.get(iban) >= cantidad) {
+
                 double resultado = cuentas.get(iban) - cantidad;
                 cuentas.put(iban, resultado);
 
-                ArrayList<Movement> mov = movimientos.get(usuarioActual);
+                ArrayList<Movement> movimientosAux = movimientos.get(usuarioActual);
                 Movement var = new Movement();
-                if (mov == null) mov = new ArrayList<>();
+                if (movimientosAux == null) movimientosAux = new ArrayList<>();
                 var.setIBAN(iban);
                 var.setQuantity(cantidad);
-                if (mov.size() >= 10) {
-                    mov.remove(0);
+                if (movimientosAux.size() >= 10) {
+                    movimientosAux.remove(0);
                 }
-                mov.add(var);
-                movimientos.put(usuarioActual, mov);
+                movimientosAux.add(var);
+                movimientos.put(usuarioActual, movimientosAux);
                 response.setResult(true);
                 response.setBalance(resultado);
             }
@@ -317,6 +311,7 @@ public class UPMBankWSSkeleton {
 
         AddUserResponse res = new AddUserResponse();
         res.set_return(response);
+
         return res;
 
     }
@@ -345,11 +340,11 @@ public class UPMBankWSSkeleton {
 
             boolean exist = false;
             try {
-                UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
-                userCheck.setName(usuarioActual);
-                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
-                userExist.setUsername(userCheck);
-                exist = stub.existUser(userExist).get_return().getResult();
+                UPMAuthenticationAuthorizationWSSkeletonStub.Username username1 = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existeUsuario = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+                username1.setName(usuarioActual);
+                existeUsuario.setUsername(username1);
+                exist = stub.existUser(existeUsuario).get_return().getResult();
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
@@ -357,16 +352,16 @@ public class UPMBankWSSkeleton {
                 double resultado = cuentas.get(iban) + cantidad;
                 cuentas.put(iban, resultado);
 
-                ArrayList<Movement> mov = movimientos.get(usuarioActual);
+                ArrayList<Movement> movimientosAux = movimientos.get(usuarioActual);
                 Movement var = new Movement();
-                if (mov == null) mov = new ArrayList<>();
+                if (movimientosAux == null) movimientosAux = new ArrayList<>();
                 var.setQuantity(cantidad);
                 var.setIBAN(iban);
-                while (mov.size() >= 10) {
-                    mov.remove(0);
+                while (movimientosAux.size() >= 10) {
+                    movimientosAux.remove(0);
                 }
-                mov.add(var);
-                movimientos.put(usuarioActual, mov);
+                movimientosAux.add(var);
+                movimientos.put(usuarioActual, movimientosAux);
                 response.setBalance(resultado);
                 response.setResult(true);
             }
@@ -378,6 +373,7 @@ public class UPMBankWSSkeleton {
 
         AddIncomeResponse res = new AddIncomeResponse();
         res.set_return(response);
+
         return res;
     }
 
@@ -451,24 +447,24 @@ public class UPMBankWSSkeleton {
         if (!conectado) {
             response.setResult(false);
         } else {
-            boolean existe = false;
+            boolean comprobacionUsuario = false;
             try {
                 String username = usuarioActual;
-                UPMAuthenticationAuthorizationWSSkeletonStub.Username userCheck = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
-                userCheck.setName(username);
-                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser userExist = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
-                userExist.setUsername(userCheck);
-                existe = stub.existUser(userExist).get_return().getResult();
+                UPMAuthenticationAuthorizationWSSkeletonStub.Username username1 = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existeUsuario = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+                username1.setName(username);
+                existeUsuario.setUsername(username1);
+                comprobacionUsuario = stub.existUser(existeUsuario).get_return().getResult();
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
-            if (existe && movimientos.containsKey(usuarioActual)) {
+            if (movimientos.containsKey(usuarioActual) && comprobacionUsuario) {
                 double[] res = new double[10];
-                ArrayList<Movement> mov = new ArrayList<>(movimientos.get(usuarioActual));
-                int size = mov.size();
+                ArrayList<Movement> movimientosAux = new ArrayList<>(movimientos.get(usuarioActual));
+                int size = movimientosAux.size();
                 for (int i = 0; i < size; i++) {
                     int v = 9 - i;
-                    res[v] = mov.remove(0).getQuantity();
+                    res[v] = movimientosAux.remove(0).getQuantity();
                 }
                 response.setResult(true);
                 response.setMovementQuantities(res);
@@ -480,6 +476,7 @@ public class UPMBankWSSkeleton {
 
         GetMyMovementsResponse res = new GetMyMovementsResponse();
         res.set_return(response);
+
         return res;
     }
 
@@ -511,17 +508,17 @@ public class UPMBankWSSkeleton {
                     response.setResponse(false);
                 }
             } else {
-                boolean existe = false;
+                boolean comprobacionUsuario = false;
                 try {
                     UPMAuthenticationAuthorizationWSSkeletonStub.Username username1 = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
+                    UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existeUsuario = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
                     username1.setName(usuarioActual);
-                    UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
-                    existUser.setUsername(username1);
-                    existe = stub.existUser(existUser).get_return().getResult();
+                    existeUsuario.setUsername(username1);
+                    comprobacionUsuario = stub.existUser(existeUsuario).get_return().getResult();
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
-                if (existe && !oldPwd.equals(newPwd)) {
+                if (!oldPwd.equals(newPwd) && comprobacionUsuario) {
                     try {
                         UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword changePassword1 = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePassword();
                         UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd passwordBackEnd = new UPMAuthenticationAuthorizationWSSkeletonStub.ChangePasswordBackEnd();
