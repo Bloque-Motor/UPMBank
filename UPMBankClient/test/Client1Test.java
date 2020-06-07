@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 
 public class Client1Test {
 
-    private Client client;
+    private Cliente client;
 
     @BeforeAll
-    void loadClient() {client = new Client();}
+    void loadClient() {client = new Cliente();}
 
     @Test
     @DisplayName("Sudo login")
