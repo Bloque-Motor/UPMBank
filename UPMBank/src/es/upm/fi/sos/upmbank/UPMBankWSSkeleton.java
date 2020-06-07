@@ -60,11 +60,11 @@ public class UPMBankWSSkeleton {
             boolean comprobacionUsuario = false;
             try {
 
-                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existeUsuario = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
                 UPMAuthenticationAuthorizationWSSkeletonStub.Username username = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
                 username.setName(usuarioActual);
-                existUser.setUsername(username);
-                comprobacionUsuario = stub.existUser(existUser).get_return().getResult();
+                existeUsuario.setUsername(username);
+                comprobacionUsuario = stub.existUser(existeUsuario).get_return().getResult();
 
             } catch (RemoteException e) {
                 e.printStackTrace();
@@ -181,10 +181,10 @@ public class UPMBankWSSkeleton {
             boolean comprobacionUsuario = false;
             try {
                 UPMAuthenticationAuthorizationWSSkeletonStub.Username username1 = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
-                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+                UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existeUsuario = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
                 username1.setName(usuario);
-                existUser.setUsername(username1);
-                comprobacionUsuario = stub.existUser(existUser).get_return().getResult();
+                existeUsuario.setUsername(username1);
+                comprobacionUsuario = stub.existUser(existeUsuario).get_return().getResult();
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
@@ -493,10 +493,10 @@ public class UPMBankWSSkeleton {
                 boolean comprobacionUsuario = false;
                 try {
                     UPMAuthenticationAuthorizationWSSkeletonStub.Username username1 = new UPMAuthenticationAuthorizationWSSkeletonStub.Username();
-                    UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existUser = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
+                    UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser existeUsuario = new UPMAuthenticationAuthorizationWSSkeletonStub.ExistUser();
                     username1.setName(usuarioActual);
-                    existUser.setUsername(username1);
-                    comprobacionUsuario = stub.existUser(existUser).get_return().getResult();
+                    existeUsuario.setUsername(username1);
+                    comprobacionUsuario = stub.existUser(existeUsuario).get_return().getResult();
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
