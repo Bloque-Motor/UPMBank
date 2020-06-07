@@ -35,38 +35,6 @@ class jUnitClientTest {
         client = new jUnitClient();
     }
 
-    @Test
-    void testLogin() {
-    }
-
-    @Test
-    void testLogout() {
-    }
-
-    @Test
-    void testChangePassword() {
-    }
-
-    @Test
-    void testAddBankAcc() {
-    }
-
-    @Test
-    void testCloseBankAcc() {
-    }
-
-    @Test
-    void testAddMovement() {
-    }
-
-    @Test
-    void testAddWithdrawal() {
-    }
-
-    @Test
-    void testGetMyMovements() {
-    }
-
     @Nested
     @DisplayName("Sudo Actions")
     @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
