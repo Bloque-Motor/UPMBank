@@ -114,7 +114,7 @@ public class UPMBankWSSkeleton {
             response.setResponse(false);
         } else {
   
-            if (cuentas.get(iban).equals(0)) {
+            if (cuentas.get(iban).equals(0.0)) {
                 response.setResponse(true);
                 cuentas.remove(iban);
             } else {
