@@ -2,10 +2,8 @@
 
 ##Autores
 - Iñigo Aranguren Redondo
-  - 160054
 - Ignacio de las Alas-Pumariño Martínez
-  - 160066
-  
+
 ##Comentarios
 En la carpeta clientes hay varios archivos:
 - Client.java:
